@@ -16,6 +16,7 @@ import { bindBookingFormEvents } from './components/BookingForm';
 import { renderCarDetailModal, bindCarDetailModalEvents } from './components/CarDetailModal';
 import { renderCompareDrawer, renderCarCompareModal, bindCompareEvents } from './components/CarCompareModal';
 import { renderQuoteModal, bindQuoteModalEvents } from './components/QuoteModal';
+import { renderMobileBottomNav, bindMobileBottomNavEvents } from './components/MobileBottomNav';
 import { renderFooter, bindFooterEvents } from './components/Footer';
 import { renderToastNotification } from './components/ToastNotification';
 import { generateWhatsAppInquiryLink } from './utils/whatsapp';
@@ -54,6 +55,7 @@ const renderApp = (): void => {
         ${page.html}
       </main>
       ${renderFooter()}
+      ${renderMobileBottomNav()}
       ${renderCarDetailModal()}
       ${renderCompareDrawer()}
       ${renderCarCompareModal()}
@@ -69,6 +71,7 @@ const renderApp = (): void => {
 
   // Bind interactive DOM events
   bindHeaderEvents();
+  bindMobileBottomNavEvents();
   bindBookingFormEvents();
   if (page.bindEvents) page.bindEvents();
   bindCarDetailModalEvents();
