@@ -1,0 +1,6 @@
+# Allow Google, Bing, Yahoo & All Search Engine Crawlers
+User-agent: *
+Allow: /
+
+# XML Sitemap Link
+Sitemap: https://anandsharma0924.github.io/Rent/sitemap.xml
