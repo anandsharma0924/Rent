@@ -502,11 +502,11 @@ Please share current availability, per KM highway rates (Min 400 KM) & best per-
       ${ue()}
 
       <!-- Featured Vehicles Section -->
-      <section class="container" style="padding: 40px 0 20px;">
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 28px;">
+      <section class="container section-padding">
+        <div class="section-header-flex">
           <div>
             <span class="hero-tag">🚘 Featured Selection</span>
-            <h2 style="font-size: 2rem; font-weight: 900; color: var(--navy-primary);">Top Rated Vehicles</h2>
+            <h2 class="section-title">Top Rated Vehicles</h2>
           </div>
           <button id="viewAllFleetBtn" class="btn-primary">
             Explore All Cars →
@@ -518,54 +518,54 @@ Please share current availability, per KM highway rates (Min 400 KM) & best per-
         </div>
       </section>
 
-      <!-- Route Estimator Widget -->
-      <section class="container" style="padding: 30px 0 40px;">
-        <div class="glass-card" style="padding: 32px; background: #ffffff; border-radius: 24px;">
-          <div style="text-align: center; margin-bottom: 24px;">
+      <!-- Popular Route Estimator Box -->
+      <section class="container section-padding">
+        <div class="glass-card home-card-box">
+          <div class="box-center-header">
             <span class="hero-tag">🗺️ Instant Route Guide</span>
-            <h2 style="font-size: 1.8rem; font-weight: 900; color: #0f172a; margin-top: 6px;">
+            <h2 class="box-title">
               Popular Destinations & Highway Route Estimator
             </h2>
-            <p style="color: #64748b; font-size: 0.9rem; margin-top: 4px;">
+            <p class="box-desc">
               Select a popular destination from Indore to view estimated distance, drive duration, and flat trip fare.
             </p>
           </div>
 
-          <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-bottom: 24px;">
+          <div class="route-tabs-container">
             ${P.map((e,t)=>`
-              <button class="route-tab-btn ${t===I?`active`:``}" data-index="${t}" style="padding: 8px 18px; border-radius: 9999px; font-size: 0.85rem; font-weight: 700; border: 1px solid ${t===I?`#0f172a`:`#e2e8f0`}; background: ${t===I?`#0f172a`:`#f1f5f9`}; color: ${t===I?`#ffffff`:`#475569`}; cursor: pointer;">
+              <button class="route-tab-btn ${t===I?`active`:``}" data-index="${t}">
                 📍 ${e.to}
               </button>
             `).join(``)}
           </div>
 
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 18px; padding: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; align-items: center;">
-            <div>
-              <span style="font-size: 0.78rem; color: #64748b; font-weight: 600;">Trip Route</span>
-              <strong style="display: block; font-size: 1.15rem; color: #0f172a; font-weight: 800;">${n.from} ➔ ${n.to}</strong>
+          <div class="route-estimator-grid">
+            <div class="estimator-item">
+              <span class="item-label">Trip Route</span>
+              <strong class="item-val-title">${n.from} ➔ ${n.to}</strong>
             </div>
 
-            <div>
-              <span style="font-size: 0.78rem; color: #64748b; font-weight: 600;">Distance & Duration</span>
-              <strong style="display: block; font-size: 1.05rem; color: #2563eb; font-weight: 800; display:flex; align-items:center; gap:6px;">
+            <div class="estimator-item">
+              <span class="item-label">Distance & Duration</span>
+              <strong class="item-val-blue">
                 ${_(16,`#2563eb`)} ${n.distance} • ${T(16,`#2563eb`)} ${n.duration}
               </strong>
             </div>
 
-            <div>
-              <span style="font-size: 0.78rem; color: #64748b; font-weight: 600;">Recommended Vehicle</span>
-              <strong style="display: block; font-size: 0.95rem; color: #0f172a; font-weight: 700; display:flex; align-items:center; gap:6px;">
+            <div class="estimator-item">
+              <span class="item-label">Recommended Vehicle</span>
+              <strong class="item-val-dark">
                 ${h(16,`#0f172a`)} ${n.recommended}
               </strong>
             </div>
 
-            <div>
-              <span style="font-size: 0.78rem; color: #64748b; font-weight: 600;">Estimated Package Fare</span>
-              <strong style="display: block; font-size: 1.25rem; color: #059669; font-weight: 900;">${n.priceEstimate}</strong>
+            <div class="estimator-item">
+              <span class="item-label">Estimated Package Fare</span>
+              <strong class="item-val-green">${n.priceEstimate}</strong>
             </div>
 
-            <div style="text-align: right;">
-              <a href="${m(`Hello! I want to reserve a vehicle for the ${n.from} to ${n.to} trip (${n.distance}).`)}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="padding: 10px 18px; font-size: 0.85rem; display: inline-flex;">
+            <div class="estimator-action">
+              <a href="${m(`Hello! I want to reserve a vehicle for the ${n.from} to ${n.to} trip (${n.distance}).`)}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
                 ${x(16,`#ffffff`)} Book This Route
               </a>
             </div>
@@ -574,49 +574,49 @@ Please share current availability, per KM highway rates (Min 400 KM) & best per-
       </section>
 
       <!-- Custom Pilgrimage & Tour Itinerary Planner -->
-      <section class="container" style="padding: 0 0 40px;">
-        <div class="glass-card" style="padding: 32px; background: #ffffff; border-radius: 24px; border: 1.5px solid #2563eb;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+      <section class="container section-padding">
+        <div class="glass-card home-card-box border-blue">
+          <div class="itinerary-header-flex">
             <div>
-              <span class="hero-tag" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1d4ed8;">🚩 Custom Itinerary Planner</span>
-              <h3 style="font-size: 1.5rem; font-weight: 900; color: #0f172a; margin-top: 4px;">Top Recommended Pilgrimage & Tour Packages</h3>
+              <span class="hero-tag tag-blue">🚩 Custom Itinerary Planner</span>
+              <h3 class="box-title margin-top-sm">Top Recommended Pilgrimage & Tour Packages</h3>
             </div>
 
-            <div style="display: flex; gap: 6px;">
+            <div class="itinerary-tabs">
               ${F.map((e,t)=>`
-                <button class="itinerary-tab-btn ${t===L?`active`:``}" data-index="${t}" style="padding: 6px 14px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; border: 1px solid ${t===L?`#2563eb`:`#cbd5e1`}; background: ${t===L?`#2563eb`:`#ffffff`}; color: ${t===L?`#ffffff`:`#334155`}; cursor: pointer;">
+                <button class="itinerary-tab-btn ${t===L?`active`:``}" data-index="${t}">
                   ${e.title.split(` `)[0]} Tour
                 </button>
               `).join(``)}
             </div>
           </div>
 
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 24px; align-items: center;">
-            <div>
-              <span style="color: #2563eb; font-weight: 800; font-size: 0.8rem; text-transform: uppercase;">${r.subtitle}</span>
-              <h4 style="font-size: 1.3rem; font-weight: 900; color: #0f172a; margin-top: 4px;">${r.title}</h4>
+          <div class="itinerary-planner-grid">
+            <div class="itinerary-left-info">
+              <span class="subtitle-blue">${r.subtitle}</span>
+              <h4 class="itinerary-title">${r.title}</h4>
 
-              <div style="margin: 14px 0;">
-                <span style="font-size: 0.82rem; font-weight: 700; color: #475569; display: block; margin-bottom: 8px;">Key Sights Included in Sightseeing:</span>
-                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              <div class="sights-box">
+                <span class="sights-label">Key Sights Included in Sightseeing:</span>
+                <div class="sights-pills-wrap">
                   ${r.places.map(e=>`
-                    <span style="background: #ffffff; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; color: #0f172a; display: inline-flex; align-items: center; gap: 4px;">
+                    <span class="sight-pill">
                       ${E(12,`#059669`)} ${e}
                     </span>
                   `).join(``)}
                 </div>
               </div>
 
-              <div style="display: flex; gap: 20px; font-size: 0.85rem; color: #64748b; margin-top: 12px;">
+              <div class="itinerary-meta-row">
                 <span>⏱️ <strong>Duration:</strong> ${r.duration}</span>
                 <span>🚘 <strong>Vehicle:</strong> ${r.car}</span>
               </div>
             </div>
 
-            <div style="background: #ffffff; border: 1.5px solid #2563eb; padding: 20px; border-radius: 14px; text-align: center;">
-              <span style="font-size: 0.78rem; color: #64748b;">Package Total Rate</span>
-              <div style="font-size: 1.6rem; font-weight: 900; color: #2563eb; margin: 4px 0 12px;">${r.price}</div>
-              <a href="${m(`Hello! I want to book the ${r.title} package (${r.price}).`)}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="width: 100%; justify-content: center;">
+            <div class="itinerary-right-card">
+              <span class="rate-label">Package Total Rate</span>
+              <div class="package-rate-val">${r.price}</div>
+              <a href="${m(`Hello! I want to book the ${r.title} package (${r.price}).`)}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp width-full">
                 📲 Book Custom Package
               </a>
             </div>
@@ -625,28 +625,28 @@ Please share current availability, per KM highway rates (Min 400 KM) & best per-
       </section>
 
       <!-- Customer Satisfaction Stats Strip -->
-      <section class="container" style="padding: 0 0 40px;">
-        <div style="background: linear-gradient(135deg, #0f172a, #1e293b); color: #ffffff; border-radius: 20px; padding: 28px 36px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; text-align: center;">
-          <div>
-            <strong style="font-size: 2rem; font-weight: 900; color: #60a5fa; display: block;">1,200+</strong>
-            <span style="font-size: 0.85rem; color: #cbd5e1;">Outstation Trips Served</span>
+      <section class="container section-padding">
+        <div class="home-stats-strip">
+          <div class="stat-box">
+            <strong class="stat-number blue-num">1,200+</strong>
+            <span class="stat-desc">Outstation Trips Served</span>
           </div>
 
-          <div>
-            <strong style="font-size: 2rem; font-weight: 900; color: #f59e0b; display: block; align-items: center; justify-content: center; gap: 4px;">
+          <div class="stat-box">
+            <strong class="stat-number amber-num">
               4.95 ${v(18,`#f59e0b`)}
             </strong>
-            <span style="font-size: 0.85rem; color: #cbd5e1;">Customer Love Rating</span>
+            <span class="stat-desc">Customer Love Rating</span>
           </div>
 
-          <div>
-            <strong style="font-size: 2rem; font-weight: 900; color: #4ade80; display: block;">100%</strong>
-            <span style="font-size: 0.85rem; color: #cbd5e1;">Police Verified Drivers</span>
+          <div class="stat-box">
+            <strong class="stat-number green-num">100%</strong>
+            <span class="stat-desc">Police Verified Drivers</span>
           </div>
 
-          <div>
-            <strong style="font-size: 2rem; font-weight: 900; color: #38bdf8; display: block;">24x7</strong>
-            <span style="font-size: 0.85rem; color: #cbd5e1;">On-Call Desk Assistance</span>
+          <div class="stat-box">
+            <strong class="stat-number sky-num">24x7</strong>
+            <span class="stat-desc">On-Call Desk Assistance</span>
           </div>
         </div>
       </section>
