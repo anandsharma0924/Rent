@@ -1,0 +1,53 @@
+:root {
+  /* Classic Royal Navy & Crisp Silver Palette */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-surface: #f1f5f9;
+  --bg-surface-elevated: #ffffff;
+
+  /* Glassmorphism Setup */
+  --glass-bg: rgba(255, 255, 255, 0.94);
+  --glass-border: #e2e8f0;
+  --glass-border-hover: rgba(37, 99, 235, 0.4);
+  --glass-backdrop: blur(18px);
+
+  /* Primary Navy & Royal Blue */
+  --navy-primary: #0f172a;
+  --navy-hover: #1e293b;
+  
+  --royal-blue: #2563eb;
+  --royal-blue-hover: #1d4ed8;
+  --blue-glow: rgba(37, 99, 235, 0.18);
+
+  --gold-accent: #d97706;
+  --gold-light: #fef3c7;
+  --gold-glow: rgba(217, 119, 6, 0.2);
+
+  --emerald-accent: #059669;
+  --emerald-light: #d1fae5;
+
+  /* Text Colors */
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+
+  /* Input fields */
+  --input-bg: #ffffff;
+  --input-border: #cbd5e1;
+
+  /* Shape Tokens */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 20px 50px rgba(15, 23, 42, 0.1);
+  --shadow-glow: 0 10px 30px var(--blue-glow);
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --max-width: 1240px;
+}
