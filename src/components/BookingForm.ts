@@ -52,11 +52,11 @@ export const renderBookingForm = (): string => {
       </div>
 
       <!-- Pricing Mode Selector Tabs (Daily Fare vs Highway Per KM Rate) -->
-      <div style="display: flex; gap: 8px; margin-bottom: 14px; background: #f1f5f9; padding: 4px; border-radius: 10px;">
-        <button type="button" class="pricing-mode-tab ${!isPerKm ? 'active' : ''}" data-mode="daily" style="flex: 1; padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; border: none; background: ${!isPerKm ? '#ffffff' : 'transparent'}; color: ${!isPerKm ? '#2563eb' : '#64748b'}; cursor: pointer; box-shadow: ${!isPerKm ? '0 2px 6px rgba(0,0,0,0.06)' : 'none'};">
+      <div class="pricing-tabs-wrap">
+        <button type="button" class="pricing-mode-tab ${!isPerKm ? 'active' : ''}" data-mode="daily">
           📅 Daily Rental Fare
         </button>
-        <button type="button" class="pricing-mode-tab ${isPerKm ? 'active' : ''}" data-mode="perKm" style="flex: 1; padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; border: none; background: ${isPerKm ? '#ffffff' : 'transparent'}; color: ${isPerKm ? '#2563eb' : '#64748b'}; cursor: pointer; box-shadow: ${isPerKm ? '0 2px 6px rgba(0,0,0,0.06)' : 'none'};">
+        <button type="button" class="pricing-mode-tab ${isPerKm ? 'active' : ''}" data-mode="perKm">
           🛣️ Per KM (Min 400 KM)
         </button>
       </div>
@@ -75,14 +75,14 @@ export const renderBookingForm = (): string => {
         <!-- Interactive Location Search Input with Autocomplete Dropdown -->
         <div class="form-group" style="position: relative;">
           <label for="pickupCityInput">Pickup Location</label>
-          <div style="position: relative;">
+          <div style="position: relative; width: 100%;">
             <input 
               type="text" 
               id="pickupCityInput" 
               placeholder="Type city, airport or landmark (e.g. Indore, Ujjain)..." 
               value="${booking.pickupCity}" 
               autocomplete="off" 
-              style="width: 100%; padding-left: 36px;"
+              style="width: 100%; padding-left: 36px; box-sizing: border-box;"
               required 
             />
             <div style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); pointer-events: none; color: #64748b;">
@@ -96,8 +96,8 @@ export const renderBookingForm = (): string => {
 
         <!-- Per KM Dynamic Distance Input Field (Min 400 KM Enforced) -->
         ${isPerKm ? `
-          <div class="form-group" style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 10px; border-radius: 8px;">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div class="form-group" style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 10px; border-radius: 8px; box-sizing: border-box;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 4px;">
               <label for="estimatedKmInput" style="color: #1d4ed8; font-weight: 800;">Highway Distance (KM) *</label>
               <span style="font-size: 0.7rem; background: #dbeafe; color: #1e40af; font-weight: 800; padding: 2px 6px; border-radius: 4px;">
                 Min 400 KM Policy
@@ -105,13 +105,13 @@ export const renderBookingForm = (): string => {
             </div>
             
             <div style="display: flex; gap: 8px; align-items: center; margin-top: 4px;">
-              <input type="number" id="estimatedKmInput" value="${rawKm}" min="400" max="5000" step="10" placeholder="Min 400 KM" style="flex: 1; font-weight: 800; color: #2563eb;" required />
+              <input type="number" id="estimatedKmInput" value="${rawKm}" min="400" max="5000" step="10" placeholder="Min 400 KM" style="flex: 1; font-weight: 800; color: #2563eb; width: 100%; min-width: 0;" required />
               <span style="font-size: 0.8rem; font-weight: 700; color: #1d4ed8; white-space: nowrap;">@ ₹${selectedCar.pricePerKm}/KM</span>
             </div>
 
             ${rawKm < MIN_KM_THRESHOLD ? `
               <div style="font-size: 0.72rem; color: #b45309; font-weight: 700; margin-top: 4px;">
-                ⚠️ Minimum 400 KM billing applies for per-KM highway rate (${MIN_KM_THRESHOLD} KM × ₹${selectedCar.pricePerKm} = ${formatCurrency(MIN_KM_THRESHOLD * selectedCar.pricePerKm)}).
+                ⚠️ Minimum 400 KM billing applies (${MIN_KM_THRESHOLD} KM × ₹${selectedCar.pricePerKm} = ${formatCurrency(MIN_KM_THRESHOLD * selectedCar.pricePerKm)}).
               </div>
             ` : ''}
           </div>
@@ -142,7 +142,7 @@ export const renderBookingForm = (): string => {
 
           <div class="form-group">
             <label for="selectedCarSelect">Vehicle Choice</label>
-            <select id="selectedCarSelect">
+            <select id="selectedCarSelect" style="width: 100%; max-width: 100%; text-overflow: ellipsis;">
               ${carsData.map(c => `
                 <option value="${c.id}" ${c.id === booking.selectedCarId ? 'selected' : ''}>
                   ${c.name} (${isPerKm ? `₹${c.pricePerKm}/km` : `${formatCurrency(c.pricePerDay)}/day`})
@@ -157,20 +157,20 @@ export const renderBookingForm = (): string => {
           <label for="needDriver">Include Driver Allowance (+₹500/day)</label>
         </div>
 
-        <div class="price-estimate-box" style="flex-wrap: wrap; gap: 10px;">
-          <div>
+        <div class="price-estimate-box">
+          <div style="min-width: 0;">
             <div style="font-size: 0.78rem; color: var(--text-muted);">
               ${isPerKm ? `Estimated Fare (${billedKm} KM @ ₹${selectedCar.pricePerKm}/km)` : `Estimated Fare (${days} ${days === 1 ? 'day' : 'days'})`}
             </div>
             <div class="estimate-val" id="estimatedFareVal">${formatCurrency(totalCost)}</div>
           </div>
 
-          <div style="display: flex; gap: 8px;">
-            <button id="generateQuotePdfBtn" type="button" class="btn-secondary" style="padding: 8px 12px; font-size: 0.8rem;">
+          <div class="estimate-actions-wrap">
+            <button id="generateQuotePdfBtn" type="button" class="btn-secondary">
               📄 Official Quote
             </button>
 
-            <button id="whatsAppBookingBtn" type="button" class="btn-whatsapp" style="padding: 8px 14px; font-size: 0.85rem;">
+            <button id="whatsAppBookingBtn" type="button" class="btn-whatsapp">
               📲 Book on WhatsApp
             </button>
           </div>
