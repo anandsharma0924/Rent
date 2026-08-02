@@ -2,18 +2,20 @@ import type { Car, BookingState } from '../types/car';
 import { formatCurrency, calculateDaysBetween } from './formatters';
 
 const DEFAULT_PHONE = '919981264216';
+const MIN_KM_THRESHOLD = 400;
 
 export const generateWhatsAppBookingLink = (car: Car, booking: BookingState): string => {
   const days = calculateDaysBetween(booking.pickupDate, booking.returnDate);
   const isPerKm = booking.pricingMode === 'perKm';
-  const estimatedKm = booking.estimatedKm || 300;
+  const rawKm = booking.estimatedKm || MIN_KM_THRESHOLD;
+  const billedKm = Math.max(MIN_KM_THRESHOLD, rawKm);
 
   let totalCost = 0;
   let pricingSummary = '';
 
   if (isPerKm) {
-    totalCost = (car.pricePerKm * estimatedKm) + (booking.needDriver ? 500 * days : 0);
-    pricingSummary = `🛣️ *Pricing Mode:* Per KM Highway Rate (₹${car.pricePerKm}/KM × ${estimatedKm} KM)`;
+    totalCost = (car.pricePerKm * billedKm) + (booking.needDriver ? 500 * days : 0);
+    pricingSummary = `🛣️ *Pricing Mode:* Per KM Highway Rate (₹${car.pricePerKm}/KM × ${billedKm} KM • Min 400 KM Policy)`;
   } else {
     totalCost = (car.pricePerDay * days) + (booking.needDriver ? 500 * days : 0);
     pricingSummary = `📅 *Pricing Mode:* Daily Fixed Rate (${formatCurrency(car.pricePerDay)} × ${days} days)`;
@@ -43,6 +45,6 @@ export const generateWhatsAppInquiryLink = (customText?: string): string => {
 -------------------------------------------------
 Hello Ertiga Ride Travel Desk! I need assistance with reserving a clean, verified luxury vehicle for my upcoming travel. 
 
-Please share current availability, per KM highway rates & best per-day quotes. Thank you!`;
+Please share current availability, per KM highway rates (Min 400 KM) & best per-day quotes. Thank you!`;
   return `https://wa.me/${DEFAULT_PHONE}?text=${encodeURIComponent(defaultText)}`;
 };

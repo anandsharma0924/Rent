@@ -57,9 +57,9 @@ export const renderCarCard = (car: Car): string => {
           </span>
         </div>
 
-        <!-- Per KM & Daily Fare Rate Badge -->
+        <!-- Per KM Rate Badge (Min 400 KM Policy) -->
         <div style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 6px 12px; border-radius: 8px; font-size: 0.78rem; color: #1d4ed8; font-weight: 700; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center;">
-          <span>🛣️ Per KM Rate: <strong>₹${car.pricePerKm}/km</strong></span>
+          <span>🛣️ Rate: <strong>₹${car.pricePerKm}/km</strong> (Min 400 KM)</span>
           <span style="font-weight: 800; color: #059669;">Daily: ${formatCurrency(car.pricePerDay)}</span>
         </div>
 

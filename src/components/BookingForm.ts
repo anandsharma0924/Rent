@@ -23,18 +23,21 @@ const POPULAR_LOCATIONS = [
   'Delhi IGI Airport (DEL)'
 ];
 
+const MIN_KM_THRESHOLD = 400; // Minimum 400 KM required for Per KM billing
+
 export const renderBookingForm = (): string => {
   const { booking } = store;
   const selectedCar = carsData.find(c => c.id === booking.selectedCarId) || carsData[0];
   const days = calculateDaysBetween(booking.pickupDate, booking.returnDate);
   
   const isPerKm = booking.pricingMode === 'perKm';
-  const estimatedKm = booking.estimatedKm || 300;
+  const rawKm = booking.estimatedKm || MIN_KM_THRESHOLD;
+  const billedKm = Math.max(MIN_KM_THRESHOLD, rawKm);
 
-  // Calculate fare based on mode (Daily Fixed vs Per KM Rate)
+  // Calculate fare based on mode (Daily Fixed vs Minimum 400 KM Per KM Rate)
   let totalCost = 0;
   if (isPerKm) {
-    totalCost = (selectedCar.pricePerKm * estimatedKm) + (booking.needDriver ? 500 * days : 0);
+    totalCost = (selectedCar.pricePerKm * billedKm) + (booking.needDriver ? 500 * days : 0);
   } else {
     totalCost = (selectedCar.pricePerDay * days) + (booking.needDriver ? 500 * days : 0);
   }
@@ -48,13 +51,13 @@ export const renderBookingForm = (): string => {
         <span class="status-pill">Available 24x7</span>
       </div>
 
-      <!-- NEW: Pricing Mode Selector Tabs (Daily Fare vs Highway Per KM Rate) -->
+      <!-- Pricing Mode Selector Tabs (Daily Fare vs Highway Per KM Rate) -->
       <div style="display: flex; gap: 8px; margin-bottom: 14px; background: #f1f5f9; padding: 4px; border-radius: 10px;">
         <button type="button" class="pricing-mode-tab ${!isPerKm ? 'active' : ''}" data-mode="daily" style="flex: 1; padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; border: none; background: ${!isPerKm ? '#ffffff' : 'transparent'}; color: ${!isPerKm ? '#2563eb' : '#64748b'}; cursor: pointer; box-shadow: ${!isPerKm ? '0 2px 6px rgba(0,0,0,0.06)' : 'none'};">
           📅 Daily Rental Fare
         </button>
         <button type="button" class="pricing-mode-tab ${isPerKm ? 'active' : ''}" data-mode="perKm" style="flex: 1; padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; border: none; background: ${isPerKm ? '#ffffff' : 'transparent'}; color: ${isPerKm ? '#2563eb' : '#64748b'}; cursor: pointer; box-shadow: ${isPerKm ? '0 2px 6px rgba(0,0,0,0.06)' : 'none'};">
-          🛣️ Per KM Highway Rate
+          🛣️ Per KM (Min 400 KM)
         </button>
       </div>
 
@@ -91,14 +94,26 @@ export const renderBookingForm = (): string => {
           <div id="pickupCityError" class="error-text" style="display:none;"></div>
         </div>
 
-        <!-- Per KM Dynamic Distance Input Field (Only visible when Per KM mode selected) -->
+        <!-- Per KM Dynamic Distance Input Field (Min 400 KM Enforced) -->
         ${isPerKm ? `
           <div class="form-group" style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 10px; border-radius: 8px;">
-            <label for="estimatedKmInput" style="color: #1d4ed8; font-weight: 800;">Estimated Highway Distance (KM) *</label>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <label for="estimatedKmInput" style="color: #1d4ed8; font-weight: 800;">Highway Distance (KM) *</label>
+              <span style="font-size: 0.7rem; background: #dbeafe; color: #1e40af; font-weight: 800; padding: 2px 6px; border-radius: 4px;">
+                Min 400 KM Policy
+              </span>
+            </div>
+            
             <div style="display: flex; gap: 8px; align-items: center; margin-top: 4px;">
-              <input type="number" id="estimatedKmInput" value="${estimatedKm}" min="50" max="5000" step="10" placeholder="e.g. 300 KM" style="flex: 1; font-weight: 800; color: #2563eb;" required />
+              <input type="number" id="estimatedKmInput" value="${rawKm}" min="400" max="5000" step="10" placeholder="Min 400 KM" style="flex: 1; font-weight: 800; color: #2563eb;" required />
               <span style="font-size: 0.8rem; font-weight: 700; color: #1d4ed8; white-space: nowrap;">@ ₹${selectedCar.pricePerKm}/KM</span>
             </div>
+
+            ${rawKm < MIN_KM_THRESHOLD ? `
+              <div style="font-size: 0.72rem; color: #b45309; font-weight: 700; margin-top: 4px;">
+                ⚠️ Minimum 400 KM billing applies for per-KM highway rate (${MIN_KM_THRESHOLD} KM × ₹${selectedCar.pricePerKm} = ${formatCurrency(MIN_KM_THRESHOLD * selectedCar.pricePerKm)}).
+              </div>
+            ` : ''}
           </div>
         ` : ''}
 
@@ -145,7 +160,7 @@ export const renderBookingForm = (): string => {
         <div class="price-estimate-box" style="flex-wrap: wrap; gap: 10px;">
           <div>
             <div style="font-size: 0.78rem; color: var(--text-muted);">
-              ${isPerKm ? `Estimated Fare (${estimatedKm} KM @ ₹${selectedCar.pricePerKm}/km)` : `Estimated Fare (${days} ${days === 1 ? 'day' : 'days'})`}
+              ${isPerKm ? `Estimated Fare (${billedKm} KM @ ₹${selectedCar.pricePerKm}/km)` : `Estimated Fare (${days} ${days === 1 ? 'day' : 'days'})`}
             </div>
             <div class="estimate-val" id="estimatedFareVal">${formatCurrency(totalCost)}</div>
           </div>
@@ -180,12 +195,12 @@ export const bindBookingFormEvents = (): void => {
   document.querySelectorAll('.pricing-mode-tab').forEach(tab => {
     tab.addEventListener('click', (e) => {
       const mode = (e.currentTarget as HTMLElement).dataset.mode as 'daily' | 'perKm';
-      store.setBooking({ pricingMode: mode });
+      store.setBooking({ pricingMode: mode, estimatedKm: mode === 'perKm' ? Math.max(MIN_KM_THRESHOLD, store.booking.estimatedKm || MIN_KM_THRESHOLD) : store.booking.estimatedKm });
     });
   });
 
   kmInput?.addEventListener('input', (e) => {
-    const kmVal = Number((e.target as HTMLInputElement).value) || 300;
+    const kmVal = Number((e.target as HTMLInputElement).value) || MIN_KM_THRESHOLD;
     store.setBooking({ estimatedKm: kmVal });
   });
 
