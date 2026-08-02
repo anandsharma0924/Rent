@@ -389,76 +389,69 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
       </div>
     </section>
   `,ue=()=>{document.querySelector(`#exploreFleetHeroBtn`)?.addEventListener(`click`,()=>{l.setRoute(`fleet`)}),document.querySelector(`#whyChooseUsHeroBtn`)?.addEventListener(`click`,()=>{l.setRoute(`why-us`)})},j=e=>{let n=l.favorites.includes(e.id),r=l.compareList.includes(e.id),{booking:i}=l,a=d(e,i);return`
-    <div class="glass-card car-card animate-fade-in" style="border-radius: 20px; overflow: hidden; background: #ffffff; border: 1px solid #e2e8f0; display: flex; flex-direction: column; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(15,23,42,0.05);">
+    <div class="glass-card car-card animate-fade-in">
       
-      <!-- Media Header with HD Image & Floating Badges -->
-      <div class="car-media" style="position: relative; height: 210px; overflow: hidden; background: #f8fafc;">
-        <img src="${e.image}" alt="${e.name}" class="car-img" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" />
+      <!-- Vehicle Media Header -->
+      <div class="car-media">
+        <img src="${e.image}" alt="${e.name}" class="car-img" />
         
-        <span class="badge-overlay" style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 4px 12px; border-radius: 9999px;">
-          🏷️ ${e.tagline.split(`•`)[0]||e.type}
+        <span class="badge-overlay">
+          🏷️ ${e.type}
         </span>
 
-        <div style="position: absolute; top: 12px; right: 12px; display: flex; gap: 6px;">
-          <button class="compare-btn fav-btn-overlay" data-car-id="${e.id}" title="${r?`Remove from Compare`:`Add to Compare`}" style="width: 34px; height: 34px; border-radius: 50%; background: #ffffff; border: 1px solid #e2e8f0; display: grid; place-items: center; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,0.12);">
-            ${T(15,r?`#2563eb`:`#64748b`)}
+        <div style="position: absolute; top: 10px; right: 10px; display: flex; gap: 6px;">
+          <button class="compare-btn fav-btn-overlay" data-car-id="${e.id}" title="${r?`Remove from Compare`:`Add to Compare`}">
+            ${T(14,r?`#2563eb`:`#64748b`)}
           </button>
 
-          <button class="fav-btn fav-btn-overlay" data-car-id="${e.id}" title="${n?`Remove from Wishlist`:`Save to Wishlist`}" style="width: 34px; height: 34px; border-radius: 50%; background: #ffffff; border: 1px solid #e2e8f0; display: grid; place-items: center; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,0.12);">
-            ${b(15,n)}
+          <button class="fav-btn fav-btn-overlay" data-car-id="${e.id}" title="${n?`Remove from Wishlist`:`Save to Wishlist`}">
+            ${b(14,n)}
           </button>
         </div>
       </div>
 
-      <!-- Car Specifications & Details -->
-      <div class="car-details" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+      <!-- Vehicle Content & Specs -->
+      <div class="car-details">
         
-        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4px;">
-          <h3 class="car-name" style="font-size: 1.25rem; font-weight: 900; color: #0f172a; line-height: 1.2;">
-            ${e.name}
-          </h3>
-          <span style="background: #fef3c7; color: #b45309; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 6px; white-space: nowrap;">
-            ★ ${e.rating} (${e.reviewCount})
+        <div class="car-header">
+          <h3 class="car-name">${e.name}</h3>
+          <span style="background: #fef3c7; color: #b45309; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 6px;">
+            ★ ${e.rating}
           </span>
         </div>
 
-        <p class="car-tagline" style="font-size: 0.82rem; color: #64748b; margin-bottom: 14px;">
-          ${e.tagline}
-        </p>
+        <p class="car-tagline">${e.tagline}</p>
 
-        <!-- Key Spec Pills -->
-        <div class="specs-pills" style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px;">
-          <span class="spec-pill" style="background: #f1f5f9; color: #334155; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 6px; display: inline-flex; align-items: center; gap: 4px;">
+        <!-- Specs Badges -->
+        <div class="specs-pills">
+          <span class="spec-pill">
             ${x(13,`#2563eb`)} ${e.seats} Seats
           </span>
-          <span class="spec-pill" style="background: #f1f5f9; color: #334155; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 6px; display: inline-flex; align-items: center; gap: 4px;">
+          <span class="spec-pill">
             ${te(13,`#059669`)} ${e.fuel}
           </span>
-          <span class="spec-pill" style="background: #f1f5f9; color: #334155; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 6px; display: inline-flex; align-items: center; gap: 4px;">
+          <span class="spec-pill">
             ${ne(13,`#64748b`)} ${e.transmission}
           </span>
         </div>
 
-        <!-- Chauffeur Verified Status -->
-        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 6px 12px; border-radius: 8px; font-size: 0.78rem; color: #166534; font-weight: 700; display: flex; align-items: center; gap: 6px; margin-bottom: 16px;">
-          <span>✓ Police Verified Chauffeur:</span> <strong>${e.chauffeur.name} (${e.chauffeur.experience})</strong>
+        <!-- Chauffeur Status -->
+        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 5px 10px; border-radius: 6px; font-size: 0.75rem; color: #166534; font-weight: 700; margin-bottom: 14px;">
+          ✓ Police Verified Chauffeur Included
         </div>
 
-        <!-- Card Footer with Pricing & Action Buttons -->
-        <div class="card-footer" style="margin-top: auto; padding-top: 14px; border-top: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+        <!-- Footer with Fare & Booking Actions -->
+        <div class="card-footer">
           <div>
-            <span style="font-size: 0.72rem; color: #64748b; font-weight: 600; display: block;">Daily Fare</span>
-            <span class="price-text" style="font-size: 1.4rem; font-weight: 900; color: #2563eb;">
-              ${t(e.pricePerDay)}
-            </span>
-            <span class="unit-text" style="font-size: 0.72rem; color: #64748b;">/day</span>
+            <span class="price-text">${t(e.pricePerDay)}</span>
+            <span class="unit-text">/day</span>
           </div>
 
           <div style="display: flex; gap: 6px;">
-            <button class="quick-view-btn btn-secondary" data-car-id="${e.id}" style="padding: 8px 12px; font-size: 0.8rem; border-radius: 8px;">
+            <button class="quick-view-btn btn-secondary" data-car-id="${e.id}" style="padding: 7px 12px; font-size: 0.8rem;">
               Details
             </button>
-            <a href="${a}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="padding: 8px 12px; font-size: 0.8rem; border-radius: 8px; display: inline-flex; align-items: center; gap: 4px;">
+            <a href="${a}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="padding: 7px 12px; font-size: 0.8rem;">
               ${y(14,`#ffffff`)} Book
             </a>
           </div>
