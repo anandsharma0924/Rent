@@ -2,17 +2,10 @@ import type { Car, FilterState, BookingState } from '../types/car';
 import { carsData } from '../data/cars';
 import { getFutureDateString } from '../utils/formatters';
 import { getFavoritesFromStorage, toggleFavoriteInStorage } from '../utils/storage';
+import { updatePageSeo } from '../utils/seo';
 
 type Listener = () => void;
 export type AppRoute = 'home' | 'fleet' | 'why-us' | 'faqs' | 'contact';
-
-const ROUTE_TITLES: Record<AppRoute, string> = {
-  'home': 'Ertiga Ride | Luxury 7-Seater Ertiga & Innova Mobility',
-  'fleet': 'Ertiga Ride | Verified Luxury Fleet & Instant Filters',
-  'why-us': 'Ertiga Ride | Why Choose Us & Safety Standards',
-  'faqs': 'Ertiga Ride | Instant Help Center & FAQs',
-  'contact': 'Ertiga Ride | Contact & 24x7 Travel Desk'
-};
 
 class AppStore {
   private listeners: Listener[] = [];
@@ -65,7 +58,9 @@ class AppStore {
       window.history.pushState({ route }, '', targetPath);
     }
     
-    document.title = ROUTE_TITLES[route] || ROUTE_TITLES['home'];
+    // Dynamic SEO update for search engine ranking
+    updatePageSeo(route);
+    
     window.scrollTo({ top: 0, behavior: 'smooth' });
     this.notify();
   }
