@@ -22,95 +22,95 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
     <path d="M9 17h6"></path>
     <circle cx="17" cy="17" r="2"></circle>
   </svg>
-`,ee=(e=18,t=`currentColor`)=>`
+`,m=(e=18,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
     <polyline points="9 22 9 12 15 12 15 22"></polyline>
   </svg>
-`,m=(e=18,t=`currentColor`)=>`
+`,h=(e=18,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
     <line x1="9" y1="3" x2="9" y2="18"></line>
     <line x1="15" y1="6" x2="15" y2="21"></line>
   </svg>
-`,h=(e=16,t=`#d97706`)=>`
+`,g=(e=16,t=`#d97706`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="${t}" stroke="${t}" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
   </svg>
-`,g=(e=18,t=`currentColor`)=>`
+`,_=(e=18,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="12" cy="12" r="10"></circle>
     <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
     <line x1="12" y1="17" x2="12.01" y2="17"></line>
   </svg>
-`,_=(e=18,t=`currentColor`)=>`
+`,v=(e=18,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
   </svg>
-`,v=(e=18,t=`currentColor`)=>`
+`,y=(e=18,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
   </svg>
-`,y=(e=18,t=!1)=>`
+`,b=(e=18,t=!1)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="${t?`#ef4444`:`none`}" stroke="${t?`#ef4444`:`currentColor`}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
   </svg>
-`,b=(e=16,t=`currentColor`)=>`
+`,x=(e=16,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
     <circle cx="9" cy="7" r="4"></circle>
     <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
   </svg>
-`,x=(e=24,t=`#2563eb`)=>`
+`,S=(e=24,t=`#2563eb`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
   </svg>
-`,S=(e=24,t=`#2563eb`)=>`
+`,C=(e=24,t=`#2563eb`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="12" cy="12" r="10"></circle>
     <polyline points="12 6 12 12 16 14"></polyline>
   </svg>
-`,C=(e=16,t=`#059669`)=>`
+`,w=(e=16,t=`#059669`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
     <polyline points="20 6 9 17 4 12"></polyline>
   </svg>
-`,te=(e=16,t=`currentColor`)=>`
+`,ee=(e=16,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="11" cy="11" r="8"></circle>
     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
   </svg>
-`,ne=(e=16,t=`currentColor`)=>`
+`,te=(e=16,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <line x1="5" y1="12" x2="19" y2="12"></line>
     <polyline points="12 5 19 12 12 19"></polyline>
   </svg>
-`,w=(e=16,t=`currentColor`)=>`
+`,T=(e=16,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <line x1="18" y1="20" x2="18" y2="10"></line>
     <line x1="12" y1="20" x2="12" y2="4"></line>
     <line x1="6" y1="20" x2="6" y2="14"></line>
   </svg>
-`,T=(e=16,t=`currentColor`)=>`
+`,E=(e=16,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <rect x="6" y="7" width="12" height="14" rx="2" ry="2"></rect>
     <path d="M9 7V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3"></path>
     <line x1="9" y1="21" x2="9" y2="21.01"></line>
     <line x1="15" y1="21" x2="15" y2="21.01"></line>
   </svg>
-`,E=(e=16,t=`currentColor`)=>`
+`,D=(e=16,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <line x1="3" y1="22" x2="15" y2="22"></line>
     <rect x="4" y="9" width="10" height="13" rx="2" ry="2"></rect>
     <path d="M14 9h2a2 2 0 0 1 2 2v3.5a1.5 1.5 0 0 0 3 0V11"></path>
     <circle cx="9" cy="6" r="2"></circle>
   </svg>
-`,D=(e=16,t=`currentColor`)=>`
+`,O=(e=16,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="12" cy="12" r="3"></circle>
     <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
   </svg>
-`,O=!1,k=()=>{let e=l.favorites.length,t=l.currentRoute,n=[{route:`home`,label:`Home`,icon:ee(16)},{route:`fleet`,label:`Fleet & Cars`,icon:p(16)},{route:`why-us`,label:`Why Choose Us`,icon:h(16)},{route:`faqs`,label:`FAQs`,icon:g(16)},{route:`contact`,label:`Contact`,icon:_(16)}];return`
+`,k=!1,A=()=>{let e=l.favorites.length,t=l.currentRoute,n=[{route:`home`,label:`Home`,icon:m(16)},{route:`fleet`,label:`Fleet & Cars`,icon:p(16)},{route:`why-us`,label:`Why Choose Us`,icon:g(16)},{route:`faqs`,label:`FAQs`,icon:_(16)},{route:`contact`,label:`Contact`,icon:v(16)}];return`
     <header class="site-header">
       <div class="container nav-wrap">
         <button id="brandLogoBtn" class="brand-logo" style="cursor: pointer; background: none; border: none; padding: 0; text-align: left;">
@@ -132,22 +132,22 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
         <div class="nav-actions">
           <button id="favHeaderBtn" class="fav-badge-btn" title="Saved Favorites" style="display: inline-flex; align-items: center; gap: 6px;">
-            ${y(16,!0)} <span>Saved</span> <span class="fav-count">${e}</span>
+            ${b(16,!0)} <span>Saved</span> <span class="fav-count">${e}</span>
           </button>
           
           <a href="${f()}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp desktop-only" style="display: inline-flex; align-items: center; gap: 6px;">
-            ${v(16,`#ffffff`)} <span>WhatsApp</span>
+            ${y(16,`#ffffff`)} <span>WhatsApp</span>
           </a>
 
           <!-- Mobile Hamburger Toggle -->
           <button id="mobileMenuToggleBtn" class="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
-            ${O?`✕`:`☰`}
+            ${k?`✕`:`☰`}
           </button>
         </div>
       </div>
 
       <!-- Mobile Dropdown Navigation Drawer -->
-      ${O?`
+      ${k?`
         <div class="mobile-drawer animate-fade-in">
           <nav class="mobile-nav-links">
             ${n.map(e=>`
@@ -159,13 +159,13 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
           
           <div style="padding-top: 14px; border-top: 1px solid #e2e8f0; margin-top: 10px;">
             <a href="${f()}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="width: 100%; justify-content: center; display: inline-flex; align-items: center; gap: 8px;">
-              ${v(18,`#ffffff`)} <span>Quick WhatsApp Support</span>
+              ${y(18,`#ffffff`)} <span>Quick WhatsApp Support</span>
             </a>
           </div>
         </div>
       `:``}
     </header>
-  `},A=()=>{document.querySelector(`#brandLogoBtn`)?.addEventListener(`click`,()=>{O=!1,l.setRoute(`home`)}),document.querySelector(`#mobileMenuToggleBtn`)?.addEventListener(`click`,()=>{O=!O;let e=document.querySelector(`.site-header`);e&&(e.outerHTML=k(),A())}),document.querySelectorAll(`.nav-link, .mobile-nav-link`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.route;t&&(O=!1,l.setRoute(t))})}),document.querySelector(`#favHeaderBtn`)?.addEventListener(`click`,()=>{O=!1,l.setRoute(`fleet`),l.favorites.length===0?l.showToast(`You have no saved favorite cars yet. Click the heart on any vehicle card!`,`info`):l.showToast(`Showing ${l.favorites.length} saved vehicles in fleet`,`success`)})},j=!1,re=()=>{j=!0,l.showToast(`Generating official travel quotation receipt...`,`info`)},ie=()=>{j=!1},ae=()=>{if(!j)return``;let{booking:r}=l,i=e.find(e=>e.id===r.selectedCarId)||e[0],a=n(r.pickupDate,r.returnDate),o=i.pricePerDay*a,s=r.needDriver?500*a:0,c=o+s,u=`ERT-2026-${Math.floor(1e3+Math.random()*9e3)}`;return`
+  `},j=()=>{document.querySelector(`#brandLogoBtn`)?.addEventListener(`click`,()=>{k=!1,l.setRoute(`home`)}),document.querySelector(`#mobileMenuToggleBtn`)?.addEventListener(`click`,()=>{k=!k;let e=document.querySelector(`.site-header`);e&&(e.outerHTML=A(),j())}),document.querySelectorAll(`.nav-link, .mobile-nav-link`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.route;t&&(k=!1,l.setRoute(t))})}),document.querySelector(`#favHeaderBtn`)?.addEventListener(`click`,()=>{k=!1,l.setRoute(`fleet`),l.favorites.length===0?l.showToast(`You have no saved favorite cars yet. Click the heart on any vehicle card!`,`info`):l.showToast(`Showing ${l.favorites.length} saved vehicles in fleet`,`success`)})},M=!1,ne=()=>{M=!0,l.showToast(`Generating official travel quotation receipt...`,`info`)},re=()=>{M=!1},ie=()=>{if(!M)return``;let{booking:r}=l,i=e.find(e=>e.id===r.selectedCarId)||e[0],a=n(r.pickupDate,r.returnDate),o=i.pricePerDay*a,s=r.needDriver?500*a:0,c=o+s,u=`ERT-2026-${Math.floor(1e3+Math.random()*9e3)}`;return`
     <div class="modal-overlay" id="quoteModalOverlay">
       <div class="modal-content animate-fade-in" style="max-width: 680px; padding: 32px; background: #ffffff;">
         <button class="modal-close" id="closeQuoteModalBtn">&times;</button>
@@ -252,7 +252,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </div>
       </div>
     </div>
-  `},oe=()=>{let e=document.querySelector(`#quoteModalOverlay`),t=document.querySelector(`#closeQuoteModalBtn`),n=document.querySelector(`#closeQuoteModalActionBtn`),r=document.querySelector(`#printQuotePdfBtn`),i=()=>{ie(),l.notify()};t?.addEventListener(`click`,i),n?.addEventListener(`click`,i),e?.addEventListener(`click`,t=>{t.target===e&&i()}),r?.addEventListener(`click`,()=>{window.print()})},se=[`Indore, Madhya Pradesh`,`Indore Airport (IDR)`,`Indore Junction Railway Station`,`Vijay Nagar, Indore`,`Ujjain Mahakal Mandir`,`Ujjain Junction Railway Station`,`Bhopal Central`,`Bhopal Airport (BHO)`,`Omkareshwar Jyotirlinga`,`Maheshwar Fort & Ghats`,`Mandu Heritage City`,`Dewas Bypass`,`Ratlam Junction`,`Mumbai Chhatrapati Shivaji Airport (BOM)`,`Delhi IGI Airport (DEL)`],ce=()=>{let{booking:i}=l,a=e.find(e=>e.id===i.selectedCarId)||e[0],o=n(i.pickupDate,i.returnDate),s=a.pricePerDay*o+(i.needDriver?500*o:0),c=r();return`
+  `},ae=()=>{let e=document.querySelector(`#quoteModalOverlay`),t=document.querySelector(`#closeQuoteModalBtn`),n=document.querySelector(`#closeQuoteModalActionBtn`),r=document.querySelector(`#printQuotePdfBtn`),i=()=>{re(),l.notify()};t?.addEventListener(`click`,i),n?.addEventListener(`click`,i),e?.addEventListener(`click`,t=>{t.target===e&&i()}),r?.addEventListener(`click`,()=>{window.print()})},oe=[`Indore, Madhya Pradesh`,`Indore Airport (IDR)`,`Indore Junction Railway Station`,`Vijay Nagar, Indore`,`Ujjain Mahakal Mandir`,`Ujjain Junction Railway Station`,`Bhopal Central`,`Bhopal Airport (BHO)`,`Omkareshwar Jyotirlinga`,`Maheshwar Fort & Ghats`,`Mandu Heritage City`,`Dewas Bypass`,`Ratlam Junction`,`Mumbai Chhatrapati Shivaji Airport (BOM)`,`Delhi IGI Airport (DEL)`],se=()=>{let{booking:i}=l,a=e.find(e=>e.id===i.selectedCarId)||e[0],o=n(i.pickupDate,i.returnDate),s=a.pricePerDay*o+(i.needDriver?500*o:0),c=r();return`
     <div class="glass-card booking-panel" id="booking">
       <div class="panel-title">
         <span>⚡ Quick Ride Estimator</span>
@@ -284,7 +284,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
               required 
             />
             <div style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); pointer-events: none; color: #64748b;">
-              ${m(16,`#2563eb`)}
+              ${h(16,`#2563eb`)}
             </div>
           </div>
           
@@ -350,11 +350,11 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </div>
       </form>
     </div>
-  `},M=()=>{let t=document.querySelector(`#bookingSearchForm`);if(!t)return;let n=document.querySelector(`#pickupCityInput`),i=document.querySelector(`#locationSuggestions`),a=document.querySelector(`#pickupDate`),o=document.querySelector(`#returnDate`),s=document.querySelector(`#pickupDateError`),c=document.querySelector(`#returnDateError`),u=e=>{if(!i)return;let t=e.trim().toLowerCase(),r=se.filter(e=>e.toLowerCase().includes(t));if(r.length===0){i.style.display=`none`;return}i.innerHTML=r.map(e=>`
+  `},ce=()=>{let t=document.querySelector(`#bookingSearchForm`);if(!t)return;let n=document.querySelector(`#pickupCityInput`),i=document.querySelector(`#locationSuggestions`),a=document.querySelector(`#pickupDate`),o=document.querySelector(`#returnDate`),s=document.querySelector(`#pickupDateError`),c=document.querySelector(`#returnDateError`),u=e=>{if(!i)return;let t=e.trim().toLowerCase(),r=oe.filter(e=>e.toLowerCase().includes(t));if(r.length===0){i.style.display=`none`;return}i.innerHTML=r.map(e=>`
       <div class="suggestion-item" data-location="${e}">
         <span style="color: #2563eb;">📍</span> <span>${e}</span>
       </div>
-    `).join(``),i.style.display=`block`,i.querySelectorAll(`.suggestion-item`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.location||``;n&&(n.value=t,l.setBooking({pickupCity:t})),i.style.display=`none`})})};n?.addEventListener(`input`,e=>{let t=e.target.value;l.setBooking({pickupCity:t}),u(t)}),n?.addEventListener(`focus`,e=>{u(e.target.value)}),document.addEventListener(`click`,e=>{!n?.contains(e.target)&&!i?.contains(e.target)&&i&&(i.style.display=`none`)});let f=()=>{let e=!0,t=r();return a&&a.value<t?(a.classList.add(`input-error`),s&&(s.textContent=`Pickup date cannot be in the past!`,s.style.display=`block`),e=!1):(a?.classList.remove(`input-error`),s&&(s.style.display=`none`)),o&&a&&o.value<a.value?(o.classList.add(`input-error`),c&&(c.textContent=`Return date must be on or after pickup date!`,c.style.display=`block`),e=!1):(o?.classList.remove(`input-error`),c&&(c.style.display=`none`)),e},p=()=>{if(!f())return;let e=document.querySelector(`#tripType`)?.value,t=n?.value||`Indore`,r=a?.value,i=o?.value,s=Number(document.querySelector(`#seatsNeeded`)?.value),c=Number(document.querySelector(`#selectedCarSelect`)?.value),u=document.querySelector(`#needDriver`)?.checked;o&&r&&(o.min=r),l.setBooking({tripType:e,pickupCity:t,pickupDate:r,returnDate:i,seatsNeeded:s,selectedCarId:c,needDriver:u})};t.querySelectorAll(`input, select`).forEach(e=>{e!==n&&e.addEventListener(`change`,p)}),document.querySelector(`#generateQuotePdfBtn`)?.addEventListener(`click`,()=>{if(!f()){l.showToast(`Please fix invalid travel dates before generating quotation`,`warning`);return}re(),l.notify()}),document.querySelector(`#whatsAppBookingBtn`)?.addEventListener(`click`,()=>{if(!f()){l.showToast(`Please fix invalid travel dates before booking`,`warning`);return}let{booking:t}=l,n=d(e.find(e=>e.id===t.selectedCarId)||e[0],t);window.open(n,`_blank`)})},le=()=>`
+    `).join(``),i.style.display=`block`,i.querySelectorAll(`.suggestion-item`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.location||``;n&&(n.value=t,l.setBooking({pickupCity:t})),i.style.display=`none`})})};n?.addEventListener(`input`,e=>{let t=e.target.value;l.setBooking({pickupCity:t}),u(t)}),n?.addEventListener(`focus`,e=>{u(e.target.value)}),document.addEventListener(`click`,e=>{!n?.contains(e.target)&&!i?.contains(e.target)&&i&&(i.style.display=`none`)});let f=()=>{let e=!0,t=r();return a&&a.value<t?(a.classList.add(`input-error`),s&&(s.textContent=`Pickup date cannot be in the past!`,s.style.display=`block`),e=!1):(a?.classList.remove(`input-error`),s&&(s.style.display=`none`)),o&&a&&o.value<a.value?(o.classList.add(`input-error`),c&&(c.textContent=`Return date must be on or after pickup date!`,c.style.display=`block`),e=!1):(o?.classList.remove(`input-error`),c&&(c.style.display=`none`)),e},p=()=>{if(!f())return;let e=document.querySelector(`#tripType`)?.value,t=n?.value||`Indore`,r=a?.value,i=o?.value,s=Number(document.querySelector(`#seatsNeeded`)?.value),c=Number(document.querySelector(`#selectedCarSelect`)?.value),u=document.querySelector(`#needDriver`)?.checked;o&&r&&(o.min=r),l.setBooking({tripType:e,pickupCity:t,pickupDate:r,returnDate:i,seatsNeeded:s,selectedCarId:c,needDriver:u})};t.querySelectorAll(`input, select`).forEach(e=>{e!==n&&e.addEventListener(`change`,p)}),document.querySelector(`#generateQuotePdfBtn`)?.addEventListener(`click`,()=>{if(!f()){l.showToast(`Please fix invalid travel dates before generating quotation`,`warning`);return}ne(),l.notify()}),document.querySelector(`#whatsAppBookingBtn`)?.addEventListener(`click`,()=>{if(!f()){l.showToast(`Please fix invalid travel dates before booking`,`warning`);return}let{booking:t}=l,n=d(e.find(e=>e.id===t.selectedCarId)||e[0],t);window.open(n,`_blank`)})},le=()=>`
     <section class="hero-section">
       <div class="container hero-grid">
         <div>
@@ -396,7 +396,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </div>
 
         <div>
-          ${ce()}
+          ${se()}
         </div>
       </div>
     </section>
@@ -406,7 +406,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         <img src="${e.image}" alt="${e.name}" loading="lazy" />
         <span class="card-badge">${e.badge}</span>
         <button class="fav-btn" data-car-id="${e.id}" title="${n?`Remove Favorite`:`Save Favorite`}">
-          ${y(18,n)}
+          ${b(18,n)}
         </button>
       </div>
 
@@ -417,22 +417,22 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
             <p class="car-tagline">${e.tagline}</p>
           </div>
           <div class="car-rating">
-            ${h(14)} <span>${e.rating}</span> <span style="font-size: 0.72rem; color: #78716c;">(${e.reviewCount})</span>
+            ${g(14)} <span>${e.rating}</span> <span style="font-size: 0.72rem; color: #78716c;">(${e.reviewCount})</span>
           </div>
         </div>
 
         <div class="car-spec-tags">
           <span class="spec-tag" style="display:flex; align-items:center; gap:4px;">
-            ${b(14)} ${e.seats} Seats
+            ${x(14)} ${e.seats} Seats
           </span>
           <span class="spec-tag" style="display:flex; align-items:center; gap:4px;">
-            ${D(14)} ${e.transmission}
+            ${O(14)} ${e.transmission}
           </span>
           <span class="spec-tag" style="display:flex; align-items:center; gap:4px;">
-            ${E(14)} ${e.fuel}
+            ${D(14)} ${e.fuel}
           </span>
           <span class="spec-tag" style="display:flex; align-items:center; gap:4px;">
-            ${T(14)} ${e.specs.luggage}
+            ${E(14)} ${e.specs.luggage}
           </span>
         </div>
 
@@ -444,10 +444,10 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
           <div class="card-actions">
             <button class="btn-secondary compare-btn" data-car-id="${e.id}" style="padding: 8px 14px; font-size: 0.82rem;">
-              ${w(14)} ${r?`Compared`:`Compare`}
+              ${T(14)} ${r?`Compared`:`Compare`}
             </button>
             <button class="btn-primary quick-view-btn" data-car-id="${e.id}" style="padding: 8px 14px; font-size: 0.82rem;">
-              Details ${ne(14,`#ffffff`)}
+              Details ${te(14,`#ffffff`)}
             </button>
           </div>
         </div>
@@ -530,7 +530,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
             <div>
               <span style="font-size: 0.78rem; color: #64748b; font-weight: 600;">Distance & Duration</span>
               <strong style="display: block; font-size: 1.05rem; color: #2563eb; font-weight: 800; display:flex; align-items:center; gap:6px;">
-                ${m(16,`#2563eb`)} ${n.distance} • ${S(16,`#2563eb`)} ${n.duration}
+                ${h(16,`#2563eb`)} ${n.distance} • ${C(16,`#2563eb`)} ${n.duration}
               </strong>
             </div>
 
@@ -548,7 +548,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
             <div style="text-align: right;">
               <a href="${f(`Hello! I want to reserve a vehicle for the ${n.from} to ${n.to} trip (${n.distance}).`)}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="padding: 10px 18px; font-size: 0.85rem; display: inline-flex;">
-                ${v(16,`#ffffff`)} Book This Route
+                ${y(16,`#ffffff`)} Book This Route
               </a>
             </div>
           </div>
@@ -583,7 +583,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
                 <div style="display: flex; flex-wrap: wrap; gap: 8px;">
                   ${r.places.map(e=>`
                     <span style="background: #ffffff; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; color: #0f172a; display: inline-flex; align-items: center; gap: 4px;">
-                      ${C(12,`#059669`)} ${e}
+                      ${w(12,`#059669`)} ${e}
                     </span>
                   `).join(``)}
                 </div>
@@ -616,7 +616,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
           <div>
             <strong style="font-size: 2rem; font-weight: 900; color: #f59e0b; display: block; align-items: center; justify-content: center; gap: 4px;">
-              4.95 ${h(18,`#f59e0b`)}
+              4.95 ${g(18,`#f59e0b`)}
             </strong>
             <span style="font-size: 0.85rem; color: #cbd5e1;">Customer Love Rating</span>
           </div>
@@ -709,11 +709,11 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
               <div style="display: flex; gap: 12px; margin-top: 22px; flex-wrap: wrap;">
                 <button id="showFavOnlyBtn" class="btn-secondary" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); color: #ffffff; padding: 8px 14px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
-                  ${y(16,!0)} Saved Wishlist: <strong style="color: #38bdf8;">${t} Cars</strong>
+                  ${b(16,!0)} Saved Wishlist: <strong style="color: #38bdf8;">${t} Cars</strong>
                 </button>
 
                 <button id="openCompareTriggerBtn" class="btn-secondary" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); color: #ffffff; padding: 8px 14px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 6px;">
-                  ${w(16,`#4ade80`)} Compare Tool: <strong style="color: #4ade80;">${n} Selected</strong>
+                  ${T(16,`#4ade80`)} Compare Tool: <strong style="color: #4ade80;">${n} Selected</strong>
                 </button>
               </div>
             </div>
@@ -723,7 +723,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
               
               <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 16px; border-radius: 16px; backdrop-filter: blur(8px);">
                 <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-                  ${x(18,`#60a5fa`)}
+                  ${S(18,`#60a5fa`)}
                   <strong style="font-size: 0.88rem; color: #ffffff;">Deep Sanitized</strong>
                 </div>
                 <span style="font-size: 0.75rem; color: #cbd5e1; line-height: 1.4; display: block;">Cleaned & disinfected before every single pickup.</span>
@@ -731,7 +731,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
               <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 16px; border-radius: 16px; backdrop-filter: blur(8px);">
                 <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-                  ${b(18,`#4ade80`)}
+                  ${x(18,`#4ade80`)}
                   <strong style="font-size: 0.88rem; color: #ffffff;">Police Verified</strong>
                 </div>
                 <span style="font-size: 0.75rem; color: #cbd5e1; line-height: 1.4; display: block;">Uniformed chauffeurs with 5+ yrs highway experience.</span>
@@ -739,7 +739,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
               <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 16px; border-radius: 16px; backdrop-filter: blur(8px);">
                 <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-                  ${S(18,`#38bdf8`)}
+                  ${C(18,`#38bdf8`)}
                   <strong style="font-size: 0.88rem; color: #ffffff;">On-Time Arrival</strong>
                 </div>
                 <span style="font-size: 0.75rem; color: #cbd5e1; line-height: 1.4; display: block;">15-min early arrival for zero travel delays.</span>
@@ -747,7 +747,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
               <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 16px; border-radius: 16px; backdrop-filter: blur(8px);">
                 <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
-                  ${C(18,`#f59e0b`)}
+                  ${w(18,`#f59e0b`)}
                   <strong style="font-size: 0.88rem; color: #ffffff;">Fixed Billing</strong>
                 </div>
                 <span style="font-size: 0.75rem; color: #cbd5e1; line-height: 1.4; display: block;">Transparent daily rates with zero hidden charges.</span>
@@ -770,7 +770,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         ${H()}
       </section>
     </div>
-  `},me=()=>{fe(),document.querySelector(`#showFavOnlyBtn`)?.addEventListener(`click`,()=>{l.favorites.length===0?l.showToast(`You have no saved favorite cars yet. Click the heart on any vehicle card!`,`info`):l.showToast(`Showing ${l.favorites.length} saved vehicles in your wishlist`,`success`)}),document.querySelector(`#openCompareTriggerBtn`)?.addEventListener(`click`,()=>{l.openCompareModal()}),document.querySelector(`#openCompareModalTrigger`)?.addEventListener(`click`,()=>{l.openCompareModal()})},U=[{title:`🛕 Ujjain Mahakal Bhasma Aarti Trip`,location:`Mahakaleshwar Temple, Ujjain`,car:`Maruti Suzuki Ertiga 7-Seater`,image:`https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80`},{title:`🌊 Omkareshwar Narmada Sangam Darshan`,location:`Omkareshwar Jyotirlinga, MP`,car:`Toyota Innova Crysta Z`,image:`https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80`},{title:`🏛️ Mandu & Maheshwar Ahilya Fort`,location:`Maheshwar Ghats, MP`,car:`Maruti XL6 Captain Suite`,image:`https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80`},{title:`✈️ Indore Airport VIP Transfer`,location:`Indore Airport (IDR)`,car:`Honda City ZX Executive`,image:`https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80`}],he=()=>`
+  `},me=()=>{fe(),document.querySelector(`#showFavOnlyBtn`)?.addEventListener(`click`,()=>{l.favorites.length===0?l.showToast(`You have no saved favorite cars yet. Click the heart on any vehicle card!`,`info`):l.showToast(`Showing ${l.favorites.length} saved vehicles in your wishlist`,`success`)}),document.querySelector(`#openCompareTriggerBtn`)?.addEventListener(`click`,()=>{l.openCompareModal()}),document.querySelector(`#openCompareModalTrigger`)?.addEventListener(`click`,()=>{l.openCompareModal()})},he=[{title:`🛕 Ujjain Mahakal Bhasma Aarti Trip`,location:`Mahakaleshwar Temple, Ujjain`,car:`Maruti Suzuki Ertiga 7-Seater`,image:`https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80`},{title:`🌊 Omkareshwar Narmada Sangam Darshan`,location:`Omkareshwar Jyotirlinga, MP`,car:`Toyota Innova Crysta Z`,image:`https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80`},{title:`🏛️ Mandu & Maheshwar Ahilya Fort`,location:`Maheshwar Ghats, MP`,car:`Maruti XL6 Captain Suite`,image:`https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80`},{title:`✈️ Indore Airport VIP Transfer`,location:`Indore Airport (IDR)`,car:`Honda City ZX Executive`,image:`https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80`}],ge=()=>`
     <section id="why-us" class="container" style="padding: 40px 0 30px;">
       <div class="section-header" style="text-align: center;">
         <span class="hero-tag" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1d4ed8;">
@@ -788,7 +788,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-bottom: 40px;">
         <div class="glass-card" style="padding: 28px; border-top: 4px solid #2563eb; background: #ffffff;">
           <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(37,99,235,0.08); border: 1px solid rgba(37,99,235,0.2); display: flex; align-items: center; justify-content: center; margin-bottom: 18px;">
-            ${x(26,`#2563eb`)}
+            ${S(26,`#2563eb`)}
           </div>
           <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; color: #0f172a;">Sanitized & Deep Cleaned Fleet</h3>
           <p style="color: #475569; font-size: 0.88rem; line-height: 1.65;">
@@ -798,7 +798,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
         <div class="glass-card" style="padding: 28px; border-top: 4px solid #2563eb; background: #ffffff;">
           <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(37,99,235,0.08); border: 1px solid rgba(37,99,235,0.2); display: flex; align-items: center; justify-content: center; margin-bottom: 18px;">
-            ${S(26,`#2563eb`)}
+            ${C(26,`#2563eb`)}
           </div>
           <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; color: #0f172a;">On-Time Pick-up Guarantee</h3>
           <p style="color: #475569; font-size: 0.88rem; line-height: 1.65;">
@@ -808,7 +808,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
         <div class="glass-card" style="padding: 28px; border-top: 4px solid #059669; background: #ffffff;">
           <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(5,150,105,0.08); border: 1px solid rgba(5,150,105,0.2); display: flex; align-items: center; justify-content: center; margin-bottom: 18px;">
-            ${C(26,`#059669`)}
+            ${w(26,`#059669`)}
           </div>
           <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; color: #0f172a;">Zero Hidden Surcharges</h3>
           <p style="color: #475569; font-size: 0.88rem; line-height: 1.65;">
@@ -818,7 +818,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
         <div class="glass-card" style="padding: 28px; border-top: 4px solid #2563eb; background: #ffffff;">
           <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(37,99,235,0.08); border: 1px solid rgba(37,99,235,0.2); display: flex; align-items: center; justify-content: center; margin-bottom: 18px;">
-            ${b(26,`#2563eb`)}
+            ${x(26,`#2563eb`)}
           </div>
           <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px; color: #0f172a;">Police Verified Chauffeurs</h3>
           <p style="color: #475569; font-size: 0.88rem; line-height: 1.65;">
@@ -842,7 +842,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
-          ${U.map(e=>`
+          ${he.map(e=>`
             <div class="glass-card" style="overflow: hidden; background: #ffffff;">
               <div style="height: 160px; overflow: hidden; position: relative;">
                 <img src="${e.image}" alt="${e.title}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;" />
@@ -863,7 +863,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
       <div class="glass-card" style="padding: 36px; background: #ffffff; margin-bottom: 20px; border-radius: 24px; border: 1px solid #e2e8f0; box-shadow: 0 10px 35px rgba(15, 23, 42, 0.06);">
         <div style="text-align: center; margin-bottom: 28px;">
           <span style="background: #fef3c7; color: #b45309; font-size: 0.78rem; font-weight: 800; padding: 5px 14px; border-radius: 9999px; border: 1px solid #fde68a; display: inline-flex; align-items: center; gap: 6px;">
-            ${w(14,`#b45309`)} PERFORMANCE COMPARISON
+            ${T(14,`#b45309`)} PERFORMANCE COMPARISON
           </span>
           <h3 style="font-size: 1.5rem; font-weight: 900; margin-top: 10px; color: #0f172a;">
             Ertiga Ride vs Ordinary Local Taxis
@@ -890,7 +890,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
               <tr style="border-bottom: 1px solid #e2e8f0;">
                 <td style="padding: 14px 20px; font-weight: 700; color: #0f172a; background: #ffffff;">Interior Sanitization</td>
                 <td style="padding: 14px 20px; font-weight: 800; color: #059669; background: #f0fdf4; border-left: 2px solid #bfdbfe; border-right: 2px solid #bfdbfe;">
-                  <span style="display:inline-flex; align-items:center; gap:6px;">${C(16,`#059669`)} Deep Sanitized Before Ride</span>
+                  <span style="display:inline-flex; align-items:center; gap:6px;">${w(16,`#059669`)} Deep Sanitized Before Ride</span>
                 </td>
                 <td style="padding: 14px 20px; color: #dc2626; font-weight: 600; background: #ffffff;">
                   ❌ Unverified & Dusty Interiors
@@ -900,7 +900,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
               <tr style="border-bottom: 1px solid #e2e8f0;">
                 <td style="padding: 14px 20px; font-weight: 700; color: #0f172a; background: #ffffff;">Chauffeur Credentials</td>
                 <td style="padding: 14px 20px; font-weight: 800; color: #059669; background: #f0fdf4; border-left: 2px solid #bfdbfe; border-right: 2px solid #bfdbfe;">
-                  <span style="display:inline-flex; align-items:center; gap:6px;">${C(16,`#059669`)} 100% Police Verified Drivers</span>
+                  <span style="display:inline-flex; align-items:center; gap:6px;">${w(16,`#059669`)} 100% Police Verified Drivers</span>
                 </td>
                 <td style="padding: 14px 20px; color: #dc2626; font-weight: 600; background: #ffffff;">
                   ❌ Random Unchecked Drivers
@@ -910,7 +910,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
               <tr style="border-bottom: 1px solid #e2e8f0;">
                 <td style="padding: 14px 20px; font-weight: 700; color: #0f172a; background: #ffffff;">Fare Integrity</td>
                 <td style="padding: 14px 20px; font-weight: 800; color: #059669; background: #f0fdf4; border-left: 2px solid #bfdbfe; border-right: 2px solid #bfdbfe;">
-                  <span style="display:inline-flex; align-items:center; gap:6px;">${C(16,`#059669`)} Guaranteed Fixed Rates</span>
+                  <span style="display:inline-flex; align-items:center; gap:6px;">${w(16,`#059669`)} Guaranteed Fixed Rates</span>
                 </td>
                 <td style="padding: 14px 20px; color: #dc2626; font-weight: 600; background: #ffffff;">
                   ❌ Surprise Surcharges Added
@@ -920,7 +920,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
               <tr style="border-bottom: 1px solid #e2e8f0;">
                 <td style="padding: 14px 20px; font-weight: 700; color: #0f172a; background: #ffffff;">Vehicle Condition</td>
                 <td style="padding: 14px 20px; font-weight: 800; color: #059669; background: #f0fdf4; border-left: 2px solid #bfdbfe; border-right: 2px solid #bfdbfe;">
-                  <span style="display:inline-flex; align-items:center; gap:6px;">${C(16,`#059669`)} Showroom Fresh (&lt;3 Yrs)</span>
+                  <span style="display:inline-flex; align-items:center; gap:6px;">${w(16,`#059669`)} Showroom Fresh (&lt;3 Yrs)</span>
                 </td>
                 <td style="padding: 14px 20px; color: #dc2626; font-weight: 600; background: #ffffff;">
                   ❌ High-Mileage Worn Cars
@@ -930,7 +930,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
               <tr>
                 <td style="padding: 14px 20px; font-weight: 700; color: #0f172a; background: #ffffff;">24x7 Travel Support</td>
                 <td style="padding: 14px 20px; font-weight: 800; color: #059669; background: #f0fdf4; border-left: 2px solid #bfdbfe; border-right: 2px solid #bfdbfe;">
-                  <span style="display:inline-flex; align-items:center; gap:6px;">${C(16,`#059669`)} Dedicated Desk Manager</span>
+                  <span style="display:inline-flex; align-items:center; gap:6px;">${w(16,`#059669`)} Dedicated Desk Manager</span>
                 </td>
                 <td style="padding: 14px 20px; color: #dc2626; font-weight: 600; background: #ffffff;">
                   ❌ No On-Call Helpline
@@ -941,7 +941,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </div>
       </div>
     </section>
-  `,ge=()=>`
+  `,_e=()=>`
     <div class="page-why-us animate-fade-in" style="padding-bottom: 50px;">
       <section class="container" style="padding-top: 30px;">
         
@@ -953,7 +953,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
             <!-- Left Column: Content & Buttons -->
             <div style="text-align: left;">
               <span style="background: rgba(37, 99, 235, 0.2); border: 1px solid rgba(96, 165, 250, 0.4); color: #60a5fa; font-weight: 800; font-size: 0.78rem; padding: 6px 16px; border-radius: 9999px; display: inline-flex; align-items: center; gap: 6px; text-transform: uppercase; letter-spacing: 0.8px;">
-                ${x(16,`#60a5fa`)} SAFETY & INTEGRITY STANDARD
+                ${S(16,`#60a5fa`)} SAFETY & INTEGRITY STANDARD
               </span>
 
               <h1 style="font-size: 2.6rem; font-weight: 900; color: #ffffff; margin-top: 14px; letter-spacing: -0.8px; line-height: 1.2;">
@@ -966,11 +966,11 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
               <div style="display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap;">
                 <a href="${f()}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="padding: 12px 24px; font-size: 0.92rem; display: inline-flex; align-items: center; gap: 8px;">
-                  ${v(18,`#ffffff`)} Speak to Travel Desk Manager
+                  ${y(18,`#ffffff`)} Speak to Travel Desk Manager
                 </a>
                 
                 <a href="tel:9981264216" class="btn-secondary" style="padding: 12px 22px; font-size: 0.92rem; background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); color: #ffffff; display: inline-flex; align-items: center; gap: 8px;">
-                  ${_(16,`#ffffff`)} Call Desk
+                  ${v(16,`#ffffff`)} Call Desk
                 </a>
               </div>
             </div>
@@ -985,7 +985,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
               <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 20px; border-radius: 18px; text-align: center; backdrop-filter: blur(8px);">
                 <strong style="font-size: 1.9rem; font-weight: 900; color: #f59e0b; display: flex; align-items: center; justify-content: center; gap: 4px;">
-                  4.95 ${h(18,`#f59e0b`)}
+                  4.95 ${g(18,`#f59e0b`)}
                 </strong>
                 <span style="font-size: 0.8rem; color: #94a3b8; font-weight: 600; margin-top: 2px; display: block;">Customer Rating</span>
               </div>
@@ -1006,10 +1006,10 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
         </div>
 
-        ${he()}
+        ${ge()}
       </section>
     </div>
-  `,_e=[{id:1,question:`Are driver allowance and night charges included in the fare?`,answer:`Yes! All driver allowances are transparently specified. Optional driver allowance (+₹500/day) covers driver food and night halts for outstation highway trips.`,category:`Pricing`},{id:2,question:`How do I book a vehicle for Ujjain Mahakal Bhasma Aarti?`,answer:`Simply select your trip date in the Quick Estimator or contact our 24x7 travel desk on WhatsApp. We provide early 3:00 AM pickup from Indore to Ujjain Mahakaleshwar Temple.`,category:`Booking`},{id:3,question:`Are your vehicles sanitized and police verified?`,answer:`100% Guaranteed! Every vehicle is deep-cleaned and interior-sanitized before every pickup. All chauffeurs hold valid commercial licenses and undergo police verification.`,category:`Vehicles`},{id:4,question:`What is the luggage capacity for Maruti Ertiga vs Innova Crysta?`,answer:`Maruti Ertiga comfortably fits 3 large bags with 7 passengers. Toyota Innova Crysta fits up to 4 large suitcases + hand luggage with roof carrier options.`,category:`Vehicles`},{id:5,question:`What happens if my flight to Indore Airport is delayed?`,answer:`No worries! Our chauffeur monitors flight arrival status at Indore (IDR) Airport and waits up to 60 minutes free of charge for flight delays.`,category:`Support`},{id:6,question:`What is your cancellation and refund policy?`,answer:`Cancellations made 24 hours prior to scheduled departure receive a 100% full refund with zero cancellation penalty.`,category:`Booking`},{id:7,question:`Are toll tax and state border taxes included?`,answer:`State highway toll tax and FASTag charges are billed transparently at actual toll plaza costs with zero hidden markup.`,category:`Pricing`}],W=``,G=`All`,K=()=>{let e=[`All`,`Booking`,`Pricing`,`Vehicles`,`Support`],t=_e.filter(e=>{if(G!==`All`&&e.category!==G)return!1;if(W.trim()){let t=W.toLowerCase();return e.question.toLowerCase().includes(t)||e.answer.toLowerCase().includes(t)}return!0});return`
+  `,ve=[{id:1,question:`Are driver allowance and night charges included in the fare?`,answer:`Yes! All driver allowances are transparently specified. Optional driver allowance (+₹500/day) covers driver food and night halts for outstation highway trips.`,category:`Pricing`},{id:2,question:`How do I book a vehicle for Ujjain Mahakal Bhasma Aarti?`,answer:`Simply select your trip date in the Quick Estimator or contact our 24x7 travel desk on WhatsApp. We provide early 3:00 AM pickup from Indore to Ujjain Mahakaleshwar Temple.`,category:`Booking`},{id:3,question:`Are your vehicles sanitized and police verified?`,answer:`100% Guaranteed! Every vehicle is deep-cleaned and interior-sanitized before every pickup. All chauffeurs hold valid commercial licenses and undergo police verification.`,category:`Vehicles`},{id:4,question:`What is the luggage capacity for Maruti Ertiga vs Innova Crysta?`,answer:`Maruti Ertiga comfortably fits 3 large bags with 7 passengers. Toyota Innova Crysta fits up to 4 large suitcases + hand luggage with roof carrier options.`,category:`Vehicles`},{id:5,question:`What happens if my flight to Indore Airport is delayed?`,answer:`No worries! Our chauffeur monitors flight arrival status at Indore (IDR) Airport and waits up to 60 minutes free of charge for flight delays.`,category:`Support`},{id:6,question:`What is your cancellation and refund policy?`,answer:`Cancellations made 24 hours prior to scheduled departure receive a 100% full refund with zero cancellation penalty.`,category:`Booking`},{id:7,question:`Are toll tax and state border taxes included?`,answer:`State highway toll tax and FASTag charges are billed transparently at actual toll plaza costs with zero hidden markup.`,category:`Pricing`}],U=``,W=`All`,G=()=>{let e=[`All`,`Booking`,`Pricing`,`Vehicles`,`Support`],t=ve.filter(e=>{if(W!==`All`&&e.category!==W)return!1;if(U.trim()){let t=U.toLowerCase();return e.question.toLowerCase().includes(t)||e.answer.toLowerCase().includes(t)}return!0});return`
     <div class="page-faqs animate-fade-in" style="padding-bottom: 60px;">
       <section class="container" style="padding-top: 30px;">
         
@@ -1031,11 +1031,11 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
               type="text" 
               id="faqSearchInput" 
               placeholder="Search questions (e.g. Mahakal, toll, cancellation, driver)..." 
-              value="${W}" 
+              value="${U}" 
               style="width: 100%; padding: 13px 18px 13px 44px; border-radius: 12px; border: 1px solid #cbd5e1; font-size: 0.92rem; outline: none; background: #ffffff; color: #0f172a; box-shadow: 0 4px 14px rgba(0,0,0,0.1);"
             />
             <div style="position: absolute; left: 14px; top: 50%; transform: translateY(-50%); pointer-events: none; color: #64748b;">
-              ${te(18,`#2563eb`)}
+              ${ee(18,`#2563eb`)}
             </div>
           </div>
         </div>
@@ -1043,7 +1043,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         <!-- FAQ Category Filter Tabs -->
         <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-bottom: 28px;">
           ${e.map(e=>`
-            <button class="faq-cat-btn ${e===G?`active`:``}" data-cat="${e}" style="padding: 8px 20px; border-radius: 9999px; font-size: 0.88rem; font-weight: 800; border: 1px solid ${e===G?`#0f172a`:`#cbd5e1`}; background: ${e===G?`#0f172a`:`#ffffff`}; color: ${e===G?`#ffffff`:`#475569`}; cursor: pointer; transition: all 0.2s ease;">
+            <button class="faq-cat-btn ${e===W?`active`:``}" data-cat="${e}" style="padding: 8px 20px; border-radius: 9999px; font-size: 0.88rem; font-weight: 800; border: 1px solid ${e===W?`#0f172a`:`#cbd5e1`}; background: ${e===W?`#0f172a`:`#ffffff`}; color: ${e===W?`#ffffff`:`#475569`}; cursor: pointer; transition: all 0.2s ease;">
               ${e}
             </button>
           `).join(``)}
@@ -1089,17 +1089,17 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
           <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
             <a href="${f()}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="display: inline-flex; align-items: center; gap: 8px;">
-              ${v(18,`#ffffff`)} Chat Live on WhatsApp
+              ${y(18,`#ffffff`)} Chat Live on WhatsApp
             </a>
             <a href="tel:9981264216" class="btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
-              ${_(16,`#0f172a`)} Call +91 9981264216
+              ${v(16,`#0f172a`)} Call +91 9981264216
             </a>
           </div>
         </div>
 
       </section>
     </div>
-  `},q=()=>{let e=document.querySelector(`#faqSearchInput`);if(e){e.focus();let t=e.value.length;e.setSelectionRange(t,t)}e?.addEventListener(`input`,e=>{W=e.target.value;let t=document.querySelector(`.page-faqs`);t&&(t.outerHTML=K(),q())}),document.querySelectorAll(`.faq-cat-btn`).forEach(e=>{e.addEventListener(`click`,e=>{G=e.currentTarget.dataset.cat||`All`;let t=document.querySelector(`.page-faqs`);t&&(t.outerHTML=K(),q())})}),document.querySelectorAll(`.faq-question-btn`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.faqId,n=document.querySelector(`#faqAnswer-${t}`),r=e.currentTarget.querySelector(`.faq-toggle-badge`);if(n){let e=n.style.display===`block`;n.style.display=e?`none`:`block`,r&&(r.textContent=e?`+`:`−`,r.style.background=e?`#f1f5f9`:`#eff6ff`)}})})},ve=()=>`
+  `},K=()=>{let e=document.querySelector(`#faqSearchInput`);if(e){e.focus();let t=e.value.length;e.setSelectionRange(t,t)}e?.addEventListener(`input`,e=>{U=e.target.value;let t=document.querySelector(`.page-faqs`);t&&(t.outerHTML=G(),K())}),document.querySelectorAll(`.faq-cat-btn`).forEach(e=>{e.addEventListener(`click`,e=>{W=e.currentTarget.dataset.cat||`All`;let t=document.querySelector(`.page-faqs`);t&&(t.outerHTML=G(),K())})}),document.querySelectorAll(`.faq-question-btn`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.faqId,n=document.querySelector(`#faqAnswer-${t}`),r=e.currentTarget.querySelector(`.faq-toggle-badge`);if(n){let e=n.style.display===`block`;n.style.display=e?`none`:`block`,r&&(r.textContent=e?`+`:`−`,r.style.background=e?`#f1f5f9`:`#eff6ff`)}})})},ye=()=>`
     <section id="contact" class="container" style="padding: 20px 0 40px;">
       
       <!-- 3 Luxury Direct Contact Cards Grid -->
@@ -1107,7 +1107,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         
         <div class="glass-card" style="padding: 26px; border-top: 4px solid #2563eb; background: #ffffff;">
           <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(37,99,235,0.08); border: 1px solid rgba(37,99,235,0.2); display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
-            ${_(24,`#2563eb`)}
+            ${v(24,`#2563eb`)}
           </div>
           <span style="font-size: 0.75rem; color: #64748b; font-weight: 700; text-transform: uppercase;">Direct Line</span>
           <h3 style="font-size: 1.15rem; font-weight: 800; color: #0f172a; margin: 2px 0 6px;">Call Desk Manager</h3>
@@ -1119,7 +1119,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
         <div class="glass-card" style="padding: 26px; border-top: 4px solid #25d366; background: #ffffff;">
           <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(37,211,102,0.1); border: 1px solid rgba(37,211,102,0.25); display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
-            ${v(26,`#25d366`)}
+            ${y(26,`#25d366`)}
           </div>
           <span style="font-size: 0.75rem; color: #059669; font-weight: 800; text-transform: uppercase;">🟢 Online Now</span>
           <h3 style="font-size: 1.15rem; font-weight: 800; color: #0f172a; margin: 2px 0 6px;">WhatsApp Support</h3>
@@ -1131,7 +1131,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
         <div class="glass-card" style="padding: 26px; border-top: 4px solid #0f172a; background: #ffffff;">
           <div style="width: 52px; height: 52px; border-radius: 14px; background: rgba(15,23,42,0.06); border: 1px solid rgba(15,23,42,0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
-            ${m(24,`#0f172a`)}
+            ${h(24,`#0f172a`)}
           </div>
           <span style="font-size: 0.75rem; color: #64748b; font-weight: 700; text-transform: uppercase;">Central Hub</span>
           <h3 style="font-size: 1.15rem; font-weight: 800; color: #0f172a; margin: 2px 0 6px;">Indore Main Office</h3>
@@ -1159,7 +1159,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
           <div style="display: flex; flex-direction: column; gap: 16px;">
             <div style="display: flex; align-items: flex-start; gap: 12px;">
               <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(37,99,235,0.08); display: grid; place-items: center; flex-shrink: 0;">
-                ${x(20,`#2563eb`)}
+                ${S(20,`#2563eb`)}
               </div>
               <div>
                 <strong style="display: block; font-size: 0.95rem; color: #0f172a;">100% Police Verified Chauffeurs</strong>
@@ -1169,7 +1169,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
             <div style="display: flex; align-items: flex-start; gap: 12px;">
               <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(5,150,105,0.08); display: grid; place-items: center; flex-shrink: 0;">
-                ${S(20,`#059669`)}
+                ${C(20,`#059669`)}
               </div>
               <div>
                 <strong style="display: block; font-size: 0.95rem; color: #0f172a;">Guaranteed Early Pickups</strong>
@@ -1179,7 +1179,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
             <div style="display: flex; align-items: flex-start; gap: 12px;">
               <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(37,99,235,0.08); display: grid; place-items: center; flex-shrink: 0;">
-                ${_(20,`#2563eb`)}
+                ${v(20,`#2563eb`)}
               </div>
               <div>
                 <strong style="display: block; font-size: 0.95rem; color: #0f172a;">24x7 Flight Tracking</strong>
@@ -1236,7 +1236,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
       </div>
     </section>
-  `,ye=()=>{let e=document.querySelector(`#leadContactForm`);e&&e.addEventListener(`submit`,t=>{t.preventDefault();let n=document.querySelector(`#leadName`),r=document.querySelector(`#leadPhone`),i=document.querySelector(`#leadService`),a=document.querySelector(`#leadMsg`),o=document.querySelector(`#leadNameError`),s=document.querySelector(`#leadPhoneError`),c=document.querySelector(`#leadMsgError`),u=!0;if(!n.value.trim()||n.value.trim().length<2?(n.classList.add(`input-error`),o&&(o.textContent=`Please enter your full name (at least 2 characters)`,o.style.display=`block`),u=!1):(n.classList.remove(`input-error`),o&&(o.style.display=`none`)),/^[6-9]\d{9}$/.test(r.value.trim())?(r.classList.remove(`input-error`),s&&(s.style.display=`none`)):(r.classList.add(`input-error`),s&&(s.textContent=`Please enter a valid 10-digit Indian mobile number`,s.style.display=`block`),u=!1),a.value.trim()?(a.classList.remove(`input-error`),c&&(c.style.display=`none`)):(a.classList.add(`input-error`),c&&(c.textContent=`Please enter trip details and dates`,c.style.display=`block`),u=!1),!u){l.showToast(`Please fix invalid fields in the contact form`,`warning`);return}let d=`🌟 *ERTIGA RIDE | DIRECT CALLBACK REQUEST* 🚘
+  `,be=()=>{let e=document.querySelector(`#leadContactForm`);e&&e.addEventListener(`submit`,t=>{t.preventDefault();let n=document.querySelector(`#leadName`),r=document.querySelector(`#leadPhone`),i=document.querySelector(`#leadService`),a=document.querySelector(`#leadMsg`),o=document.querySelector(`#leadNameError`),s=document.querySelector(`#leadPhoneError`),c=document.querySelector(`#leadMsgError`),u=!0;if(!n.value.trim()||n.value.trim().length<2?(n.classList.add(`input-error`),o&&(o.textContent=`Please enter your full name (at least 2 characters)`,o.style.display=`block`),u=!1):(n.classList.remove(`input-error`),o&&(o.style.display=`none`)),/^[6-9]\d{9}$/.test(r.value.trim())?(r.classList.remove(`input-error`),s&&(s.style.display=`none`)):(r.classList.add(`input-error`),s&&(s.textContent=`Please enter a valid 10-digit Indian mobile number`,s.style.display=`block`),u=!1),a.value.trim()?(a.classList.remove(`input-error`),c&&(c.style.display=`none`)):(a.classList.add(`input-error`),c&&(c.textContent=`Please enter trip details and dates`,c.style.display=`block`),u=!1),!u){l.showToast(`Please fix invalid fields in the contact form`,`warning`);return}let d=`🌟 *ERTIGA RIDE | DIRECT CALLBACK REQUEST* 🚘
 -------------------------------------------------
 Name: ${n.value.trim()}
 Phone: ${r.value.trim()}
@@ -1245,7 +1245,7 @@ Service Needed: ${i.value}
 Trip Details:
 "${a.value.trim()}"
 
-Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.me/919981264216?text=${encodeURIComponent(d)}`;l.showToast(`Validation successful! Opening WhatsApp chat...`,`success`),setTimeout(()=>{window.open(f,`_blank`)},600),e.reset()})},be=()=>`
+Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.me/919981264216?text=${encodeURIComponent(d)}`;l.showToast(`Validation successful! Opening WhatsApp chat...`,`success`),setTimeout(()=>{window.open(f,`_blank`)},600),e.reset()})},xe=()=>`
     <div class="page-contact animate-fade-in" style="padding-bottom: 60px;">
       <section class="container" style="padding-top: 30px;">
         <div style="background: linear-gradient(135deg, #0f172a, #1e293b); color: #ffffff; padding: 44px 30px; border-radius: 24px; margin-bottom: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 12px 35px rgba(15,23,42,0.12);">
@@ -1261,32 +1261,32 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
 
           <div style="display: flex; gap: 12px; justify-content: center; margin-top: 22px; flex-wrap: wrap;">
             <a href="tel:9981264216" class="btn-primary" style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, #2563eb, #1d4ed8);">
-              ${_(16,`#ffffff`)} Call +91 9981264216
+              ${v(16,`#ffffff`)} Call +91 9981264216
             </a>
             <a href="${f()}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="display: inline-flex; align-items: center; gap: 8px;">
-              ${v(18,`#ffffff`)} WhatsApp Instant Chat
+              ${y(18,`#ffffff`)} WhatsApp Instant Chat
             </a>
           </div>
         </div>
 
-        ${ve()}
+        ${ye()}
       </section>
     </div>
-  `,xe=()=>{ye()},J=0,Y=()=>{let{activeDetailCar:e,booking:n}=l;return e?`
+  `,Se=()=>{be()},q=0,J=()=>{let{activeDetailCar:e,booking:n}=l;return e?`
     <div class="modal-overlay" id="carDetailModalOverlay">
       <div class="modal-content animate-fade-in" style="max-width: 760px;">
         <button class="modal-close" id="closeDetailModalBtn">&times;</button>
 
         <!-- Main Image Preview Frame -->
         <div style="position: relative; height: 260px; border-radius: 16px; overflow: hidden; margin-bottom: 12px; border: 1px solid #e2e8f0;">
-          <img id="detailMainPreview" src="${e.gallery[J]?.url||e.image}" alt="${e.name}" style="width:100%; height:100%; object-fit:cover; transition: opacity 0.3s ease;" />
+          <img id="detailMainPreview" src="${e.gallery[q]?.url||e.image}" alt="${e.name}" style="width:100%; height:100%; object-fit:cover; transition: opacity 0.3s ease;" />
           <span class="card-badge" style="position:absolute; top:14px; left:14px;">${e.badge}</span>
         </div>
 
         <!-- Multi-Angle Thumbnail Tabs -->
         <div style="display: flex; gap: 8px; margin-bottom: 20px; overflow-x: auto; padding-bottom: 4px;">
           ${e.gallery.map((e,t)=>`
-            <button class="gallery-thumb-btn ${t===J?`active`:``}" data-index="${t}" style="padding: 6px 12px; border-radius: 8px; font-size: 0.78rem; font-weight: 700; border: 1.5px solid ${t===J?`#2563eb`:`#e2e8f0`}; background: ${t===J?`#eff6ff`:`#ffffff`}; color: ${t===J?`#1d4ed8`:`#475569`}; cursor: pointer; white-space: nowrap;">
+            <button class="gallery-thumb-btn ${t===q?`active`:``}" data-index="${t}" style="padding: 6px 12px; border-radius: 8px; font-size: 0.78rem; font-weight: 700; border: 1.5px solid ${t===q?`#2563eb`:`#e2e8f0`}; background: ${t===q?`#eff6ff`:`#ffffff`}; color: ${t===q?`#1d4ed8`:`#475569`}; cursor: pointer; white-space: nowrap;">
               📸 ${e.label}
             </button>
           `).join(``)}
@@ -1326,7 +1326,7 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
         <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 16px; margin: 18px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
           <div>
             <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
-              ${x(18,`#2563eb`)}
+              ${S(18,`#2563eb`)}
               <strong style="font-size: 0.92rem; color: #0f172a;">Assigned Chauffeur: ${e.chauffeur.name}</strong>
               <span style="background: #d1fae5; color: #065f46; font-size: 0.7rem; font-weight: 800; padding: 2px 8px; border-radius: 9999px;">
                 ✓ Police Verified
@@ -1337,7 +1337,7 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
             </div>
           </div>
           <div style="display: flex; align-items: center; gap: 4px; background: #fef3c7; color: #b45309; padding: 4px 10px; border-radius: 8px; font-weight: 800; font-size: 0.85rem;">
-            ${h(14)} ${e.chauffeur.rating} / 5 Rating
+            ${g(14)} ${e.chauffeur.rating} / 5 Rating
           </div>
         </div>
 
@@ -1346,7 +1346,7 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
         <ul style="display:grid; grid-template-columns: repeat(2, 1fr); gap:8px; margin-bottom:24px; list-style:none;">
           ${e.features.map(e=>`
             <li style="display:flex; align-items:center; gap:6px; color:#334155; font-size:0.85rem; font-weight:600;">
-              ${C(14,`#059669`)} ${e}
+              ${w(14,`#059669`)} ${e}
             </li>
           `).join(``)}
         </ul>
@@ -1363,11 +1363,11 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
         </div>
       </div>
     </div>
-  `:``},X=()=>{let e=document.querySelector(`#carDetailModalOverlay`);document.querySelector(`#closeDetailModalBtn`)?.addEventListener(`click`,()=>{J=0,l.closeDetailModal()}),e?.addEventListener(`click`,t=>{t.target===e&&(J=0,l.closeDetailModal())}),document.querySelectorAll(`.gallery-thumb-btn`).forEach(e=>{e.addEventListener(`click`,e=>{J=Number(e.currentTarget.dataset.index);let t=document.querySelector(`#carDetailModalOverlay`);t&&(t.outerHTML=Y(),X())})})},Se=()=>{let{compareList:t}=l;if(t.length===0)return``;let n=e.filter(e=>t.includes(e.id));return`
+  `:``},Y=()=>{let e=document.querySelector(`#carDetailModalOverlay`);document.querySelector(`#closeDetailModalBtn`)?.addEventListener(`click`,()=>{q=0,l.closeDetailModal()}),e?.addEventListener(`click`,t=>{t.target===e&&(q=0,l.closeDetailModal())}),document.querySelectorAll(`.gallery-thumb-btn`).forEach(e=>{e.addEventListener(`click`,e=>{q=Number(e.currentTarget.dataset.index);let t=document.querySelector(`#carDetailModalOverlay`);t&&(t.outerHTML=J(),Y())})})},Ce=()=>{let{compareList:t}=l;if(t.length===0)return``;let n=e.filter(e=>t.includes(e.id));return`
     <div class="compare-drawer animate-fade-in">
       <div style="display: flex; align-items: center; gap: 8px;">
         <span style="background: #2563eb; color: #ffffff; padding: 4px 10px; border-radius: 9999px; font-size: 0.78rem; font-weight: 800; display: inline-flex; align-items: center; gap: 4px;">
-          ${w(14,`#ffffff`)} ${t.length} / 3 Selected
+          ${T(14,`#ffffff`)} ${t.length} / 3 Selected
         </span>
         <span style="font-size: 0.88rem; font-weight: 700; color: #0f172a;" class="desktop-only">
           ${n.map(e=>e.name).join(`, `)}
@@ -1383,7 +1383,7 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
         </button>
       </div>
     </div>
-  `},Ce=()=>{let{isCompareModalOpen:n,compareList:r,booking:i}=l;if(!n||r.length===0)return``;let a=e.filter(e=>r.includes(e.id));return`
+  `},we=()=>{let{isCompareModalOpen:n,compareList:r,booking:i}=l;if(!n||r.length===0)return``;let a=e.filter(e=>r.includes(e.id));return`
     <div class="modal-overlay" id="carCompareModalOverlay">
       <div class="modal-content animate-fade-in" style="max-width: 860px;">
         <button class="modal-close" id="closeCompareModalBtn">&times;</button>
@@ -1453,7 +1453,21 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
         </div>
       </div>
     </div>
-  `},we=()=>{document.querySelector(`#openCompareModalBtn`)?.addEventListener(`click`,()=>{l.openCompareModal()}),document.querySelector(`#clearCompareBtn`)?.addEventListener(`click`,()=>{l.clearCompare()});let e=document.querySelector(`#closeCompareModalBtn`),t=document.querySelector(`#carCompareModalOverlay`);e?.addEventListener(`click`,()=>{l.closeCompareModal()}),t?.addEventListener(`click`,e=>{e.target===t&&l.closeCompareModal()})},Te=()=>`
+  `},Te=()=>{document.querySelector(`#openCompareModalBtn`)?.addEventListener(`click`,()=>{l.openCompareModal()}),document.querySelector(`#clearCompareBtn`)?.addEventListener(`click`,()=>{l.clearCompare()});let e=document.querySelector(`#closeCompareModalBtn`),t=document.querySelector(`#carCompareModalOverlay`);e?.addEventListener(`click`,()=>{l.closeCompareModal()}),t?.addEventListener(`click`,e=>{e.target===t&&l.closeCompareModal()})},Ee=()=>{let e=l.currentRoute;return`
+    <nav class="mobile-bottom-nav">
+      ${[{route:`home`,label:`Home`,icon:m(18,e===`home`?`#2563eb`:`#64748b`)},{route:`fleet`,label:`Fleet`,icon:p(18,e===`fleet`?`#2563eb`:`#64748b`)},{route:`why-us`,label:`Why Us`,icon:g(18,e===`why-us`?`#2563eb`:`#64748b`)},{route:`faqs`,label:`FAQs`,icon:_(18,e===`faqs`?`#2563eb`:`#64748b`)},{route:`call`,label:`Call`,icon:v(18,`#059669`)}].map(t=>t.route===`call`?`
+            <a href="tel:9981264216" class="mobile-nav-tab" style="color: #059669;">
+              ${t.icon}
+              <span>${t.label}</span>
+            </a>
+          `:`
+          <button class="mobile-nav-tab ${e===t.route?`active`:``}" data-route="${t.route}">
+            ${t.icon}
+            <span>${t.label}</span>
+          </button>
+        `).join(``)}
+    </nav>
+  `},De=()=>{document.querySelectorAll(`.mobile-bottom-nav .mobile-nav-tab[data-route]`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.route;t&&l.setRoute(t)})})},Oe=()=>`
     <footer style="border-top: 1px solid #e2e8f0; padding: 40px 0 20px; background: #0f172a; color: #f8fafc; margin-top: 40px;">
       <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-bottom: 30px;">
         <div>
@@ -1466,10 +1480,10 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
           </p>
           <div style="display: flex; gap: 10px;">
             <a href="${f()}" target="_blank" rel="noopener noreferrer" style="background: rgba(255,255,255,0.08); padding: 8px 14px; border-radius: 8px; font-size: 0.8rem; color: #38bdf8; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">
-              ${v(14,`#38bdf8`)} WhatsApp
+              ${y(14,`#38bdf8`)} WhatsApp
             </a>
             <a href="tel:9981264216" style="background: rgba(255,255,255,0.08); padding: 8px 14px; border-radius: 8px; font-size: 0.8rem; color: #4ade80; font-weight: 700; display: inline-flex; align-items: center; gap: 6px;">
-              ${_(14,`#4ade80`)} Call Now
+              ${v(14,`#4ade80`)} Call Now
             </a>
           </div>
         </div>
@@ -1525,28 +1539,29 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
         color: #60a5fa;
       }
     </style>
-  `,Ee=()=>{document.querySelectorAll(`.footer-nav-btn`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.route;t&&l.setRoute(t)})})},De=()=>{let{activeToast:e}=l;return e?`
+  `,ke=()=>{document.querySelectorAll(`.footer-nav-btn`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.route;t&&l.setRoute(t)})})},X=()=>{let{activeToast:e}=l;return e?`
     <div class="toast-container">
       <div class="toast animate-fade-in">
         <span>${e.message}</span>
       </div>
     </div>
-  `:``},Oe=()=>{if(window.innerWidth<=820)return;let e=document.getElementById(`cursorDot`),t=document.getElementById(`cursorRing`);e||(e=document.createElement(`div`),e.id=`cursorDot`,document.body.appendChild(e)),t||(t=document.createElement(`div`),t.id=`cursorRing`,document.body.appendChild(t));let n=-100,r=-100,i=-100,a=-100;window.addEventListener(`mousemove`,t=>{n=t.clientX,r=t.clientY,e&&(e.style.transform=`translate3d(${n}px, ${r}px, 0)`)});let o=()=>{i+=(n-i)*.15,a+=(r-a)*.15,t&&(t.style.transform=`translate3d(${i-18}px, ${a-18}px, 0)`),requestAnimationFrame(o)};o(),document.addEventListener(`mouseover`,n=>{n.target.closest(`button, a, input, select, textarea, .glass-card, .fav-btn, .filter-pill, .faq-question`)?(t?.classList.add(`cursor-hover`),e?.classList.add(`cursor-hover-dot`)):(t?.classList.remove(`cursor-hover`),e?.classList.remove(`cursor-hover-dot`))})},Z=document.querySelector(`#app`);if(!Z)throw Error(`App root container #app not found!`);var ke=()=>{switch(l.currentRoute){case`fleet`:return{html:pe(),bindEvents:me};case`why-us`:return{html:ge()};case`faqs`:return{html:K(),bindEvents:q};case`contact`:return{html:be(),bindEvents:xe};default:return{html:R(),bindEvents:z}}},Q=()=>{let e=ke();Z.innerHTML=`
+  `:``},Ae=()=>{if(window.innerWidth<=820)return;let e=document.getElementById(`cursorDot`),t=document.getElementById(`cursorRing`);e||(e=document.createElement(`div`),e.id=`cursorDot`,document.body.appendChild(e)),t||(t=document.createElement(`div`),t.id=`cursorRing`,document.body.appendChild(t));let n=-100,r=-100,i=-100,a=-100;window.addEventListener(`mousemove`,t=>{n=t.clientX,r=t.clientY,e&&(e.style.transform=`translate3d(${n}px, ${r}px, 0)`)});let o=()=>{i+=(n-i)*.15,a+=(r-a)*.15,t&&(t.style.transform=`translate3d(${i-18}px, ${a-18}px, 0)`),requestAnimationFrame(o)};o(),document.addEventListener(`mouseover`,n=>{n.target.closest(`button, a, input, select, textarea, .glass-card, .fav-btn, .filter-pill, .faq-question`)?(t?.classList.add(`cursor-hover`),e?.classList.add(`cursor-hover-dot`)):(t?.classList.remove(`cursor-hover`),e?.classList.remove(`cursor-hover-dot`))})},Z=document.querySelector(`#app`);if(!Z)throw Error(`App root container #app not found!`);var je=()=>{switch(l.currentRoute){case`fleet`:return{html:pe(),bindEvents:me};case`why-us`:return{html:_e()};case`faqs`:return{html:G(),bindEvents:K};case`contact`:return{html:xe(),bindEvents:Se};default:return{html:R(),bindEvents:z}}},Q=()=>{let e=je();Z.innerHTML=`
     <div id="pageShell">
-      ${k()}
+      ${A()}
       <main>
         ${e.html}
       </main>
-      ${Te()}
-      ${Y()}
-      ${Se()}
+      ${Oe()}
+      ${Ee()}
+      ${J()}
       ${Ce()}
-      ${ae()}
-      ${De()}
+      ${we()}
+      ${ie()}
+      ${X()}
 
       <!-- Floating WhatsApp Quick Button -->
       <a href="${f()}" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" title="Chat on WhatsApp">
-        ${v(26,`#ffffff`)}
+        ${y(26,`#ffffff`)}
       </a>
     </div>
-  `,A(),M(),e.bindEvents&&e.bindEvents(),X(),we(),oe(),Ee()},$=()=>{if(window.location.hash){let e=window.location.hash.replace(`#`,``);if([`home`,`fleet`,`why-us`,`faqs`,`contact`].includes(e)){let t=e===`home`?`/`:`/${e}`;window.history.replaceState({route:e},``,t),l.currentRoute=e;return}}let e=window.location.pathname.replace(/^\/|\/$/g,``);l.currentRoute=[`home`,`fleet`,`why-us`,`faqs`,`contact`].includes(e)?e:`home`};$(),Q(),Oe(),window.addEventListener(`popstate`,()=>{$(),Q()}),window.addEventListener(`hashchange`,()=>{$(),Q()}),l.subscribe(()=>{Q()});
+  `,j(),De(),ce(),e.bindEvents&&e.bindEvents(),Y(),Te(),ae(),ke()},$=()=>{if(window.location.hash){let e=window.location.hash.replace(`#`,``);if([`home`,`fleet`,`why-us`,`faqs`,`contact`].includes(e)){let t=e===`home`?`/`:`/${e}`;window.history.replaceState({route:e},``,t),l.currentRoute=e;return}}let e=window.location.pathname.replace(/^\/|\/$/g,``);l.currentRoute=[`home`,`fleet`,`why-us`,`faqs`,`contact`].includes(e)?e:`home`};$(),Q(),Ae(),window.addEventListener(`popstate`,()=>{$(),Q()}),window.addEventListener(`hashchange`,()=>{$(),Q()}),l.subscribe(()=>{Q()});
