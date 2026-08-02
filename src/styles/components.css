@@ -4,7 +4,8 @@
 
 /* Universal Layout & Section Utilities */
 .section-padding {
-  padding: 36px 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
   box-sizing: border-box;
 }
 
@@ -21,6 +22,7 @@
   margin-bottom: 24px;
   gap: 16px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .section-title {
@@ -38,6 +40,8 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   box-sizing: border-box;
   max-width: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .glass-card:hover {
@@ -50,6 +54,8 @@
   padding: 32px;
   background: #ffffff;
   border-radius: 24px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .border-blue {
@@ -730,10 +736,11 @@
   -webkit-justify-content: center;
   justify-content: center;
   margin-bottom: 24px;
+  width: 100%;
 }
 
 .route-tab-btn {
-  padding: 8px 18px;
+  padding: 8px 16px;
   border-radius: 9999px;
   font-size: 0.85rem;
   font-weight: 700;
@@ -742,6 +749,7 @@
   color: #475569;
   cursor: pointer;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .route-tab-btn.active {
@@ -761,6 +769,8 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .estimator-item {
@@ -828,6 +838,7 @@
   margin-bottom: 20px;
   flex-wrap: wrap;
   gap: 12px;
+  width: 100%;
 }
 
 .margin-top-sm {
@@ -839,6 +850,7 @@
   display: -webkit-flex;
   display: flex;
   gap: 6px;
+  flex-wrap: wrap;
 }
 
 .itinerary-tab-btn {
@@ -850,6 +862,7 @@
   background: #ffffff;
   color: #334155;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .itinerary-tab-btn.active {
@@ -869,6 +882,8 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .itinerary-left-info {
@@ -943,6 +958,8 @@
   padding: 20px;
   border-radius: 14px;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .rate-label {
@@ -967,6 +984,8 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .stat-box {
@@ -994,6 +1013,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  width: 100%;
 }
 
 .car-card {
@@ -1311,6 +1331,21 @@
     font-size: 16px !important;
   }
 
+  .section-header-flex {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+    flex-direction: column !important;
+    -webkit-box-align: start !important;
+    -webkit-align-items: flex-start !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+
+  .section-header-flex .btn-primary {
+    width: 100% !important;
+  }
+
   .desktop-only {
     display: none !important;
   }
@@ -1409,6 +1444,22 @@
     -webkit-box-pack: center !important;
     -webkit-justify-content: center !important;
     justify-content: center !important;
+  }
+
+  .route-tabs-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 6px !important;
+  }
+
+  .route-tab-btn {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 8px 12px !important;
+    font-size: 0.8rem !important;
   }
 
   .route-estimator-grid {
