@@ -80,37 +80,25 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
     <circle cx="11" cy="11" r="8"></circle>
     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
   </svg>
-`,te=(e=16,t=`currentColor`)=>`
-  <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <line x1="5" y1="12" x2="19" y2="12"></line>
-    <polyline points="12 5 19 12 12 19"></polyline>
-  </svg>
 `,T=(e=16,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <line x1="18" y1="20" x2="18" y2="10"></line>
     <line x1="12" y1="20" x2="12" y2="4"></line>
     <line x1="6" y1="20" x2="6" y2="14"></line>
   </svg>
-`,E=(e=16,t=`currentColor`)=>`
-  <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="6" y="7" width="12" height="14" rx="2" ry="2"></rect>
-    <path d="M9 7V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3"></path>
-    <line x1="9" y1="21" x2="9" y2="21.01"></line>
-    <line x1="15" y1="21" x2="15" y2="21.01"></line>
-  </svg>
-`,D=(e=16,t=`currentColor`)=>`
+`,te=(e=16,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <line x1="3" y1="22" x2="15" y2="22"></line>
     <rect x="4" y="9" width="10" height="13" rx="2" ry="2"></rect>
     <path d="M14 9h2a2 2 0 0 1 2 2v3.5a1.5 1.5 0 0 0 3 0V11"></path>
     <circle cx="9" cy="6" r="2"></circle>
   </svg>
-`,O=(e=16,t=`currentColor`)=>`
+`,ne=(e=16,t=`currentColor`)=>`
   <svg width="${e}" height="${e}" viewBox="0 0 24 24" fill="none" stroke="${t}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <circle cx="12" cy="12" r="3"></circle>
     <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
   </svg>
-`,k=!1,A=()=>{let e=l.favorites.length,t=l.currentRoute,n=[{route:`home`,label:`Home`,icon:m(16)},{route:`fleet`,label:`Fleet & Cars`,icon:p(16)},{route:`why-us`,label:`Why Choose Us`,icon:g(16)},{route:`faqs`,label:`FAQs`,icon:_(16)},{route:`contact`,label:`Contact`,icon:v(16)}];return`
+`,E=!1,D=()=>{let e=l.favorites.length,t=l.currentRoute,n=[{route:`home`,label:`Home`,icon:m(16)},{route:`fleet`,label:`Fleet & Cars`,icon:p(16)},{route:`why-us`,label:`Why Choose Us`,icon:g(16)},{route:`faqs`,label:`FAQs`,icon:_(16)},{route:`contact`,label:`Contact`,icon:v(16)}];return`
     <header class="site-header">
       <div class="container nav-wrap">
         <button id="brandLogoBtn" class="brand-logo" style="cursor: pointer; background: none; border: none; padding: 0; text-align: left;">
@@ -141,13 +129,13 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
           <!-- Mobile Hamburger Toggle -->
           <button id="mobileMenuToggleBtn" class="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
-            ${k?`✕`:`☰`}
+            ${E?`✕`:`☰`}
           </button>
         </div>
       </div>
 
       <!-- Mobile Dropdown Navigation Drawer -->
-      ${k?`
+      ${E?`
         <div class="mobile-drawer animate-fade-in">
           <nav class="mobile-nav-links">
             ${n.map(e=>`
@@ -165,7 +153,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </div>
       `:``}
     </header>
-  `},j=()=>{document.querySelector(`#brandLogoBtn`)?.addEventListener(`click`,()=>{k=!1,l.setRoute(`home`)}),document.querySelector(`#mobileMenuToggleBtn`)?.addEventListener(`click`,()=>{k=!k;let e=document.querySelector(`.site-header`);e&&(e.outerHTML=A(),j())}),document.querySelectorAll(`.nav-link, .mobile-nav-link`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.route;t&&(k=!1,l.setRoute(t))})}),document.querySelector(`#favHeaderBtn`)?.addEventListener(`click`,()=>{k=!1,l.setRoute(`fleet`),l.favorites.length===0?l.showToast(`You have no saved favorite cars yet. Click the heart on any vehicle card!`,`info`):l.showToast(`Showing ${l.favorites.length} saved vehicles in fleet`,`success`)})},M=!1,ne=()=>{M=!0,l.showToast(`Generating official travel quotation receipt...`,`info`)},re=()=>{M=!1},ie=()=>{if(!M)return``;let{booking:r}=l,i=e.find(e=>e.id===r.selectedCarId)||e[0],a=n(r.pickupDate,r.returnDate),o=i.pricePerDay*a,s=r.needDriver?500*a:0,c=o+s,u=`ERT-2026-${Math.floor(1e3+Math.random()*9e3)}`;return`
+  `},O=()=>{document.querySelector(`#brandLogoBtn`)?.addEventListener(`click`,()=>{E=!1,l.setRoute(`home`)}),document.querySelector(`#mobileMenuToggleBtn`)?.addEventListener(`click`,()=>{E=!E;let e=document.querySelector(`.site-header`);e&&(e.outerHTML=D(),O())}),document.querySelectorAll(`.nav-link, .mobile-nav-link`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.route;t&&(E=!1,l.setRoute(t))})}),document.querySelector(`#favHeaderBtn`)?.addEventListener(`click`,()=>{E=!1,l.setRoute(`fleet`),l.favorites.length===0?l.showToast(`You have no saved favorite cars yet. Click the heart on any vehicle card!`,`info`):l.showToast(`Showing ${l.favorites.length} saved vehicles in fleet`,`success`)})},k=!1,re=()=>{k=!0,l.showToast(`Generating official travel quotation receipt...`,`info`)},ie=()=>{k=!1},ae=()=>{if(!k)return``;let{booking:r}=l,i=e.find(e=>e.id===r.selectedCarId)||e[0],a=n(r.pickupDate,r.returnDate),o=i.pricePerDay*a,s=r.needDriver?500*a:0,c=o+s,u=`ERT-2026-${Math.floor(1e3+Math.random()*9e3)}`;return`
     <div class="modal-overlay" id="quoteModalOverlay">
       <div class="modal-content animate-fade-in" style="max-width: 680px; padding: 32px; background: #ffffff;">
         <button class="modal-close" id="closeQuoteModalBtn">&times;</button>
@@ -252,7 +240,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </div>
       </div>
     </div>
-  `},ae=()=>{let e=document.querySelector(`#quoteModalOverlay`),t=document.querySelector(`#closeQuoteModalBtn`),n=document.querySelector(`#closeQuoteModalActionBtn`),r=document.querySelector(`#printQuotePdfBtn`),i=()=>{re(),l.notify()};t?.addEventListener(`click`,i),n?.addEventListener(`click`,i),e?.addEventListener(`click`,t=>{t.target===e&&i()}),r?.addEventListener(`click`,()=>{window.print()})},oe=[`Indore, Madhya Pradesh`,`Indore Airport (IDR)`,`Indore Junction Railway Station`,`Vijay Nagar, Indore`,`Ujjain Mahakal Mandir`,`Ujjain Junction Railway Station`,`Bhopal Central`,`Bhopal Airport (BHO)`,`Omkareshwar Jyotirlinga`,`Maheshwar Fort & Ghats`,`Mandu Heritage City`,`Dewas Bypass`,`Ratlam Junction`,`Mumbai Chhatrapati Shivaji Airport (BOM)`,`Delhi IGI Airport (DEL)`],se=()=>{let{booking:i}=l,a=e.find(e=>e.id===i.selectedCarId)||e[0],o=n(i.pickupDate,i.returnDate),s=a.pricePerDay*o+(i.needDriver?500*o:0),c=r();return`
+  `},A=()=>{let e=document.querySelector(`#quoteModalOverlay`),t=document.querySelector(`#closeQuoteModalBtn`),n=document.querySelector(`#closeQuoteModalActionBtn`),r=document.querySelector(`#printQuotePdfBtn`),i=()=>{ie(),l.notify()};t?.addEventListener(`click`,i),n?.addEventListener(`click`,i),e?.addEventListener(`click`,t=>{t.target===e&&i()}),r?.addEventListener(`click`,()=>{window.print()})},oe=[`Indore, Madhya Pradesh`,`Indore Airport (IDR)`,`Indore Junction Railway Station`,`Vijay Nagar, Indore`,`Ujjain Mahakal Mandir`,`Ujjain Junction Railway Station`,`Bhopal Central`,`Bhopal Airport (BHO)`,`Omkareshwar Jyotirlinga`,`Maheshwar Fort & Ghats`,`Mandu Heritage City`,`Dewas Bypass`,`Ratlam Junction`,`Mumbai Chhatrapati Shivaji Airport (BOM)`,`Delhi IGI Airport (DEL)`],se=()=>{let{booking:i}=l,a=e.find(e=>e.id===i.selectedCarId)||e[0],o=n(i.pickupDate,i.returnDate),s=a.pricePerDay*o+(i.needDriver?500*o:0),c=r();return`
     <div class="glass-card booking-panel" id="booking">
       <div class="panel-title">
         <span>⚡ Quick Ride Estimator</span>
@@ -354,7 +342,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
       <div class="suggestion-item" data-location="${e}">
         <span style="color: #2563eb;">📍</span> <span>${e}</span>
       </div>
-    `).join(``),i.style.display=`block`,i.querySelectorAll(`.suggestion-item`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.location||``;n&&(n.value=t,l.setBooking({pickupCity:t})),i.style.display=`none`})})};n?.addEventListener(`input`,e=>{let t=e.target.value;l.setBooking({pickupCity:t}),u(t)}),n?.addEventListener(`focus`,e=>{u(e.target.value)}),document.addEventListener(`click`,e=>{!n?.contains(e.target)&&!i?.contains(e.target)&&i&&(i.style.display=`none`)});let f=()=>{let e=!0,t=r();return a&&a.value<t?(a.classList.add(`input-error`),s&&(s.textContent=`Pickup date cannot be in the past!`,s.style.display=`block`),e=!1):(a?.classList.remove(`input-error`),s&&(s.style.display=`none`)),o&&a&&o.value<a.value?(o.classList.add(`input-error`),c&&(c.textContent=`Return date must be on or after pickup date!`,c.style.display=`block`),e=!1):(o?.classList.remove(`input-error`),c&&(c.style.display=`none`)),e},p=()=>{if(!f())return;let e=document.querySelector(`#tripType`)?.value,t=n?.value||`Indore`,r=a?.value,i=o?.value,s=Number(document.querySelector(`#seatsNeeded`)?.value),c=Number(document.querySelector(`#selectedCarSelect`)?.value),u=document.querySelector(`#needDriver`)?.checked;o&&r&&(o.min=r),l.setBooking({tripType:e,pickupCity:t,pickupDate:r,returnDate:i,seatsNeeded:s,selectedCarId:c,needDriver:u})};t.querySelectorAll(`input, select`).forEach(e=>{e!==n&&e.addEventListener(`change`,p)}),document.querySelector(`#generateQuotePdfBtn`)?.addEventListener(`click`,()=>{if(!f()){l.showToast(`Please fix invalid travel dates before generating quotation`,`warning`);return}ne(),l.notify()}),document.querySelector(`#whatsAppBookingBtn`)?.addEventListener(`click`,()=>{if(!f()){l.showToast(`Please fix invalid travel dates before booking`,`warning`);return}let{booking:t}=l,n=d(e.find(e=>e.id===t.selectedCarId)||e[0],t);window.open(n,`_blank`)})},le=()=>`
+    `).join(``),i.style.display=`block`,i.querySelectorAll(`.suggestion-item`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.location||``;n&&(n.value=t,l.setBooking({pickupCity:t})),i.style.display=`none`})})};n?.addEventListener(`input`,e=>{let t=e.target.value;l.setBooking({pickupCity:t}),u(t)}),n?.addEventListener(`focus`,e=>{u(e.target.value)}),document.addEventListener(`click`,e=>{!n?.contains(e.target)&&!i?.contains(e.target)&&i&&(i.style.display=`none`)});let f=()=>{let e=!0,t=r();return a&&a.value<t?(a.classList.add(`input-error`),s&&(s.textContent=`Pickup date cannot be in the past!`,s.style.display=`block`),e=!1):(a?.classList.remove(`input-error`),s&&(s.style.display=`none`)),o&&a&&o.value<a.value?(o.classList.add(`input-error`),c&&(c.textContent=`Return date must be on or after pickup date!`,c.style.display=`block`),e=!1):(o?.classList.remove(`input-error`),c&&(c.style.display=`none`)),e},p=()=>{if(!f())return;let e=document.querySelector(`#tripType`)?.value,t=n?.value||`Indore`,r=a?.value,i=o?.value,s=Number(document.querySelector(`#seatsNeeded`)?.value),c=Number(document.querySelector(`#selectedCarSelect`)?.value),u=document.querySelector(`#needDriver`)?.checked;o&&r&&(o.min=r),l.setBooking({tripType:e,pickupCity:t,pickupDate:r,returnDate:i,seatsNeeded:s,selectedCarId:c,needDriver:u})};t.querySelectorAll(`input, select`).forEach(e=>{e!==n&&e.addEventListener(`change`,p)}),document.querySelector(`#generateQuotePdfBtn`)?.addEventListener(`click`,()=>{if(!f()){l.showToast(`Please fix invalid travel dates before generating quotation`,`warning`);return}re(),l.notify()}),document.querySelector(`#whatsAppBookingBtn`)?.addEventListener(`click`,()=>{if(!f()){l.showToast(`Please fix invalid travel dates before booking`,`warning`);return}let{booking:t}=l,n=d(e.find(e=>e.id===t.selectedCarId)||e[0],t);window.open(n,`_blank`)})},le=()=>`
     <section class="hero-section">
       <div class="container hero-grid">
         <div>
@@ -400,60 +388,86 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </div>
       </div>
     </section>
-  `,ue=()=>{document.querySelector(`#exploreFleetHeroBtn`)?.addEventListener(`click`,()=>{l.setRoute(`fleet`)}),document.querySelector(`#whyChooseUsHeroBtn`)?.addEventListener(`click`,()=>{l.setRoute(`why-us`)})},N=e=>{let n=l.favorites.includes(e.id),r=l.compareList.includes(e.id);return`
-    <article class="glass-card car-card animate-fade-in">
-      <div class="car-image-container">
-        <img src="${e.image}" alt="${e.name}" loading="lazy" />
-        <span class="card-badge">${e.badge}</span>
-        <button class="fav-btn" data-car-id="${e.id}" title="${n?`Remove Favorite`:`Save Favorite`}">
-          ${b(18,n)}
-        </button>
+  `,ue=()=>{document.querySelector(`#exploreFleetHeroBtn`)?.addEventListener(`click`,()=>{l.setRoute(`fleet`)}),document.querySelector(`#whyChooseUsHeroBtn`)?.addEventListener(`click`,()=>{l.setRoute(`why-us`)})},j=e=>{let n=l.favorites.includes(e.id),r=l.compareList.includes(e.id),{booking:i}=l,a=d(e,i);return`
+    <div class="glass-card car-card animate-fade-in" style="border-radius: 20px; overflow: hidden; background: #ffffff; border: 1px solid #e2e8f0; display: flex; flex-direction: column; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(15,23,42,0.05);">
+      
+      <!-- Media Header with HD Image & Floating Badges -->
+      <div class="car-media" style="position: relative; height: 210px; overflow: hidden; background: #f8fafc;">
+        <img src="${e.image}" alt="${e.name}" class="car-img" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" />
+        
+        <span class="badge-overlay" style="position: absolute; top: 12px; left: 12px; background: rgba(15,23,42,0.85); backdrop-filter: blur(4px); color: #ffffff; font-size: 0.72rem; font-weight: 800; padding: 4px 12px; border-radius: 9999px;">
+          🏷️ ${e.tagline.split(`•`)[0]||e.type}
+        </span>
+
+        <div style="position: absolute; top: 12px; right: 12px; display: flex; gap: 6px;">
+          <button class="compare-btn fav-btn-overlay" data-car-id="${e.id}" title="${r?`Remove from Compare`:`Add to Compare`}" style="width: 34px; height: 34px; border-radius: 50%; background: #ffffff; border: 1px solid #e2e8f0; display: grid; place-items: center; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,0.12);">
+            ${T(15,r?`#2563eb`:`#64748b`)}
+          </button>
+
+          <button class="fav-btn fav-btn-overlay" data-car-id="${e.id}" title="${n?`Remove from Wishlist`:`Save to Wishlist`}" style="width: 34px; height: 34px; border-radius: 50%; background: #ffffff; border: 1px solid #e2e8f0; display: grid; place-items: center; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,0.12);">
+            ${b(15,n)}
+          </button>
+        </div>
       </div>
 
-      <div class="car-card-body">
-        <div class="car-card-header">
+      <!-- Car Specifications & Details -->
+      <div class="car-details" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+        
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4px;">
+          <h3 class="car-name" style="font-size: 1.25rem; font-weight: 900; color: #0f172a; line-height: 1.2;">
+            ${e.name}
+          </h3>
+          <span style="background: #fef3c7; color: #b45309; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 6px; white-space: nowrap;">
+            ★ ${e.rating} (${e.reviewCount})
+          </span>
+        </div>
+
+        <p class="car-tagline" style="font-size: 0.82rem; color: #64748b; margin-bottom: 14px;">
+          ${e.tagline}
+        </p>
+
+        <!-- Key Spec Pills -->
+        <div class="specs-pills" style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px;">
+          <span class="spec-pill" style="background: #f1f5f9; color: #334155; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 6px; display: inline-flex; align-items: center; gap: 4px;">
+            ${x(13,`#2563eb`)} ${e.seats} Seats
+          </span>
+          <span class="spec-pill" style="background: #f1f5f9; color: #334155; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 6px; display: inline-flex; align-items: center; gap: 4px;">
+            ${te(13,`#059669`)} ${e.fuel}
+          </span>
+          <span class="spec-pill" style="background: #f1f5f9; color: #334155; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 6px; display: inline-flex; align-items: center; gap: 4px;">
+            ${ne(13,`#64748b`)} ${e.transmission}
+          </span>
+        </div>
+
+        <!-- Chauffeur Verified Status -->
+        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 6px 12px; border-radius: 8px; font-size: 0.78rem; color: #166534; font-weight: 700; display: flex; align-items: center; gap: 6px; margin-bottom: 16px;">
+          <span>✓ Police Verified Chauffeur:</span> <strong>${e.chauffeur.name} (${e.chauffeur.experience})</strong>
+        </div>
+
+        <!-- Card Footer with Pricing & Action Buttons -->
+        <div class="card-footer" style="margin-top: auto; padding-top: 14px; border-top: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center; gap: 8px;">
           <div>
-            <h3 class="car-title">${e.name}</h3>
-            <p class="car-tagline">${e.tagline}</p>
-          </div>
-          <div class="car-rating">
-            ${g(14)} <span>${e.rating}</span> <span style="font-size: 0.72rem; color: #78716c;">(${e.reviewCount})</span>
-          </div>
-        </div>
-
-        <div class="car-spec-tags">
-          <span class="spec-tag" style="display:flex; align-items:center; gap:4px;">
-            ${x(14)} ${e.seats} Seats
-          </span>
-          <span class="spec-tag" style="display:flex; align-items:center; gap:4px;">
-            ${O(14)} ${e.transmission}
-          </span>
-          <span class="spec-tag" style="display:flex; align-items:center; gap:4px;">
-            ${D(14)} ${e.fuel}
-          </span>
-          <span class="spec-tag" style="display:flex; align-items:center; gap:4px;">
-            ${E(14)} ${e.specs.luggage}
-          </span>
-        </div>
-
-        <div class="car-card-footer">
-          <div class="price-display">
-            <strong>${t(e.pricePerDay)}</strong>
-            <span>/ day</span>
+            <span style="font-size: 0.72rem; color: #64748b; font-weight: 600; display: block;">Daily Fare</span>
+            <span class="price-text" style="font-size: 1.4rem; font-weight: 900; color: #2563eb;">
+              ${t(e.pricePerDay)}
+            </span>
+            <span class="unit-text" style="font-size: 0.72rem; color: #64748b;">/day</span>
           </div>
 
-          <div class="card-actions">
-            <button class="btn-secondary compare-btn" data-car-id="${e.id}" style="padding: 8px 14px; font-size: 0.82rem;">
-              ${T(14)} ${r?`Compared`:`Compare`}
+          <div style="display: flex; gap: 6px;">
+            <button class="quick-view-btn btn-secondary" data-car-id="${e.id}" style="padding: 8px 12px; font-size: 0.8rem; border-radius: 8px;">
+              Details
             </button>
-            <button class="btn-primary quick-view-btn" data-car-id="${e.id}" style="padding: 8px 14px; font-size: 0.82rem;">
-              Details ${te(14,`#ffffff`)}
-            </button>
+            <a href="${a}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" style="padding: 8px 12px; font-size: 0.8rem; border-radius: 8px; display: inline-flex; align-items: center; gap: 4px;">
+              ${y(14,`#ffffff`)} Book
+            </a>
           </div>
         </div>
+
       </div>
-    </article>
-  `},P=[{from:`Indore`,to:`Ujjain Mahakal Mandir`,distance:`55 KM`,duration:`1 Hr 15 Min`,recommended:`Maruti Ertiga 7-Seater`,tollEstimate:`₹95 (Expressway Toll)`,priceEstimate:`₹3,500 Flat Round Trip`},{from:`Indore`,to:`Omkareshwar Jyotirlinga`,distance:`78 KM`,duration:`2 Hours`,recommended:`Toyota Innova Crysta / XL6`,tollEstimate:`₹60 (State Highway)`,priceEstimate:`₹3,800 Round Trip`},{from:`Indore`,to:`Bhopal Capital City`,distance:`195 KM`,duration:`3.5 Hours`,recommended:`Honda City / Creta / Ertiga`,tollEstimate:`₹240 (4-Lane Super Corridor)`,priceEstimate:`₹4,400 One Way / Day`},{from:`Indore`,to:`Indore Airport (IDR)`,distance:`12 KM`,duration:`25 Minutes`,recommended:`Maruti Ertiga / Sedan`,tollEstimate:`Zero Toll`,priceEstimate:`₹1,399 Express Drop`}],de=[{code:`MAHAKAL10`,title:`Mahakal Temple Trip Offer`,desc:`Get 10% instant discount on Ujjain Mahakaleshwar Pilgrimage Round Trips.`,tag:`LIMITED TIME`},{code:`WELCOME500`,title:`Highway Outstation Discount`,desc:`Flat ₹500 OFF on any multi-day highway outstation car booking.`,tag:`MOST POPULAR`},{code:`AIRPORT200`,title:`Express Airport Transfer`,desc:`Flat ₹200 OFF on 24x7 Indore Airport Drop or Pickup rides.`,tag:`EXPRESS SAVINGS`}],F=[{title:`Ujjain Mahakal Bhasma Aarti Special`,subtitle:`VIP Pilgrimage Day Trip`,places:[`Mahakaleshwar Temple`,`Harsiddhi Mata Mandir`,`Kal Bhairav Temple`,`Ram Ghat Aarti`],duration:`1 Full Day (12 Hours)`,car:`Maruti Ertiga 7-Seater`,price:`₹3,500 All Inclusive`},{title:`Omkareshwar & Mamleshwar Darshan`,subtitle:`Narmada Ghat Pilgrimage`,places:[`Omkareshwar Jyotirlinga`,`Mamleshwar Temple`,`Narmada Sangam Boat Ride`],duration:`1 Day Trip`,car:`Maruti XL6 / Innova`,price:`₹3,800 All Inclusive`},{title:`Mandu Heritage & Maheshwar Fort`,subtitle:`Royal Architecture Tour`,places:[`Jahaz Mahal`,`Hindola Mahal`,`Rupmati Pavilion`,`Maheshwar Ahilya Fort & Ghats`],duration:`1 Day / 2 Days Option`,car:`Toyota Innova Crysta`,price:`₹4,800 Full Package`}],I=0,L=0,R=()=>{let t=e.slice(0,3),n=P[I],r=F[L];return`
+
+    </div>
+  `},M=[{from:`Indore`,to:`Ujjain Mahakal Mandir`,distance:`55 KM`,duration:`1 Hr 15 Min`,recommended:`Maruti Ertiga 7-Seater`,tollEstimate:`₹95 (Expressway Toll)`,priceEstimate:`₹3,500 Flat Round Trip`},{from:`Indore`,to:`Omkareshwar Jyotirlinga`,distance:`78 KM`,duration:`2 Hours`,recommended:`Toyota Innova Crysta / XL6`,tollEstimate:`₹60 (State Highway)`,priceEstimate:`₹3,800 Round Trip`},{from:`Indore`,to:`Bhopal Capital City`,distance:`195 KM`,duration:`3.5 Hours`,recommended:`Honda City / Creta / Ertiga`,tollEstimate:`₹240 (4-Lane Super Corridor)`,priceEstimate:`₹4,400 One Way / Day`},{from:`Indore`,to:`Indore Airport (IDR)`,distance:`12 KM`,duration:`25 Minutes`,recommended:`Maruti Ertiga / Sedan`,tollEstimate:`Zero Toll`,priceEstimate:`₹1,399 Express Drop`}],de=[{code:`MAHAKAL10`,title:`Mahakal Temple Trip Offer`,desc:`Get 10% instant discount on Ujjain Mahakaleshwar Pilgrimage Round Trips.`,tag:`LIMITED TIME`},{code:`WELCOME500`,title:`Highway Outstation Discount`,desc:`Flat ₹500 OFF on any multi-day highway outstation car booking.`,tag:`MOST POPULAR`},{code:`AIRPORT200`,title:`Express Airport Transfer`,desc:`Flat ₹200 OFF on 24x7 Indore Airport Drop or Pickup rides.`,tag:`EXPRESS SAVINGS`}],N=[{title:`Ujjain Mahakal Bhasma Aarti Special`,subtitle:`VIP Pilgrimage Day Trip`,places:[`Mahakaleshwar Temple`,`Harsiddhi Mata Mandir`,`Kal Bhairav Temple`,`Ram Ghat Aarti`],duration:`1 Full Day (12 Hours)`,car:`Maruti Ertiga 7-Seater`,price:`₹3,500 All Inclusive`},{title:`Omkareshwar & Mamleshwar Darshan`,subtitle:`Narmada Ghat Pilgrimage`,places:[`Omkareshwar Jyotirlinga`,`Mamleshwar Temple`,`Narmada Sangam Boat Ride`],duration:`1 Day Trip`,car:`Maruti XL6 / Innova`,price:`₹3,800 All Inclusive`},{title:`Mandu Heritage & Maheshwar Fort`,subtitle:`Royal Architecture Tour`,places:[`Jahaz Mahal`,`Hindola Mahal`,`Rupmati Pavilion`,`Maheshwar Ahilya Fort & Ghats`],duration:`1 Day / 2 Days Option`,car:`Toyota Innova Crysta`,price:`₹4,800 Full Package`}],P=0,F=0,I=()=>{let t=e.slice(0,3),n=M[P],r=N[F];return`
     <div class="page-home animate-fade-in">
       ${le()}
 
@@ -496,7 +510,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </div>
 
         <div class="car-grid">
-          ${t.map(e=>N(e)).join(``)}
+          ${t.map(e=>j(e)).join(``)}
         </div>
       </section>
 
@@ -514,8 +528,8 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
           </div>
 
           <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-bottom: 24px;">
-            ${P.map((e,t)=>`
-              <button class="route-tab-btn ${t===I?`active`:``}" data-index="${t}" style="padding: 8px 18px; border-radius: 9999px; font-size: 0.85rem; font-weight: 700; border: 1px solid ${t===I?`#0f172a`:`#e2e8f0`}; background: ${t===I?`#0f172a`:`#f1f5f9`}; color: ${t===I?`#ffffff`:`#475569`}; cursor: pointer;">
+            ${M.map((e,t)=>`
+              <button class="route-tab-btn ${t===P?`active`:``}" data-index="${t}" style="padding: 8px 18px; border-radius: 9999px; font-size: 0.85rem; font-weight: 700; border: 1px solid ${t===P?`#0f172a`:`#e2e8f0`}; background: ${t===P?`#0f172a`:`#f1f5f9`}; color: ${t===P?`#ffffff`:`#475569`}; cursor: pointer;">
                 📍 ${e.to}
               </button>
             `).join(``)}
@@ -565,8 +579,8 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
             </div>
 
             <div style="display: flex; gap: 6px;">
-              ${F.map((e,t)=>`
-                <button class="itinerary-tab-btn ${t===L?`active`:``}" data-index="${t}" style="padding: 6px 14px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; border: 1px solid ${t===L?`#2563eb`:`#cbd5e1`}; background: ${t===L?`#2563eb`:`#ffffff`}; color: ${t===L?`#ffffff`:`#334155`}; cursor: pointer;">
+              ${N.map((e,t)=>`
+                <button class="itinerary-tab-btn ${t===F?`active`:``}" data-index="${t}" style="padding: 6px 14px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; border: 1px solid ${t===F?`#2563eb`:`#cbd5e1`}; background: ${t===F?`#2563eb`:`#ffffff`}; color: ${t===F?`#ffffff`:`#334155`}; cursor: pointer;">
                   ${e.title.split(` `)[0]} Tour
                 </button>
               `).join(``)}
@@ -633,7 +647,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </div>
       </section>
     </div>
-  `},z=()=>{ue(),document.querySelector(`#viewAllFleetBtn`)?.addEventListener(`click`,()=>{l.setRoute(`fleet`)}),document.querySelectorAll(`.copy-coupon-btn`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.code||``;navigator.clipboard.writeText(t),l.showToast(`Promo code '${t}' copied! Apply when booking on WhatsApp 🎉`,`success`)})}),document.querySelectorAll(`.route-tab-btn`).forEach(e=>{e.addEventListener(`click`,e=>{I=Number(e.currentTarget.dataset.index);let t=document.querySelector(`.page-home`);t&&(t.outerHTML=R(),z())})}),document.querySelectorAll(`.itinerary-tab-btn`).forEach(e=>{e.addEventListener(`click`,e=>{L=Number(e.currentTarget.dataset.index);let t=document.querySelector(`.page-home`);t&&(t.outerHTML=R(),z())})}),document.querySelectorAll(`.fav-btn`).forEach(e=>{e.addEventListener(`click`,e=>{e.stopPropagation();let t=Number(e.currentTarget.dataset.carId);l.toggleFavorite(t)})}),document.querySelectorAll(`.compare-btn`).forEach(e=>{e.addEventListener(`click`,e=>{e.stopPropagation();let t=Number(e.currentTarget.dataset.carId);l.toggleCompare(t)})}),document.querySelectorAll(`.quick-view-btn`).forEach(t=>{t.addEventListener(`click`,t=>{let n=Number(t.currentTarget.dataset.carId),r=e.find(e=>e.id===n);r&&l.openDetailModal(r)})})},B=()=>{let{filters:e}=l;return`
+  `},L=()=>{ue(),document.querySelector(`#viewAllFleetBtn`)?.addEventListener(`click`,()=>{l.setRoute(`fleet`)}),document.querySelectorAll(`.copy-coupon-btn`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.code||``;navigator.clipboard.writeText(t),l.showToast(`Promo code '${t}' copied! Apply when booking on WhatsApp 🎉`,`success`)})}),document.querySelectorAll(`.route-tab-btn`).forEach(e=>{e.addEventListener(`click`,e=>{P=Number(e.currentTarget.dataset.index);let t=document.querySelector(`.page-home`);t&&(t.outerHTML=I(),L())})}),document.querySelectorAll(`.itinerary-tab-btn`).forEach(e=>{e.addEventListener(`click`,e=>{F=Number(e.currentTarget.dataset.index);let t=document.querySelector(`.page-home`);t&&(t.outerHTML=I(),L())})}),document.querySelectorAll(`.fav-btn`).forEach(e=>{e.addEventListener(`click`,e=>{e.stopPropagation();let t=Number(e.currentTarget.dataset.carId);l.toggleFavorite(t)})}),document.querySelectorAll(`.compare-btn`).forEach(e=>{e.addEventListener(`click`,e=>{e.stopPropagation();let t=Number(e.currentTarget.dataset.carId);l.toggleCompare(t)})}),document.querySelectorAll(`.quick-view-btn`).forEach(t=>{t.addEventListener(`click`,t=>{let n=Number(t.currentTarget.dataset.carId),r=e.find(e=>e.id===n);r&&l.openDetailModal(r)})})},R=()=>{let{filters:e}=l;return`
     <div class="glass-card filter-bar">
       <div class="filter-pills">
         ${[`All`,`Family`,`SUV`,`Sedan`,`Premium`].map(t=>`
@@ -661,7 +675,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </select>
       </div>
     </div>
-  `},V=()=>{document.querySelectorAll(`.filter-pill`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.category;l.setFilters({selectedType:t})})}),document.querySelector(`#carSearchInput`)?.addEventListener(`input`,e=>{let t=e.target.value;l.setFilters({searchQuery:t})}),document.querySelector(`#sortBySelect`)?.addEventListener(`change`,e=>{let t=e.target.value;l.setFilters({sortBy:t})}),document.querySelector(`#seatFilterSelect`)?.addEventListener(`change`,e=>{let t=e.target.value,n=t===`All`?`All`:Number(t);l.setFilters({selectedSeats:n})})},H=()=>{let e=l.getFilteredCars();return`
+  `},z=()=>{document.querySelectorAll(`.filter-pill`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.category;l.setFilters({selectedType:t})})}),document.querySelector(`#carSearchInput`)?.addEventListener(`input`,e=>{let t=e.target.value;l.setFilters({searchQuery:t})}),document.querySelector(`#sortBySelect`)?.addEventListener(`change`,e=>{let t=e.target.value;l.setFilters({sortBy:t})}),document.querySelector(`#seatFilterSelect`)?.addEventListener(`change`,e=>{let t=e.target.value,n=t===`All`?`All`:Number(t);l.setFilters({selectedSeats:n})})},B=()=>{let e=l.getFilteredCars();return`
     <section id="fleet" class="container" style="padding: 60px 0;">
       <div class="section-header" style="text-align: center;">
         <span class="hero-tag">🚘 Verified Fleet</span>
@@ -671,7 +685,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </p>
       </div>
 
-      ${B()}
+      ${R()}
 
       ${e.length===0?`
         <div class="glass-card" style="padding: 60px; text-align: center; margin-top: 24px;">
@@ -681,11 +695,11 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </div>
       `:`
         <div class="car-grid">
-          ${e.map(e=>N(e)).join(``)}
+          ${e.map(e=>j(e)).join(``)}
         </div>
       `}
     </section>
-  `},fe=()=>{V(),document.querySelector(`#resetFiltersBtn`)?.addEventListener(`click`,()=>{l.setFilters({searchQuery:``,selectedType:`All`,selectedSeats:`All`,selectedTransmission:`All`,selectedFuel:`All`,maxPrice:8e3})}),document.querySelectorAll(`.fav-btn`).forEach(e=>{e.addEventListener(`click`,e=>{e.stopPropagation();let t=Number(e.currentTarget.dataset.carId);l.toggleFavorite(t)})}),document.querySelectorAll(`.compare-btn`).forEach(e=>{e.addEventListener(`click`,e=>{e.stopPropagation();let t=Number(e.currentTarget.dataset.carId);l.toggleCompare(t)})}),document.querySelectorAll(`.quick-view-btn`).forEach(t=>{t.addEventListener(`click`,t=>{let n=Number(t.currentTarget.dataset.carId),r=e.find(e=>e.id===n);r&&l.openDetailModal(r)})})},pe=()=>{let e=l.getFilteredCars(),t=l.favorites.length,n=l.compareList.length;return`
+  `},V=()=>{z(),document.querySelector(`#resetFiltersBtn`)?.addEventListener(`click`,()=>{l.setFilters({searchQuery:``,selectedType:`All`,selectedSeats:`All`,selectedTransmission:`All`,selectedFuel:`All`,maxPrice:8e3})}),document.querySelectorAll(`.fav-btn`).forEach(e=>{e.addEventListener(`click`,e=>{e.stopPropagation();let t=Number(e.currentTarget.dataset.carId);l.toggleFavorite(t)})}),document.querySelectorAll(`.compare-btn`).forEach(e=>{e.addEventListener(`click`,e=>{e.stopPropagation();let t=Number(e.currentTarget.dataset.carId);l.toggleCompare(t)})}),document.querySelectorAll(`.quick-view-btn`).forEach(t=>{t.addEventListener(`click`,t=>{let n=Number(t.currentTarget.dataset.carId),r=e.find(e=>e.id===n);r&&l.openDetailModal(r)})})},H=()=>{let e=l.getFilteredCars(),t=l.favorites.length,n=l.compareList.length;return`
     <div class="page-fleet animate-fade-in" style="padding-bottom: 50px;">
       <section class="container" style="padding-top: 30px;">
         
@@ -767,10 +781,10 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
           `:``}
         </div>
 
-        ${H()}
+        ${B()}
       </section>
     </div>
-  `},me=()=>{fe(),document.querySelector(`#showFavOnlyBtn`)?.addEventListener(`click`,()=>{l.favorites.length===0?l.showToast(`You have no saved favorite cars yet. Click the heart on any vehicle card!`,`info`):l.showToast(`Showing ${l.favorites.length} saved vehicles in your wishlist`,`success`)}),document.querySelector(`#openCompareTriggerBtn`)?.addEventListener(`click`,()=>{l.openCompareModal()}),document.querySelector(`#openCompareModalTrigger`)?.addEventListener(`click`,()=>{l.openCompareModal()})},he=[{title:`🛕 Ujjain Mahakal Bhasma Aarti Trip`,location:`Mahakaleshwar Temple, Ujjain`,car:`Maruti Suzuki Ertiga 7-Seater`,image:`https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80`},{title:`🌊 Omkareshwar Narmada Sangam Darshan`,location:`Omkareshwar Jyotirlinga, MP`,car:`Toyota Innova Crysta Z`,image:`https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80`},{title:`🏛️ Mandu & Maheshwar Ahilya Fort`,location:`Maheshwar Ghats, MP`,car:`Maruti XL6 Captain Suite`,image:`https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80`},{title:`✈️ Indore Airport VIP Transfer`,location:`Indore Airport (IDR)`,car:`Honda City ZX Executive`,image:`https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80`}],ge=()=>`
+  `},fe=()=>{V(),document.querySelector(`#showFavOnlyBtn`)?.addEventListener(`click`,()=>{l.favorites.length===0?l.showToast(`You have no saved favorite cars yet. Click the heart on any vehicle card!`,`info`):l.showToast(`Showing ${l.favorites.length} saved vehicles in your wishlist`,`success`)}),document.querySelector(`#openCompareTriggerBtn`)?.addEventListener(`click`,()=>{l.openCompareModal()}),document.querySelector(`#openCompareModalTrigger`)?.addEventListener(`click`,()=>{l.openCompareModal()})},pe=[{title:`🛕 Ujjain Mahakal Bhasma Aarti Trip`,location:`Mahakaleshwar Temple, Ujjain`,car:`Maruti Suzuki Ertiga 7-Seater`,image:`https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80`},{title:`🌊 Omkareshwar Narmada Sangam Darshan`,location:`Omkareshwar Jyotirlinga, MP`,car:`Toyota Innova Crysta Z`,image:`https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80`},{title:`🏛️ Mandu & Maheshwar Ahilya Fort`,location:`Maheshwar Ghats, MP`,car:`Maruti XL6 Captain Suite`,image:`https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80`},{title:`✈️ Indore Airport VIP Transfer`,location:`Indore Airport (IDR)`,car:`Honda City ZX Executive`,image:`https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80`}],me=()=>`
     <section id="why-us" class="container" style="padding: 40px 0 30px;">
       <div class="section-header" style="text-align: center;">
         <span class="hero-tag" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1d4ed8;">
@@ -842,7 +856,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
-          ${he.map(e=>`
+          ${pe.map(e=>`
             <div class="glass-card" style="overflow: hidden; background: #ffffff;">
               <div style="height: 160px; overflow: hidden; position: relative;">
                 <img src="${e.image}" alt="${e.title}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;" />
@@ -941,7 +955,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
         </div>
       </div>
     </section>
-  `,_e=()=>`
+  `,he=()=>`
     <div class="page-why-us animate-fade-in" style="padding-bottom: 50px;">
       <section class="container" style="padding-top: 30px;">
         
@@ -1006,10 +1020,10 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
         </div>
 
-        ${ge()}
+        ${me()}
       </section>
     </div>
-  `,ve=[{id:1,question:`Are driver allowance and night charges included in the fare?`,answer:`Yes! All driver allowances are transparently specified. Optional driver allowance (+₹500/day) covers driver food and night halts for outstation highway trips.`,category:`Pricing`},{id:2,question:`How do I book a vehicle for Ujjain Mahakal Bhasma Aarti?`,answer:`Simply select your trip date in the Quick Estimator or contact our 24x7 travel desk on WhatsApp. We provide early 3:00 AM pickup from Indore to Ujjain Mahakaleshwar Temple.`,category:`Booking`},{id:3,question:`Are your vehicles sanitized and police verified?`,answer:`100% Guaranteed! Every vehicle is deep-cleaned and interior-sanitized before every pickup. All chauffeurs hold valid commercial licenses and undergo police verification.`,category:`Vehicles`},{id:4,question:`What is the luggage capacity for Maruti Ertiga vs Innova Crysta?`,answer:`Maruti Ertiga comfortably fits 3 large bags with 7 passengers. Toyota Innova Crysta fits up to 4 large suitcases + hand luggage with roof carrier options.`,category:`Vehicles`},{id:5,question:`What happens if my flight to Indore Airport is delayed?`,answer:`No worries! Our chauffeur monitors flight arrival status at Indore (IDR) Airport and waits up to 60 minutes free of charge for flight delays.`,category:`Support`},{id:6,question:`What is your cancellation and refund policy?`,answer:`Cancellations made 24 hours prior to scheduled departure receive a 100% full refund with zero cancellation penalty.`,category:`Booking`},{id:7,question:`Are toll tax and state border taxes included?`,answer:`State highway toll tax and FASTag charges are billed transparently at actual toll plaza costs with zero hidden markup.`,category:`Pricing`}],U=``,W=`All`,G=()=>{let e=[`All`,`Booking`,`Pricing`,`Vehicles`,`Support`],t=ve.filter(e=>{if(W!==`All`&&e.category!==W)return!1;if(U.trim()){let t=U.toLowerCase();return e.question.toLowerCase().includes(t)||e.answer.toLowerCase().includes(t)}return!0});return`
+  `,ge=[{id:1,question:`Are driver allowance and night charges included in the fare?`,answer:`Yes! All driver allowances are transparently specified. Optional driver allowance (+₹500/day) covers driver food and night halts for outstation highway trips.`,category:`Pricing`},{id:2,question:`How do I book a vehicle for Ujjain Mahakal Bhasma Aarti?`,answer:`Simply select your trip date in the Quick Estimator or contact our 24x7 travel desk on WhatsApp. We provide early 3:00 AM pickup from Indore to Ujjain Mahakaleshwar Temple.`,category:`Booking`},{id:3,question:`Are your vehicles sanitized and police verified?`,answer:`100% Guaranteed! Every vehicle is deep-cleaned and interior-sanitized before every pickup. All chauffeurs hold valid commercial licenses and undergo police verification.`,category:`Vehicles`},{id:4,question:`What is the luggage capacity for Maruti Ertiga vs Innova Crysta?`,answer:`Maruti Ertiga comfortably fits 3 large bags with 7 passengers. Toyota Innova Crysta fits up to 4 large suitcases + hand luggage with roof carrier options.`,category:`Vehicles`},{id:5,question:`What happens if my flight to Indore Airport is delayed?`,answer:`No worries! Our chauffeur monitors flight arrival status at Indore (IDR) Airport and waits up to 60 minutes free of charge for flight delays.`,category:`Support`},{id:6,question:`What is your cancellation and refund policy?`,answer:`Cancellations made 24 hours prior to scheduled departure receive a 100% full refund with zero cancellation penalty.`,category:`Booking`},{id:7,question:`Are toll tax and state border taxes included?`,answer:`State highway toll tax and FASTag charges are billed transparently at actual toll plaza costs with zero hidden markup.`,category:`Pricing`}],U=``,W=`All`,G=()=>{let e=[`All`,`Booking`,`Pricing`,`Vehicles`,`Support`],t=ge.filter(e=>{if(W!==`All`&&e.category!==W)return!1;if(U.trim()){let t=U.toLowerCase();return e.question.toLowerCase().includes(t)||e.answer.toLowerCase().includes(t)}return!0});return`
     <div class="page-faqs animate-fade-in" style="padding-bottom: 60px;">
       <section class="container" style="padding-top: 30px;">
         
@@ -1099,7 +1113,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
       </section>
     </div>
-  `},K=()=>{let e=document.querySelector(`#faqSearchInput`);if(e){e.focus();let t=e.value.length;e.setSelectionRange(t,t)}e?.addEventListener(`input`,e=>{U=e.target.value;let t=document.querySelector(`.page-faqs`);t&&(t.outerHTML=G(),K())}),document.querySelectorAll(`.faq-cat-btn`).forEach(e=>{e.addEventListener(`click`,e=>{W=e.currentTarget.dataset.cat||`All`;let t=document.querySelector(`.page-faqs`);t&&(t.outerHTML=G(),K())})}),document.querySelectorAll(`.faq-question-btn`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.faqId,n=document.querySelector(`#faqAnswer-${t}`),r=e.currentTarget.querySelector(`.faq-toggle-badge`);if(n){let e=n.style.display===`block`;n.style.display=e?`none`:`block`,r&&(r.textContent=e?`+`:`−`,r.style.background=e?`#f1f5f9`:`#eff6ff`)}})})},ye=()=>`
+  `},K=()=>{let e=document.querySelector(`#faqSearchInput`);if(e){e.focus();let t=e.value.length;e.setSelectionRange(t,t)}e?.addEventListener(`input`,e=>{U=e.target.value;let t=document.querySelector(`.page-faqs`);t&&(t.outerHTML=G(),K())}),document.querySelectorAll(`.faq-cat-btn`).forEach(e=>{e.addEventListener(`click`,e=>{W=e.currentTarget.dataset.cat||`All`;let t=document.querySelector(`.page-faqs`);t&&(t.outerHTML=G(),K())})}),document.querySelectorAll(`.faq-question-btn`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.faqId,n=document.querySelector(`#faqAnswer-${t}`),r=e.currentTarget.querySelector(`.faq-toggle-badge`);if(n){let e=n.style.display===`block`;n.style.display=e?`none`:`block`,r&&(r.textContent=e?`+`:`−`,r.style.background=e?`#f1f5f9`:`#eff6ff`)}})})},_e=()=>`
     <section id="contact" class="container" style="padding: 20px 0 40px;">
       
       <!-- 3 Luxury Direct Contact Cards Grid -->
@@ -1236,7 +1250,7 @@ Please share current availability and best per-day rates. Thank you!`)}`,p=(e=18
 
       </div>
     </section>
-  `,be=()=>{let e=document.querySelector(`#leadContactForm`);e&&e.addEventListener(`submit`,t=>{t.preventDefault();let n=document.querySelector(`#leadName`),r=document.querySelector(`#leadPhone`),i=document.querySelector(`#leadService`),a=document.querySelector(`#leadMsg`),o=document.querySelector(`#leadNameError`),s=document.querySelector(`#leadPhoneError`),c=document.querySelector(`#leadMsgError`),u=!0;if(!n.value.trim()||n.value.trim().length<2?(n.classList.add(`input-error`),o&&(o.textContent=`Please enter your full name (at least 2 characters)`,o.style.display=`block`),u=!1):(n.classList.remove(`input-error`),o&&(o.style.display=`none`)),/^[6-9]\d{9}$/.test(r.value.trim())?(r.classList.remove(`input-error`),s&&(s.style.display=`none`)):(r.classList.add(`input-error`),s&&(s.textContent=`Please enter a valid 10-digit Indian mobile number`,s.style.display=`block`),u=!1),a.value.trim()?(a.classList.remove(`input-error`),c&&(c.style.display=`none`)):(a.classList.add(`input-error`),c&&(c.textContent=`Please enter trip details and dates`,c.style.display=`block`),u=!1),!u){l.showToast(`Please fix invalid fields in the contact form`,`warning`);return}let d=`🌟 *ERTIGA RIDE | DIRECT CALLBACK REQUEST* 🚘
+  `,ve=()=>{let e=document.querySelector(`#leadContactForm`);e&&e.addEventListener(`submit`,t=>{t.preventDefault();let n=document.querySelector(`#leadName`),r=document.querySelector(`#leadPhone`),i=document.querySelector(`#leadService`),a=document.querySelector(`#leadMsg`),o=document.querySelector(`#leadNameError`),s=document.querySelector(`#leadPhoneError`),c=document.querySelector(`#leadMsgError`),u=!0;if(!n.value.trim()||n.value.trim().length<2?(n.classList.add(`input-error`),o&&(o.textContent=`Please enter your full name (at least 2 characters)`,o.style.display=`block`),u=!1):(n.classList.remove(`input-error`),o&&(o.style.display=`none`)),/^[6-9]\d{9}$/.test(r.value.trim())?(r.classList.remove(`input-error`),s&&(s.style.display=`none`)):(r.classList.add(`input-error`),s&&(s.textContent=`Please enter a valid 10-digit Indian mobile number`,s.style.display=`block`),u=!1),a.value.trim()?(a.classList.remove(`input-error`),c&&(c.style.display=`none`)):(a.classList.add(`input-error`),c&&(c.textContent=`Please enter trip details and dates`,c.style.display=`block`),u=!1),!u){l.showToast(`Please fix invalid fields in the contact form`,`warning`);return}let d=`🌟 *ERTIGA RIDE | DIRECT CALLBACK REQUEST* 🚘
 -------------------------------------------------
 Name: ${n.value.trim()}
 Phone: ${r.value.trim()}
@@ -1245,7 +1259,7 @@ Service Needed: ${i.value}
 Trip Details:
 "${a.value.trim()}"
 
-Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.me/919981264216?text=${encodeURIComponent(d)}`;l.showToast(`Validation successful! Opening WhatsApp chat...`,`success`),setTimeout(()=>{window.open(f,`_blank`)},600),e.reset()})},xe=()=>`
+Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.me/919981264216?text=${encodeURIComponent(d)}`;l.showToast(`Validation successful! Opening WhatsApp chat...`,`success`),setTimeout(()=>{window.open(f,`_blank`)},600),e.reset()})},ye=()=>`
     <div class="page-contact animate-fade-in" style="padding-bottom: 60px;">
       <section class="container" style="padding-top: 30px;">
         <div style="background: linear-gradient(135deg, #0f172a, #1e293b); color: #ffffff; padding: 44px 30px; border-radius: 24px; margin-bottom: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 12px 35px rgba(15,23,42,0.12);">
@@ -1269,10 +1283,10 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
           </div>
         </div>
 
-        ${ye()}
+        ${_e()}
       </section>
     </div>
-  `,Se=()=>{be()},q=0,J=()=>{let{activeDetailCar:e,booking:n}=l;return e?`
+  `,be=()=>{ve()},q=0,J=()=>{let{activeDetailCar:e,booking:n}=l;return e?`
     <div class="modal-overlay" id="carDetailModalOverlay">
       <div class="modal-content animate-fade-in" style="max-width: 760px;">
         <button class="modal-close" id="closeDetailModalBtn">&times;</button>
@@ -1363,7 +1377,7 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
         </div>
       </div>
     </div>
-  `:``},Y=()=>{let e=document.querySelector(`#carDetailModalOverlay`);document.querySelector(`#closeDetailModalBtn`)?.addEventListener(`click`,()=>{q=0,l.closeDetailModal()}),e?.addEventListener(`click`,t=>{t.target===e&&(q=0,l.closeDetailModal())}),document.querySelectorAll(`.gallery-thumb-btn`).forEach(e=>{e.addEventListener(`click`,e=>{q=Number(e.currentTarget.dataset.index);let t=document.querySelector(`#carDetailModalOverlay`);t&&(t.outerHTML=J(),Y())})})},Ce=()=>{let{compareList:t}=l;if(t.length===0)return``;let n=e.filter(e=>t.includes(e.id));return`
+  `:``},Y=()=>{let e=document.querySelector(`#carDetailModalOverlay`);document.querySelector(`#closeDetailModalBtn`)?.addEventListener(`click`,()=>{q=0,l.closeDetailModal()}),e?.addEventListener(`click`,t=>{t.target===e&&(q=0,l.closeDetailModal())}),document.querySelectorAll(`.gallery-thumb-btn`).forEach(e=>{e.addEventListener(`click`,e=>{q=Number(e.currentTarget.dataset.index);let t=document.querySelector(`#carDetailModalOverlay`);t&&(t.outerHTML=J(),Y())})})},xe=()=>{let{compareList:t}=l;if(t.length===0)return``;let n=e.filter(e=>t.includes(e.id));return`
     <div class="compare-drawer animate-fade-in">
       <div style="display: flex; align-items: center; gap: 8px;">
         <span style="background: #2563eb; color: #ffffff; padding: 4px 10px; border-radius: 9999px; font-size: 0.78rem; font-weight: 800; display: inline-flex; align-items: center; gap: 4px;">
@@ -1383,7 +1397,7 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
         </button>
       </div>
     </div>
-  `},we=()=>{let{isCompareModalOpen:n,compareList:r,booking:i}=l;if(!n||r.length===0)return``;let a=e.filter(e=>r.includes(e.id));return`
+  `},Se=()=>{let{isCompareModalOpen:n,compareList:r,booking:i}=l;if(!n||r.length===0)return``;let a=e.filter(e=>r.includes(e.id));return`
     <div class="modal-overlay" id="carCompareModalOverlay">
       <div class="modal-content animate-fade-in" style="max-width: 860px;">
         <button class="modal-close" id="closeCompareModalBtn">&times;</button>
@@ -1453,7 +1467,7 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
         </div>
       </div>
     </div>
-  `},Te=()=>{document.querySelector(`#openCompareModalBtn`)?.addEventListener(`click`,()=>{l.openCompareModal()}),document.querySelector(`#clearCompareBtn`)?.addEventListener(`click`,()=>{l.clearCompare()});let e=document.querySelector(`#closeCompareModalBtn`),t=document.querySelector(`#carCompareModalOverlay`);e?.addEventListener(`click`,()=>{l.closeCompareModal()}),t?.addEventListener(`click`,e=>{e.target===t&&l.closeCompareModal()})},Ee=()=>{let e=l.currentRoute;return`
+  `},Ce=()=>{document.querySelector(`#openCompareModalBtn`)?.addEventListener(`click`,()=>{l.openCompareModal()}),document.querySelector(`#clearCompareBtn`)?.addEventListener(`click`,()=>{l.clearCompare()});let e=document.querySelector(`#closeCompareModalBtn`),t=document.querySelector(`#carCompareModalOverlay`);e?.addEventListener(`click`,()=>{l.closeCompareModal()}),t?.addEventListener(`click`,e=>{e.target===t&&l.closeCompareModal()})},we=()=>{let e=l.currentRoute;return`
     <nav class="mobile-bottom-nav">
       ${[{route:`home`,label:`Home`,icon:m(18,e===`home`?`#2563eb`:`#64748b`)},{route:`fleet`,label:`Fleet`,icon:p(18,e===`fleet`?`#2563eb`:`#64748b`)},{route:`why-us`,label:`Why Us`,icon:g(18,e===`why-us`?`#2563eb`:`#64748b`)},{route:`faqs`,label:`FAQs`,icon:_(18,e===`faqs`?`#2563eb`:`#64748b`)},{route:`call`,label:`Call`,icon:v(18,`#059669`)}].map(t=>t.route===`call`?`
             <a href="tel:9981264216" class="mobile-nav-tab" style="color: #059669;">
@@ -1467,7 +1481,7 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
           </button>
         `).join(``)}
     </nav>
-  `},De=()=>{document.querySelectorAll(`.mobile-bottom-nav .mobile-nav-tab[data-route]`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.route;t&&l.setRoute(t)})})},Oe=()=>`
+  `},Te=()=>{document.querySelectorAll(`.mobile-bottom-nav .mobile-nav-tab[data-route]`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.route;t&&l.setRoute(t)})})},Ee=()=>`
     <footer style="border-top: 1px solid #e2e8f0; padding: 40px 0 20px; background: #0f172a; color: #f8fafc; margin-top: 40px;">
       <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-bottom: 30px;">
         <div>
@@ -1539,29 +1553,29 @@ Please send vehicle availability and rate quotation. Thank you!`,f=`https://wa.m
         color: #60a5fa;
       }
     </style>
-  `,ke=()=>{document.querySelectorAll(`.footer-nav-btn`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.route;t&&l.setRoute(t)})})},X=()=>{let{activeToast:e}=l;return e?`
+  `,X=()=>{document.querySelectorAll(`.footer-nav-btn`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.route;t&&l.setRoute(t)})})},De=()=>{let{activeToast:e}=l;return e?`
     <div class="toast-container">
       <div class="toast animate-fade-in">
         <span>${e.message}</span>
       </div>
     </div>
-  `:``},Ae=()=>{if(window.innerWidth<=820)return;let e=document.getElementById(`cursorDot`),t=document.getElementById(`cursorRing`);e||(e=document.createElement(`div`),e.id=`cursorDot`,document.body.appendChild(e)),t||(t=document.createElement(`div`),t.id=`cursorRing`,document.body.appendChild(t));let n=-100,r=-100,i=-100,a=-100;window.addEventListener(`mousemove`,t=>{n=t.clientX,r=t.clientY,e&&(e.style.transform=`translate3d(${n}px, ${r}px, 0)`)});let o=()=>{i+=(n-i)*.15,a+=(r-a)*.15,t&&(t.style.transform=`translate3d(${i-18}px, ${a-18}px, 0)`),requestAnimationFrame(o)};o(),document.addEventListener(`mouseover`,n=>{n.target.closest(`button, a, input, select, textarea, .glass-card, .fav-btn, .filter-pill, .faq-question`)?(t?.classList.add(`cursor-hover`),e?.classList.add(`cursor-hover-dot`)):(t?.classList.remove(`cursor-hover`),e?.classList.remove(`cursor-hover-dot`))})},Z=document.querySelector(`#app`);if(!Z)throw Error(`App root container #app not found!`);var je=()=>{switch(l.currentRoute){case`fleet`:return{html:pe(),bindEvents:me};case`why-us`:return{html:_e()};case`faqs`:return{html:G(),bindEvents:K};case`contact`:return{html:xe(),bindEvents:Se};default:return{html:R(),bindEvents:z}}},Q=()=>{let e=je();Z.innerHTML=`
+  `:``},Oe=()=>{if(window.innerWidth<=820)return;let e=document.getElementById(`cursorDot`),t=document.getElementById(`cursorRing`);e||(e=document.createElement(`div`),e.id=`cursorDot`,document.body.appendChild(e)),t||(t=document.createElement(`div`),t.id=`cursorRing`,document.body.appendChild(t));let n=-100,r=-100,i=-100,a=-100;window.addEventListener(`mousemove`,t=>{n=t.clientX,r=t.clientY,e&&(e.style.transform=`translate3d(${n}px, ${r}px, 0)`)});let o=()=>{i+=(n-i)*.15,a+=(r-a)*.15,t&&(t.style.transform=`translate3d(${i-18}px, ${a-18}px, 0)`),requestAnimationFrame(o)};o(),document.addEventListener(`mouseover`,n=>{n.target.closest(`button, a, input, select, textarea, .glass-card, .fav-btn, .filter-pill, .faq-question`)?(t?.classList.add(`cursor-hover`),e?.classList.add(`cursor-hover-dot`)):(t?.classList.remove(`cursor-hover`),e?.classList.remove(`cursor-hover-dot`))})},Z=document.querySelector(`#app`);if(!Z)throw Error(`App root container #app not found!`);var ke=()=>{switch(l.currentRoute){case`fleet`:return{html:H(),bindEvents:fe};case`why-us`:return{html:he()};case`faqs`:return{html:G(),bindEvents:K};case`contact`:return{html:ye(),bindEvents:be};default:return{html:I(),bindEvents:L}}},Q=()=>{let e=ke();Z.innerHTML=`
     <div id="pageShell">
-      ${A()}
+      ${D()}
       <main>
         ${e.html}
       </main>
-      ${Oe()}
       ${Ee()}
-      ${J()}
-      ${Ce()}
       ${we()}
-      ${ie()}
-      ${X()}
+      ${J()}
+      ${xe()}
+      ${Se()}
+      ${ae()}
+      ${De()}
 
       <!-- Floating WhatsApp Quick Button -->
       <a href="${f()}" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" title="Chat on WhatsApp">
         ${y(26,`#ffffff`)}
       </a>
     </div>
-  `,j(),De(),ce(),e.bindEvents&&e.bindEvents(),Y(),Te(),ae(),ke()},$=()=>{if(window.location.hash){let e=window.location.hash.replace(`#`,``);if([`home`,`fleet`,`why-us`,`faqs`,`contact`].includes(e)){let t=e===`home`?`/`:`/${e}`;window.history.replaceState({route:e},``,t),l.currentRoute=e;return}}let e=window.location.pathname.replace(/^\/|\/$/g,``);l.currentRoute=[`home`,`fleet`,`why-us`,`faqs`,`contact`].includes(e)?e:`home`};$(),Q(),Ae(),window.addEventListener(`popstate`,()=>{$(),Q()}),window.addEventListener(`hashchange`,()=>{$(),Q()}),l.subscribe(()=>{Q()});
+  `,O(),Te(),ce(),e.bindEvents&&e.bindEvents(),Y(),Ce(),A(),X()},$=()=>{if(window.location.hash){let e=window.location.hash.replace(`#`,``);if([`home`,`fleet`,`why-us`,`faqs`,`contact`].includes(e)){let t=e===`home`?`/`:`/${e}`;window.history.replaceState({route:e},``,t),l.currentRoute=e;return}}let e=window.location.pathname.replace(/^\/|\/$/g,``);l.currentRoute=[`home`,`fleet`,`why-us`,`faqs`,`contact`].includes(e)?e:`home`};$(),Q(),Oe(),window.addEventListener(`popstate`,()=>{$(),Q()}),window.addEventListener(`hashchange`,()=>{$(),Q()}),l.subscribe(()=>{Q()});
