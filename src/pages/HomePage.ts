@@ -44,27 +44,6 @@ const POPULAR_ROUTES = [
   }
 ];
 
-const PROMO_COUPONS = [
-  {
-    code: 'MAHAKAL10',
-    title: 'Mahakal Temple Trip Offer',
-    desc: 'Get 10% instant discount on Ujjain Mahakaleshwar Pilgrimage Round Trips.',
-    tag: 'LIMITED TIME'
-  },
-  {
-    code: 'WELCOME500',
-    title: 'Highway Outstation Discount',
-    desc: 'Flat ₹500 OFF on any multi-day highway outstation car booking.',
-    tag: 'MOST POPULAR'
-  },
-  {
-    code: 'AIRPORT200',
-    title: 'Express Airport Transfer',
-    desc: 'Flat ₹200 OFF on 24x7 Indore Airport Drop or Pickup rides.',
-    tag: 'EXPRESS SAVINGS'
-  }
-];
-
 const TRIP_ITINERARIES = [
   {
     title: 'Ujjain Mahakal Bhasma Aarti Special',
@@ -103,32 +82,6 @@ export const renderHomePage = (): string => {
   return `
     <div class="page-home animate-fade-in">
       ${renderHero()}
-
-      <!-- Promo Coupons Section -->
-      <section class="container" style="padding: 30px 0 10px;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
-          ${PROMO_COUPONS.map(coupon => `
-            <div class="glass-card" style="padding: 20px; border-left: 4px solid #2563eb; background: #ffffff; display: flex; flex-direction: column; justify-content: space-between;">
-              <div>
-                <span style="background: #fef3c7; color: #b45309; font-size: 0.72rem; font-weight: 800; padding: 3px 10px; border-radius: 9999px;">
-                  🏷️ ${coupon.tag}
-                </span>
-                <h4 style="font-size: 1.05rem; font-weight: 800; color: #0f172a; margin-top: 8px;">${coupon.title}</h4>
-                <p style="font-size: 0.82rem; color: #64748b; margin-top: 4px; line-height: 1.5;">${coupon.desc}</p>
-              </div>
-
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 14px; padding-top: 10px; border-top: 1px dashed #e2e8f0;">
-                <code style="background: #f1f5f9; padding: 4px 10px; border-radius: 6px; font-weight: 800; color: #2563eb; letter-spacing: 1px; font-size: 0.88rem;">
-                  ${coupon.code}
-                </code>
-                <button class="copy-coupon-btn btn-secondary" data-code="${coupon.code}" style="padding: 5px 12px; font-size: 0.78rem;">
-                  Copy Code
-                </button>
-              </div>
-            </div>
-          `).join('')}
-        </div>
-      </section>
 
       <!-- Featured Vehicles Section -->
       <section class="container" style="padding: 40px 0 20px;">
@@ -288,14 +241,6 @@ export const bindHomePageEvents = (): void => {
 
   document.querySelector('#viewAllFleetBtn')?.addEventListener('click', () => {
     store.setRoute('fleet');
-  });
-
-  document.querySelectorAll('.copy-coupon-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const code = (e.currentTarget as HTMLElement).dataset.code || '';
-      navigator.clipboard.writeText(code);
-      store.showToast(`Promo code '${code}' copied! Apply when booking on WhatsApp 🎉`, 'success');
-    });
   });
 
   document.querySelectorAll('.route-tab-btn').forEach(btn => {
