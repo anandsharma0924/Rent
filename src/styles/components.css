@@ -1,8 +1,35 @@
 /* ==========================================================================
-   ULTRA-CLEAN, USER-FRIENDLY & 100% RESPONSIVE DESIGN SYSTEM
+   ULTRA-CLEAN, SAFARI-COMPATIBLE & 100% RESPONSIVE DESIGN SYSTEM
    ========================================================================== */
 
-/* Glass & Card Containers */
+/* Universal Layout & Section Utilities */
+.section-padding {
+  padding: 36px 0;
+  box-sizing: border-box;
+}
+
+.section-header-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  margin-bottom: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
 .glass-card {
   background: #ffffff;
   border: 1px solid #eaecf0;
@@ -18,7 +45,36 @@
   box-shadow: 0 12px 24px rgba(16, 24, 40, 0.08);
 }
 
-/* Primary, Secondary & WhatsApp Buttons */
+.home-card-box {
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 24px;
+}
+
+.border-blue {
+  border: 1.5px solid #2563eb;
+}
+
+.box-center-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.box-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-top: 6px;
+  line-height: 1.25;
+}
+
+.box-desc {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+/* Primary, Secondary & WhatsApp Buttons (Safari WebKit Touch) */
 .btn-primary {
   background: #0f172a;
   color: #ffffff;
@@ -26,8 +82,14 @@
   font-size: 0.88rem;
   padding: 10px 18px;
   border-radius: 10px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
   display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   gap: 8px;
   transition: background 0.2s ease, transform 0.2s ease;
@@ -50,8 +112,14 @@
   font-size: 0.88rem;
   padding: 10px 18px;
   border-radius: 10px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
   display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   gap: 8px;
   transition: all 0.2s ease;
@@ -73,8 +141,14 @@
   font-size: 0.88rem;
   padding: 10px 18px;
   border-radius: 10px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
   display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   gap: 8px;
   transition: background 0.2s ease, transform 0.2s ease;
@@ -89,27 +163,42 @@
   background: #128c7e;
 }
 
+.width-full {
+  width: 100%;
+}
+
 /* Header & Navigation */
 .site-header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
   background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid #eaecf0;
   padding: 12px 0;
   box-shadow: 0 1px 3px rgba(16, 24, 40, 0.05);
 }
 
 .nav-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
 .brand-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
   gap: 10px;
   background: none;
@@ -143,7 +232,11 @@
 }
 
 .nav-links {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
   gap: 6px;
 }
@@ -166,7 +259,11 @@
 }
 
 .nav-actions {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
   gap: 10px;
 }
@@ -177,7 +274,11 @@
   padding: 8px 14px;
   border-radius: 10px;
   color: #0f172a;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
   gap: 6px;
   font-weight: 700;
@@ -219,7 +320,12 @@
 }
 
 .mobile-nav-links {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   flex-direction: column;
   gap: 6px;
 }
@@ -250,19 +356,29 @@
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   border-top: 1px solid #eaecf0;
   z-index: 190;
   padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
+  -webkit-justify-content: space-around;
   justify-content: space-around;
   box-shadow: 0 -4px 20px rgba(16, 24, 40, 0.08);
 }
 
 .mobile-nav-tab {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   gap: 3px;
   color: #64748b;
@@ -275,6 +391,8 @@
   cursor: pointer;
   text-decoration: none;
   touch-action: manipulation;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
   flex: 1;
 }
 
@@ -297,11 +415,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 
 .hero-tag {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
   display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
   gap: 6px;
   background: rgba(37, 99, 235, 0.2);
@@ -313,6 +437,12 @@
   border-radius: 9999px;
   margin-bottom: 12px;
   text-transform: uppercase;
+}
+
+.tag-blue {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
 }
 
 .hero-title {
@@ -335,6 +465,8 @@
 }
 
 .hero-stats {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   gap: 24px;
   margin-top: 24px;
@@ -364,8 +496,14 @@
 }
 
 .panel-title {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
   margin-bottom: 14px;
   padding-bottom: 10px;
@@ -384,7 +522,12 @@
 }
 
 .form-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   flex-direction: column;
   gap: 12px;
 }
@@ -396,9 +539,15 @@
 }
 
 .form-group {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   flex-direction: column;
   gap: 4px;
+  min-width: 0; /* Safari flex child min-width fix */
 }
 
 .form-group label {
@@ -418,6 +567,7 @@
   color: #101828;
   outline: none;
   background: #ffffff;
+  -webkit-appearance: none; /* Safari select fix */
 }
 
 .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
@@ -458,7 +608,11 @@
   font-weight: 700;
   color: #101828;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
   gap: 8px;
   border-bottom: 1px solid #f2f4f7;
@@ -470,7 +624,11 @@
 }
 
 .checkbox-group {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
   gap: 8px;
   font-size: 0.82rem;
@@ -483,8 +641,14 @@
   border: 1px solid #eaecf0;
   padding: 12px 14px;
   border-radius: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -492,6 +656,276 @@
   font-size: 1.3rem;
   font-weight: 900;
   color: #2563eb;
+}
+
+/* Route Estimator Grid System */
+.route-tabs-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.route-tab-btn {
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1px solid #cbd5e1;
+  background: #f1f5f9;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.route-tab-btn.active {
+  border-color: #0f172a;
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.route-estimator-grid {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+  gap: 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.estimator-item {
+  min-width: 0;
+}
+
+.item-label {
+  font-size: 0.78rem;
+  color: #64748b;
+  font-weight: 600;
+  display: block;
+}
+
+.item-val-title {
+  display: block;
+  font-size: 1.1rem;
+  color: #0f172a;
+  font-weight: 800;
+}
+
+.item-val-blue {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.05rem;
+  color: #2563eb;
+  font-weight: 800;
+}
+
+.item-val-dark {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.item-val-green {
+  display: block;
+  font-size: 1.25rem;
+  color: #059669;
+  font-weight: 900;
+}
+
+/* Custom Itinerary Planner Grid */
+.itinerary-header-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.margin-top-sm {
+  margin-top: 4px;
+}
+
+.itinerary-tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  gap: 6px;
+}
+
+.itinerary-tab-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #334155;
+  cursor: pointer;
+}
+
+.itinerary-tab-btn.active {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.itinerary-planner-grid {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.itinerary-left-info {
+  min-width: 0;
+}
+
+.subtitle-blue {
+  color: #2563eb;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.itinerary-title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #0f172a;
+  margin-top: 4px;
+}
+
+.sights-box {
+  margin: 14px 0;
+}
+
+.sights-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #475569;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.sights-pills-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sight-pill {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #0f172a;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.itinerary-meta-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  gap: 20px;
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.itinerary-right-card {
+  background: #ffffff;
+  border: 1.5px solid #2563eb;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.rate-label {
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.package-rate-val {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #2563eb;
+  margin: 4px 0 12px;
+}
+
+/* Home Stats Strip */
+.home-stats-strip {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 28px 36px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+
+.stat-box {
+  min-width: 0;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 900;
+  display: block;
+}
+
+.blue-num { color: #60a5fa; }
+.amber-num { color: #f59e0b; display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center; gap: 4px; }
+.green-num { color: #4ade80; }
+.sky-num { color: #38bdf8; }
+
+.stat-desc {
+  font-size: 0.85rem;
+  color: #cbd5e1;
 }
 
 /* CAR CARDS GRID SYSTEM (FLUID & CLEAN) */
@@ -503,7 +937,12 @@
 
 .car-card {
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
@@ -530,6 +969,7 @@
   top: 10px;
   left: 10px;
   background: rgba(16, 24, 40, 0.85);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   color: #ffffff;
   font-size: 0.72rem;
@@ -555,14 +995,27 @@
 
 .car-details {
   padding: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
   flex-grow: 1;
 }
 
 .car-header {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
   align-items: flex-start;
   margin-bottom: 4px;
 }
@@ -580,6 +1033,8 @@
 }
 
 .specs-pills {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
@@ -593,7 +1048,11 @@
   font-weight: 700;
   padding: 4px 10px;
   border-radius: 6px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
   display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
   gap: 4px;
 }
@@ -602,8 +1061,14 @@
   margin-top: auto;
   padding-top: 12px;
   border-top: 1px solid #f2f4f7;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -623,6 +1088,7 @@
   position: fixed;
   inset: 0;
   background: rgba(16, 24, 40, 0.7);
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   z-index: 200;
   display: grid;
@@ -683,7 +1149,11 @@
   padding: 8px 20px;
   box-shadow: 0 10px 30px rgba(16, 24, 40, 0.18);
   z-index: 150;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
   gap: 16px;
   max-width: 90vw;
@@ -726,7 +1196,11 @@
   padding: 12px 18px;
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(16, 24, 40, 0.1);
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
   gap: 10px;
   font-weight: 700;
@@ -734,7 +1208,7 @@
 }
 
 /* ==========================================================================
-   COMPREHENSIVE RESPONSIVE MEDIA QUERIES (TABLETS & MOBILE)
+   COMPREHENSIVE SAFARI & MOBILE MEDIA QUERIES (TABLETS & MOBILE)
    ========================================================================== */
 
 /* Tablets (768px - 991px) */
@@ -748,11 +1222,30 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
+  .route-estimator-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .estimator-action {
+    grid-column: span 2;
+  }
+
+  .itinerary-planner-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .home-stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
 }
 
 /* Mobile Screens (< 768px) */
 @media (max-width: 768px) {
-  /* Fix iOS Safari auto-zoom */
+  /* Safari iOS input auto-zoom prevention */
   input, select, textarea {
     font-size: 16px !important;
   }
@@ -770,6 +1263,8 @@
   }
 
   .mobile-bottom-nav {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
     display: flex !important;
   }
 
@@ -784,7 +1279,20 @@
   }
 
   .hero-title {
-    font-size: 1.7rem !important;
+    font-size: 1.65rem !important;
+  }
+
+  .home-card-box {
+    padding: 16px !important;
+    border-radius: 16px !important;
+  }
+
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+
+  .box-title {
+    font-size: 1.35rem !important;
   }
 
   .car-grid {
@@ -796,31 +1304,45 @@
     grid-template-columns: 1fr !important;
   }
 
-  /* Override all inline 2-column grids on mobile */
-  div[style*="grid-template-columns: 1.2fr"],
-  div[style*="grid-template-columns: 1.15fr"],
-  div[style*="grid-template-columns: 1.1fr"],
-  div[style*="grid-template-columns: 1fr 1fr"] {
+  .route-estimator-grid {
     grid-template-columns: 1fr !important;
+    padding: 16px !important;
+    gap: 14px !important;
+  }
+
+  .estimator-action {
+    grid-column: auto !important;
+    width: 100%;
+  }
+
+  .estimator-action .btn-whatsapp {
+    width: 100% !important;
+  }
+
+  .itinerary-planner-grid {
+    grid-template-columns: 1fr !important;
+    padding: 16px !important;
     gap: 16px !important;
   }
 
-  div[style*="padding: 32px"],
-  div[style*="padding: 28px"],
-  div[style*="padding: 24px"] {
-    padding: 16px !important;
+  .home-stats-strip {
+    grid-template-columns: 1fr 1fr !important;
+    padding: 20px 16px !important;
+    gap: 14px !important;
   }
 
-  /* Stat strips in Home & Why Choose Us */
-  div[style*="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr))"],
-  div[style*="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr))"] {
-    grid-template-columns: 1fr !important;
-    gap: 12px !important;
+  .stat-number {
+    font-size: 1.5rem !important;
   }
 
   .price-estimate-box {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
     flex-direction: column !important;
     gap: 12px !important;
+    -webkit-box-align: stretch !important;
+    -webkit-align-items: stretch !important;
     align-items: stretch !important;
     text-align: center !important;
   }
@@ -844,11 +1366,17 @@
 /* Extra Small Mobile (< 480px) */
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 1.45rem !important;
+    font-size: 1.4rem !important;
+  }
+
+  .home-stats-strip {
+    grid-template-columns: 1fr !important;
   }
 
   .btn-primary, .btn-secondary, .btn-whatsapp {
     width: 100% !important;
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
     justify-content: center !important;
     padding: 10px 14px !important;
     font-size: 0.82rem !important;
