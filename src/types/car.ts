@@ -1,74 +1,47 @@
-export type CarType = 'SUV' | 'Sedan' | 'Premium' | 'Family';
-export type TransmissionType = 'Automatic' | 'Manual';
-export type FuelType = 'Petrol' | 'Diesel' | 'Electric' | 'CNG';
+export type CarType = 'Sedan' | 'SUV' | 'Family' | 'Premium';
+export type FuelType = 'Petrol' | 'Diesel' | 'CNG' | 'Hybrid';
+export type TransmissionType = 'Manual' | 'Automatic';
 
-export interface CarGalleryItem {
-  label: string;
-  url: string;
+export interface CarSpecs {
+  engine: string;
+  mileage: string;
+  luggage: string;
+  airbags?: string;
 }
 
 export interface CarChauffeurInfo {
   name: string;
   experience: string;
-  rating: number;
-  verified: boolean;
   languages: string[];
+  rating?: number;
+}
+
+export interface CarGalleryItem {
+  title: string;
+  url: string;
+  label?: string;
 }
 
 export interface Car {
   id: number;
   name: string;
-  tagline: string;
   type: CarType;
+  tagline: string;
+  pricePerDay: number;
+  pricePerKm: number; // Per KM Rate for outstation trips
+  pricePerHour?: number;
   seats: number;
   transmission: TransmissionType;
   fuel: FuelType;
   rating: number;
   reviewCount: number;
-  pricePerDay: number;
-  hourlyRate: number;
-  location: string;
   image: string;
+  badge?: string;
+  location?: string;
   gallery: CarGalleryItem[];
   chauffeur: CarChauffeurInfo;
-  badge: string;
   features: string[];
-  specs: {
-    luggage: string;
-    mileage: string;
-    engine: string;
-    airbags: number;
-    ac: boolean;
-  };
-}
-
-export interface RentalPackage {
-  id: string;
-  name: string;
-  tagline: string;
-  duration: string;
-  kilometers: string;
-  price: number;
-  features: string[];
-  popular?: boolean;
-}
-
-export interface Review {
-  id: number;
-  name: string;
-  location: string;
-  rating: number;
-  date: string;
-  comment: string;
-  carRented: string;
-  avatar: string;
-}
-
-export interface FAQ {
-  id: number;
-  question: string;
-  answer: string;
-  category: 'Booking' | 'Pricing' | 'Vehicles' | 'Support';
+  specs: CarSpecs;
 }
 
 export interface FilterState {
@@ -78,16 +51,53 @@ export interface FilterState {
   selectedTransmission: TransmissionType | 'All';
   selectedFuel: FuelType | 'All';
   maxPrice: number;
-  sortBy: 'recommended' | 'price-low' | 'price-high' | 'rating';
+  sortBy: 'price-low' | 'price-high' | 'rating' | 'recommended';
 }
 
 export interface BookingState {
   tripType: string;
   pickupCity: string;
-  dropCity?: string;
   pickupDate: string;
   returnDate: string;
   seatsNeeded: number;
   needDriver: boolean;
-  selectedCarId: number | null;
+  selectedCarId: number;
+  pricingMode?: 'daily' | 'perKm';
+  estimatedKm?: number;
+}
+
+export interface FAQ {
+  id: number;
+  question: string;
+  answer: string;
+  category: string;
+}
+
+export interface RentalPackage {
+  id: number | string;
+  name?: string;
+  title?: string;
+  subtitle?: string;
+  tagline?: string;
+  tag?: string;
+  popular?: boolean;
+  price: number;
+  duration: string;
+  kilometers?: string;
+  recommendedCar?: string;
+  features: string[];
+  popularRoutes?: string[];
+}
+
+export interface Review {
+  id: number;
+  name: string;
+  location: string;
+  avatar?: string;
+  rating: number;
+  date: string;
+  comment: string;
+  vehicleBooked?: string;
+  carRented?: string;
+  verifiedTrip?: string;
 }

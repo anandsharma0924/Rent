@@ -27,7 +27,18 @@ export const renderBookingForm = (): string => {
   const { booking } = store;
   const selectedCar = carsData.find(c => c.id === booking.selectedCarId) || carsData[0];
   const days = calculateDaysBetween(booking.pickupDate, booking.returnDate);
-  const totalCost = (selectedCar.pricePerDay * days) + (booking.needDriver ? 500 * days : 0);
+  
+  const isPerKm = booking.pricingMode === 'perKm';
+  const estimatedKm = booking.estimatedKm || 300;
+
+  // Calculate fare based on mode (Daily Fixed vs Per KM Rate)
+  let totalCost = 0;
+  if (isPerKm) {
+    totalCost = (selectedCar.pricePerKm * estimatedKm) + (booking.needDriver ? 500 * days : 0);
+  } else {
+    totalCost = (selectedCar.pricePerDay * days) + (booking.needDriver ? 500 * days : 0);
+  }
+
   const todayStr = getTodayDateString();
 
   return `
@@ -35,6 +46,16 @@ export const renderBookingForm = (): string => {
       <div class="panel-title">
         <span>⚡ Quick Ride Estimator</span>
         <span class="status-pill">Available 24x7</span>
+      </div>
+
+      <!-- NEW: Pricing Mode Selector Tabs (Daily Fare vs Highway Per KM Rate) -->
+      <div style="display: flex; gap: 8px; margin-bottom: 14px; background: #f1f5f9; padding: 4px; border-radius: 10px;">
+        <button type="button" class="pricing-mode-tab ${!isPerKm ? 'active' : ''}" data-mode="daily" style="flex: 1; padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; border: none; background: ${!isPerKm ? '#ffffff' : 'transparent'}; color: ${!isPerKm ? '#2563eb' : '#64748b'}; cursor: pointer; box-shadow: ${!isPerKm ? '0 2px 6px rgba(0,0,0,0.06)' : 'none'};">
+          📅 Daily Rental Fare
+        </button>
+        <button type="button" class="pricing-mode-tab ${isPerKm ? 'active' : ''}" data-mode="perKm" style="flex: 1; padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; border: none; background: ${isPerKm ? '#ffffff' : 'transparent'}; color: ${isPerKm ? '#2563eb' : '#64748b'}; cursor: pointer; box-shadow: ${isPerKm ? '0 2px 6px rgba(0,0,0,0.06)' : 'none'};">
+          🛣️ Per KM Highway Rate
+        </button>
       </div>
 
       <form id="bookingSearchForm" class="form-grid" novalidate>
@@ -70,6 +91,17 @@ export const renderBookingForm = (): string => {
           <div id="pickupCityError" class="error-text" style="display:none;"></div>
         </div>
 
+        <!-- Per KM Dynamic Distance Input Field (Only visible when Per KM mode selected) -->
+        ${isPerKm ? `
+          <div class="form-group" style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 10px; border-radius: 8px;">
+            <label for="estimatedKmInput" style="color: #1d4ed8; font-weight: 800;">Estimated Highway Distance (KM) *</label>
+            <div style="display: flex; gap: 8px; align-items: center; margin-top: 4px;">
+              <input type="number" id="estimatedKmInput" value="${estimatedKm}" min="50" max="5000" step="10" placeholder="e.g. 300 KM" style="flex: 1; font-weight: 800; color: #2563eb;" required />
+              <span style="font-size: 0.8rem; font-weight: 700; color: #1d4ed8; white-space: nowrap;">@ ₹${selectedCar.pricePerKm}/KM</span>
+            </div>
+          </div>
+        ` : ''}
+
         <div class="form-row">
           <div class="form-group">
             <label for="pickupDate">Pickup Date</label>
@@ -98,7 +130,7 @@ export const renderBookingForm = (): string => {
             <select id="selectedCarSelect">
               ${carsData.map(c => `
                 <option value="${c.id}" ${c.id === booking.selectedCarId ? 'selected' : ''}>
-                  ${c.name} (${formatCurrency(c.pricePerDay)}/day)
+                  ${c.name} (${isPerKm ? `₹${c.pricePerKm}/km` : `${formatCurrency(c.pricePerDay)}/day`})
                 </option>
               `).join('')}
             </select>
@@ -112,7 +144,9 @@ export const renderBookingForm = (): string => {
 
         <div class="price-estimate-box" style="flex-wrap: wrap; gap: 10px;">
           <div>
-            <div style="font-size: 0.78rem; color: var(--text-muted);">Estimated Fare (${days} ${days === 1 ? 'day' : 'days'})</div>
+            <div style="font-size: 0.78rem; color: var(--text-muted);">
+              ${isPerKm ? `Estimated Fare (${estimatedKm} KM @ ₹${selectedCar.pricePerKm}/km)` : `Estimated Fare (${days} ${days === 1 ? 'day' : 'days'})`}
+            </div>
             <div class="estimate-val" id="estimatedFareVal">${formatCurrency(totalCost)}</div>
           </div>
 
@@ -139,8 +173,21 @@ export const bindBookingFormEvents = (): void => {
   const suggestionsBox = document.querySelector('#locationSuggestions') as HTMLDivElement;
   const pickupInput = document.querySelector('#pickupDate') as HTMLInputElement;
   const returnInput = document.querySelector('#returnDate') as HTMLInputElement;
+  const kmInput = document.querySelector('#estimatedKmInput') as HTMLInputElement;
   const pickupErr = document.querySelector('#pickupDateError') as HTMLDivElement;
   const returnErr = document.querySelector('#returnDateError') as HTMLDivElement;
+
+  document.querySelectorAll('.pricing-mode-tab').forEach(tab => {
+    tab.addEventListener('click', (e) => {
+      const mode = (e.currentTarget as HTMLElement).dataset.mode as 'daily' | 'perKm';
+      store.setBooking({ pricingMode: mode });
+    });
+  });
+
+  kmInput?.addEventListener('input', (e) => {
+    const kmVal = Number((e.target as HTMLInputElement).value) || 300;
+    store.setBooking({ estimatedKm: kmVal });
+  });
 
   const renderSuggestions = (query: string) => {
     if (!suggestionsBox) return;
@@ -246,7 +293,7 @@ export const bindBookingFormEvents = (): void => {
   };
 
   form.querySelectorAll('input, select').forEach(element => {
-    if (element !== locationInput) {
+    if (element !== locationInput && element !== kmInput) {
       element.addEventListener('change', updateStateAndFare);
     }
   });

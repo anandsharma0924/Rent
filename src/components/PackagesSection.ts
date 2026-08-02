@@ -32,7 +32,7 @@ export const renderPackagesSection = (): string => {
             </div>
 
             <ul style="list-style: none; margin-bottom: 24px;">
-              ${pkg.features.map(feat => `
+              ${pkg.features.map((feat: string) => `
                 <li style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
                   <span style="color: var(--emerald-light);">✓</span> ${feat}
                 </li>

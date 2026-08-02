@@ -57,16 +57,17 @@ export const renderCarCard = (car: Car): string => {
           </span>
         </div>
 
-        <!-- Chauffeur Status -->
-        <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 5px 10px; border-radius: 6px; font-size: 0.75rem; color: #166534; font-weight: 700; margin-bottom: 14px;">
-          ✓ Police Verified Chauffeur Included
+        <!-- Per KM & Daily Fare Rate Badge -->
+        <div style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 6px 12px; border-radius: 8px; font-size: 0.78rem; color: #1d4ed8; font-weight: 700; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center;">
+          <span>🛣️ Per KM Rate: <strong>₹${car.pricePerKm}/km</strong></span>
+          <span style="font-weight: 800; color: #059669;">Daily: ${formatCurrency(car.pricePerDay)}</span>
         </div>
 
         <!-- Footer with Fare & Booking Actions -->
         <div class="card-footer">
           <div>
             <span class="price-text">${formatCurrency(car.pricePerDay)}</span>
-            <span class="unit-text">/day</span>
+            <span class="unit-text">/day (or ₹${car.pricePerKm}/km)</span>
           </div>
 
           <div style="display: flex; gap: 6px;">
