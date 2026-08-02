@@ -249,11 +249,11 @@ Please share current availability, per KM highway rates (Min 400 KM) & best per-
       </div>
 
       <!-- Pricing Mode Selector Tabs (Daily Fare vs Highway Per KM Rate) -->
-      <div style="display: flex; gap: 8px; margin-bottom: 14px; background: #f1f5f9; padding: 4px; border-radius: 10px;">
-        <button type="button" class="pricing-mode-tab ${s?``:`active`}" data-mode="daily" style="flex: 1; padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; border: none; background: ${s?`transparent`:`#ffffff`}; color: ${s?`#64748b`:`#2563eb`}; cursor: pointer; box-shadow: ${s?`none`:`0 2px 6px rgba(0,0,0,0.06)`};">
+      <div class="pricing-tabs-wrap">
+        <button type="button" class="pricing-mode-tab ${s?``:`active`}" data-mode="daily">
           📅 Daily Rental Fare
         </button>
-        <button type="button" class="pricing-mode-tab ${s?`active`:``}" data-mode="perKm" style="flex: 1; padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; border: none; background: ${s?`#ffffff`:`transparent`}; color: ${s?`#2563eb`:`#64748b`}; cursor: pointer; box-shadow: ${s?`0 2px 6px rgba(0,0,0,0.06)`:`none`};">
+        <button type="button" class="pricing-mode-tab ${s?`active`:``}" data-mode="perKm">
           🛣️ Per KM (Min 400 KM)
         </button>
       </div>
@@ -272,14 +272,14 @@ Please share current availability, per KM highway rates (Min 400 KM) & best per-
         <!-- Interactive Location Search Input with Autocomplete Dropdown -->
         <div class="form-group" style="position: relative;">
           <label for="pickupCityInput">Pickup Location</label>
-          <div style="position: relative;">
+          <div style="position: relative; width: 100%;">
             <input 
               type="text" 
               id="pickupCityInput" 
               placeholder="Type city, airport or landmark (e.g. Indore, Ujjain)..." 
               value="${i.pickupCity}" 
               autocomplete="off" 
-              style="width: 100%; padding-left: 36px;"
+              style="width: 100%; padding-left: 36px; box-sizing: border-box;"
               required 
             />
             <div style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); pointer-events: none; color: #64748b;">
@@ -293,8 +293,8 @@ Please share current availability, per KM highway rates (Min 400 KM) & best per-
 
         <!-- Per KM Dynamic Distance Input Field (Min 400 KM Enforced) -->
         ${s?`
-          <div class="form-group" style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 10px; border-radius: 8px;">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div class="form-group" style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 10px; border-radius: 8px; box-sizing: border-box;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 4px;">
               <label for="estimatedKmInput" style="color: #1d4ed8; font-weight: 800;">Highway Distance (KM) *</label>
               <span style="font-size: 0.7rem; background: #dbeafe; color: #1e40af; font-weight: 800; padding: 2px 6px; border-radius: 4px;">
                 Min 400 KM Policy
@@ -302,13 +302,13 @@ Please share current availability, per KM highway rates (Min 400 KM) & best per-
             </div>
             
             <div style="display: flex; gap: 8px; align-items: center; margin-top: 4px;">
-              <input type="number" id="estimatedKmInput" value="${c}" min="400" max="5000" step="10" placeholder="Min 400 KM" style="flex: 1; font-weight: 800; color: #2563eb;" required />
+              <input type="number" id="estimatedKmInput" value="${c}" min="400" max="5000" step="10" placeholder="Min 400 KM" style="flex: 1; font-weight: 800; color: #2563eb; width: 100%; min-width: 0;" required />
               <span style="font-size: 0.8rem; font-weight: 700; color: #1d4ed8; white-space: nowrap;">@ ₹${a.pricePerKm}/KM</span>
             </div>
 
             ${c<M?`
               <div style="font-size: 0.72rem; color: #b45309; font-weight: 700; margin-top: 4px;">
-                ⚠️ Minimum 400 KM billing applies for per-KM highway rate (${M} KM × ₹${a.pricePerKm} = ${t(M*a.pricePerKm)}).
+                ⚠️ Minimum 400 KM billing applies (${M} KM × ₹${a.pricePerKm} = ${t(M*a.pricePerKm)}).
               </div>
             `:``}
           </div>
@@ -339,7 +339,7 @@ Please share current availability, per KM highway rates (Min 400 KM) & best per-
 
           <div class="form-group">
             <label for="selectedCarSelect">Vehicle Choice</label>
-            <select id="selectedCarSelect">
+            <select id="selectedCarSelect" style="width: 100%; max-width: 100%; text-overflow: ellipsis;">
               ${e.map(e=>`
                 <option value="${e.id}" ${e.id===i.selectedCarId?`selected`:``}>
                   ${e.name} (${s?`₹${e.pricePerKm}/km`:`${t(e.pricePerDay)}/day`})
@@ -354,20 +354,20 @@ Please share current availability, per KM highway rates (Min 400 KM) & best per-
           <label for="needDriver">Include Driver Allowance (+₹500/day)</label>
         </div>
 
-        <div class="price-estimate-box" style="flex-wrap: wrap; gap: 10px;">
-          <div>
+        <div class="price-estimate-box">
+          <div style="min-width: 0;">
             <div style="font-size: 0.78rem; color: var(--text-muted);">
               ${s?`Estimated Fare (${l} KM @ ₹${a.pricePerKm}/km)`:`Estimated Fare (${o} ${o===1?`day`:`days`})`}
             </div>
             <div class="estimate-val" id="estimatedFareVal">${t(d)}</div>
           </div>
 
-          <div style="display: flex; gap: 8px;">
-            <button id="generateQuotePdfBtn" type="button" class="btn-secondary" style="padding: 8px 12px; font-size: 0.8rem;">
+          <div class="estimate-actions-wrap">
+            <button id="generateQuotePdfBtn" type="button" class="btn-secondary">
               📄 Official Quote
             </button>
 
-            <button id="whatsAppBookingBtn" type="button" class="btn-whatsapp" style="padding: 8px 14px; font-size: 0.85rem;">
+            <button id="whatsAppBookingBtn" type="button" class="btn-whatsapp">
               📲 Book on WhatsApp
             </button>
           </div>
@@ -379,48 +379,50 @@ Please share current availability, per KM highway rates (Min 400 KM) & best per-
         <span style="color: #2563eb;">📍</span> <span>${e}</span>
       </div>
     `).join(``),i.style.display=`block`,i.querySelectorAll(`.suggestion-item`).forEach(e=>{e.addEventListener(`click`,e=>{let t=e.currentTarget.dataset.location||``;n&&(n.value=t,u.setBooking({pickupCity:t})),i.style.display=`none`})})};n?.addEventListener(`input`,e=>{let t=e.target.value;u.setBooking({pickupCity:t}),d(t)}),n?.addEventListener(`focus`,e=>{d(e.target.value)}),document.addEventListener(`click`,e=>{!n?.contains(e.target)&&!i?.contains(e.target)&&i&&(i.style.display=`none`)});let f=()=>{let e=!0,t=r();return a&&a.value<t?(a.classList.add(`input-error`),c&&(c.textContent=`Pickup date cannot be in the past!`,c.style.display=`block`),e=!1):(a?.classList.remove(`input-error`),c&&(c.style.display=`none`)),o&&a&&o.value<a.value?(o.classList.add(`input-error`),l&&(l.textContent=`Return date must be on or after pickup date!`,l.style.display=`block`),e=!1):(o?.classList.remove(`input-error`),l&&(l.style.display=`none`)),e},m=()=>{if(!f())return;let e=document.querySelector(`#tripType`)?.value,t=n?.value||`Indore`,r=a?.value,i=o?.value,s=Number(document.querySelector(`#seatsNeeded`)?.value),c=Number(document.querySelector(`#selectedCarSelect`)?.value),l=document.querySelector(`#needDriver`)?.checked;o&&r&&(o.min=r),u.setBooking({tripType:e,pickupCity:t,pickupDate:r,returnDate:i,seatsNeeded:s,selectedCarId:c,needDriver:l})};t.querySelectorAll(`input, select`).forEach(e=>{e!==n&&e!==s&&e.addEventListener(`change`,m)}),document.querySelector(`#generateQuotePdfBtn`)?.addEventListener(`click`,()=>{if(!f()){u.showToast(`Please fix invalid travel dates before generating quotation`,`warning`);return}re(),u.notify()}),document.querySelector(`#whatsAppBookingBtn`)?.addEventListener(`click`,()=>{if(!f()){u.showToast(`Please fix invalid travel dates before booking`,`warning`);return}let{booking:t}=u,n=p(e.find(e=>e.id===t.selectedCarId)||e[0],t);window.open(n,`_blank`)})},ue=()=>`
-    <section class="hero-section">
-      <div class="container hero-grid">
-        <div>
-          <div class="hero-tag">
-            <span>✨ Verified Clean & Sanitized Fleet</span>
+    <section class="container" style="padding-top: 16px;">
+      <div class="hero-section">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-tag">
+              <span>✨ Verified Clean & Sanitized Fleet</span>
+            </div>
+
+            <h1 class="hero-title">
+              Travel Luxury. <span>Drive Comfort.</span>
+            </h1>
+
+            <p class="hero-desc">
+              Reserve premium 7-seater Maruti Ertiga, Innova Crysta, XL6 & Fortuner for family vacations, Mahakal pilgrimage trips, airport drops & outstation journeys across India.
+            </p>
+
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px;">
+              <button id="exploreFleetHeroBtn" class="btn-primary">
+                🚘 Explore Fleet
+              </button>
+              <button id="whyChooseUsHeroBtn" class="btn-secondary">
+                🛡️ Why Choose Us
+              </button>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <strong>1,200+</strong>
+                <span>Trips Completed</span>
+              </div>
+              <div class="stat-item">
+                <strong>4.9 ★</strong>
+                <span>Customer Rating</span>
+              </div>
+              <div class="stat-item">
+                <strong>100%</strong>
+                <span>Transparent Pricing</span>
+              </div>
+            </div>
           </div>
 
-          <h1 class="hero-title">
-            Travel Luxury. <span>Drive Comfort.</span>
-          </h1>
-
-          <p class="hero-desc">
-            Reserve premium 7-seater Maruti Ertiga, Innova Crysta, XL6 & Fortuner for family vacations, Mahakal pilgrimage trips, airport drops & outstation journeys across India.
-          </p>
-
-          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-            <button id="exploreFleetHeroBtn" class="btn-primary">
-              🚘 Explore Luxury Fleet
-            </button>
-            <button id="whyChooseUsHeroBtn" class="btn-secondary">
-              🛡️ Why Choose Us
-            </button>
+          <div style="min-width: 0; width: 100%;">
+            ${ce()}
           </div>
-
-          <div class="hero-stats">
-            <div class="stat-item">
-              <strong>1,200+</strong>
-              <span>Trips Completed</span>
-            </div>
-            <div class="stat-item">
-              <strong>4.9 ★</strong>
-              <span>Customer Rating</span>
-            </div>
-            <div class="stat-item">
-              <strong>100%</strong>
-              <span>Transparent Pricing</span>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          ${ce()}
         </div>
       </div>
     </section>
